@@ -33,14 +33,14 @@
 </header>
 
 <!-- 1. PRESENTACIÓN -->
-<section id="presentacion">
+ <section class="hero" id="presentacion">
   <h1>Guía de Validación y Estandarización de Pruebas Psicológicas</h1>
-  <p class="subtitle">Psicometría Aplicada – 5.º año, Psicología Clínica – UNA</p>
-
+  <p class="subtitle">Psicometría Aplicada – 5.º año · Psicología Clínica · Facultad de Filosofía – UNA</p>
+   
   <audio controls>
-    <source src="media/01_presentacion_general.mp3" type="audio/mpeg" />
-    Tu navegador no soporta audio HTML5.
+    <source src="media/01_presentacion_general.mp3" type="audio/mpeg">
   </audio>
+</section>
 
   <div class="note">
     <p><strong>Propósito.</strong> Esta guía acompaña el trabajo práctico de validación de un
@@ -48,18 +48,15 @@
   </div>
 </section>
 
+  
 <!-- ▸ ▸  2. CRONOGRAMA  ◂ ◂ -->
 <section id="cronograma">
   <h2>Cronograma y plan de trabajo</h2>
-
   <table class="cronograma">
-    <thead>
-      <tr><th>Etapa</th><th>Actividad</th><th>Fechas</th><th>Entregable</th></tr>
-    </thead>
-    <tbody id="cronograma-body"><!-- JS rellena --></tbody>
+    <thead><tr><th>Etapa</th><th>Actividad</th><th>Fechas</th><th>Entregables/Acciones</th></tr></thead>
+    <tbody id="cronograma-body"><!-- utils.js rellenará --></tbody>
   </table>
 </section>
-
  
 <!-- 3. TESTS -->
 <section id="tests">
@@ -73,14 +70,16 @@
   <p>Tamaño recomendado: 3 – 5 integrantes. Verifica que tu test no esté repetido.</p>
 
   <!-- Google Form -->
-  <iframe class="responsive-frame"
-          src="https://docs.google.com/forms/d/e/1FAIpQLSdz4KRBX4btU91r9gJgZRrMGzJvGohZiqWzmLyJnTQuW1kODA/viewform?embedded=true"
+  <div class="iframe-wrap">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdz4KRBX4btU91r9gJgZRrMGzJvGohZiqWzmLyJnTQuW1kODA/viewform?embedded=true"
           loading="lazy"></iframe>
+</div>
+          
 
   <h3>Listado vivo de grupos</h3>
   <!-- Google Sheet -->
-  <iframe class="responsive-frame"
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSH3HdSIU9Waykz9kpQ-z7nOxyJF5k9syv3TIPaoC46kTVZP424xUT1_xC4dc4BVQVqGIcINsNWBFfa/pubhtml?gid=1955925198&amp;single=true&amp;widget=true&amp;headers=false"
+  <div class="iframe-wrap">
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSH3HdSIU9Waykz9kpQ-z7nOxyJF5k9syv3TIPaoC46kTVZP424xUT1_xC4dc4BVQVqGIcINsNWBFfa/pubhtml?gid=1955925198&amp;single=true&amp;widget=true&amp;headers=false"
           loading="lazy"></iframe>
 </section>
 
