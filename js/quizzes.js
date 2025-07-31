@@ -1,61 +1,100 @@
-/* quizzes.js – gestiona la carga y puntuación de cada quiz */
+/* quizzes.js – gestor único de autoevaluaciones  */
 
-document.addEventListener('click', async (e) => {
-  if (!e.target.matches('.btn-quiz')) return;
+const Quiz = {
+  data: [],          // banco de preguntas cargado vía JSON
+  current: 0,        // índice de la pregunta mostrada
+  score: 0,          // aciertos
+  asked: [],         // preguntas seleccionadas (5)
 
-  const jsonPath = e.target.dataset.json;
-  const targetId = e.target.dataset.target;
-  const container = document.getElementById(targetId);
-  if (!jsonPath || !container) return;
+  /* Carga banco según nombre recibido p.e. quiz_validez */
+  async init(nombreJSON, titulo = 'Quiz') {
+    // Resetea interfaz
+    document.getElementById('quiz-zone').classList.remove('hidden');
+    document.getElementById('quiz-title').textContent = titulo;
+    document.getElementById('quiz-score').textContent = '';
+    document.getElementById('quiz-feedback').textContent = '';
+    document.getElementById('quiz-next').disabled = true;
+    document.getElementById('quiz-reload').classList.add('hidden');
 
-  const preguntas = await fetch(jsonPath).then(r => r.json());
-  runQuiz(preguntas, container);
-});
+    // Carga banco
+    this.data = await Utils.loadJSON(`data/${nombreJSON}.json`);
+    this.asked = Utils.shuffle([...this.data]).slice(0, 5);
+    this.current = 0;
+    this.score = 0;
+    this.render();
+  },
 
-function runQuiz(pool, container) {
-  container.innerHTML = '';            // limpia intento anterior
-  const preguntas = shuffle(pool).slice(0, 5);
-  let index = 0, aciertos = 0;
+  /* Pinta la pregunta actual */
+  render() {
+    const q = this.asked[this.current];
+    document.getElementById('quiz-question').textContent = q.p;
 
-  function renderPregunta() {
-    const q = preguntas[index];
-    container.innerHTML = `
-      <p><strong>${index+1}/5.</strong> ${q.p}</p>
-      <ul id="opts"></ul>
-    `;
-    q.opciones.forEach((opt,i)=>{
-      const li = document.createElement('li');
-      li.innerHTML = `<button class="opt" data-i="${i}">${opt}</button>`;
-      document.getElementById('opts').appendChild(li);
+    // Opciones
+    const box = document.getElementById('quiz-options');
+    box.innerHTML = '';
+    q.opciones.forEach((txt, idx) => {
+      const btn = document.createElement('button');
+      btn.textContent = txt;
+      btn.className = 'option';
+      btn.onclick = () => this.pick(idx);
+      box.appendChild(btn);
     });
+  },
+
+  /* Cuando el usuario elige */
+  pick(idx) {
+    const q = this.asked[this.current];
+    const opciones = document.querySelectorAll('#quiz-options .option');
+
+    opciones.forEach((b, i) => {
+      b.disabled = true;
+      if (i === q.correcta) b.classList.add('ok');
+      if (i === idx && idx !== q.correcta) b.classList.add('bad');
+    });
+
+    // Feedback
+    const fb = document.getElementById('quiz-feedback');
+    if (idx === q.correcta) {
+      this.score++;
+      fb.textContent = '✅ ¡Correcto!';
+    } else {
+      fb.textContent = `❌ Incorrecto. ${q.exp}`;
+    }
+
+    // botón siguiente
+    document.getElementById('quiz-next').disabled = false;
+    document.getElementById('quiz-next').onclick = () => this.next();
+  },
+
+  /* Avanza de pregunta o muestra resultado final */
+  next() {
+    this.current++;
+    document.getElementById('quiz-feedback').textContent = '';
+    document.getElementById('quiz-next').disabled = true;
+
+    if (this.current < this.asked.length) {
+      this.render();
+    } else {
+      // Resultado final
+      const ok = this.score;
+      const total = this.asked.length;
+      const aprobado = ok >= 4;   // 4/5
+      document.getElementById('quiz-question').textContent = 'Resultados';
+      document.getElementById('quiz-options').innerHTML = '';
+      document.getElementById('quiz-score').textContent =
+        `Tu puntuación: ${ok}/${total} – ${aprobado ? 'Aprobado 🎉' : 'Repasa y vuelve a intentarlo'}`;
+      document.getElementById('quiz-reload').classList.remove('hidden');
+    }
+  },
+
+  /* Reiniciar */
+  reset() {
+    document.getElementById('quiz-zone').classList.add('hidden');
   }
+};
 
-  container.addEventListener('click', onClick);
-
-  function onClick(e) {
-    if (!e.target.matches('.opt')) return;
-    const sel = +e.target.dataset.i;
-    const q = preguntas[index];
-    if (sel === q.correcta) aciertos++;
-
-    index++;
-    if (index < 5) { renderPregunta(); }
-    else { endQuiz(); }
-  }
-
-  function endQuiz() {
-    container.removeEventListener('click', onClick);
-    const aprobado = aciertos >= 4;
-    container.innerHTML = `
-      <p>Tu puntuación: <strong>${aciertos}/5</strong></p>
-      <p>${aprobado ? '¡Bien hecho! Puedes continuar.' :
-        'Revisa de nuevo la sección antes de avanzar.'}</p>
-    `;
-  }
-
-  renderPregunta();
-}
-
-function shuffle(arr){
-  return arr.map(v=>[Math.random(),v]).sort((a,b)=>a[0]-b[0]).map(v=>v[1]);
-}
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/*  Ejemplo de activación:                                             
+      <button onclick="Quiz.init('quiz_validez', 'Quiz · Validez de contenido')">Probar Quiz</button>
+   Crea botones similares en cada sección.                             */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
