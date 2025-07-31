@@ -79,3 +79,17 @@ table.cronograma th { background: var(--accent); color: var(--white); }
   width: 100%;
   height: 100%;
 }
+/* Tarjetas de test  (añádelo al final de styles.css) */
+.card-test {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: .8rem 0;
+  background: #fafcff;
+  /* evita que el contenido se corte */
+  overflow: visible;          /* ①  */
+  /* alto mínimo auto para crecer con el contenido */
+  min-height: 160px;          /* ② ajusta si hace falta */
+}
+.card-test h3 {margin-top:0}
+.card-test p  {margin:.4rem 0}
