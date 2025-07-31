@@ -93,3 +93,37 @@ table.cronograma th { background: var(--accent); color: var(--white); }
 }
 .card-test h3 {margin-top:0}
 .card-test p  {margin:.4rem 0}
+
+
+/* 1 ✦ iframes responsivos */
+.responsive-frame{
+  width:100%;
+  min-height:550px;        /* se adaptará a 100 % ancho y altura mínima */
+  border:0;
+}
+
+/* 2 ✦ tarjetas flexibles */
+.cards-container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1rem;
+}
+
+/* 3 ✦ caja del quiz */
+.quiz-box{
+  margin-top:1rem;
+}
+
+/* 4 ✦ chat */
+.chat-box{
+  max-width:680px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:.5rem;
+}
+
+@media (max-width:600px){
+  .responsive-frame{min-height:700px}
+}
+
