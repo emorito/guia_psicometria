@@ -62,3 +62,22 @@ function renderTestCards() {
     cont.appendChild(div);
   });
 }
+/* utils.js  – pequeñas funciones de apoyo */
+
+const Utils = {
+  /* Carga y devuelve un JSON remoto */
+  async loadJSON(path) {
+    const res = await fetch(path);
+    if (!res.ok) throw new Error(`No se pudo cargar ${path}`);
+    return res.json();
+  },
+
+  /* Mezcla aleatoriamente un array (Fisher-Yates) */
+  shuffle(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+};
