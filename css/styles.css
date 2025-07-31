@@ -52,3 +52,16 @@ table.cronograma th { background: var(--accent); color: var(--white); }
 @media (min-width: 800px){
   body { padding: 0 2rem; }
 }
+  <style>
+    /* Tarjetas de tests */
+    .cards-wrapper         {display:flex;flex-wrap:wrap;gap:1rem}
+    .card-test             {
+      flex:1 1 260px; min-height:160px;
+      border:1px solid #ccc; border-radius:8px; padding:1rem;
+      background:#fafcff; overflow:visible;
+    }
+    .card-test h3{margin:0 0 .3rem}
+    /* Iframe responsivo (Google Sheet) */
+    .iframe-wrap{position:relative;width:100%;padding-top:56.25%;margin:1rem 0}
+    .iframe-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+  </style>
