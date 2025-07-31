@@ -1,23 +1,51 @@
-/* chat.js – Q&A sin servidor */
+/* chat.js – mini Q&A sin servidor  */
 
-let qa_conceptos = [], qa_decisiones = [];
+const Chat = {
+  bancos: {
+    conceptos: null,
+    decisiones: null
+  },
 
-fetch('data/qa_conceptos.json').then(r=>r.json()).then(d=>qa_conceptos=d);
-fetch('data/qa_decisiones.json').then(r=>r.json()).then(d=>qa_decisiones=d);
+  async init() {
+    // carga ambos JSON (una sola vez)
+    if (!this.bancos.conceptos)
+      this.bancos.conceptos = await Utils.loadJSON('data/qa_conceptos.json');
+    if (!this.bancos.decisiones)
+      this.bancos.decisiones = await Utils.loadJSON('data/qa_decisiones.json');
 
-document.getElementById('sendBtn').addEventListener('click', reply);
-document.getElementById('userQuestion').addEventListener('keydown', e=>{
-  if(e.key==='Enter') reply();
-});
+    // listeners UI
+    document.getElementById('chat-send').onclick = () => this.responder();
+    document.getElementById('chat-input').addEventListener('keydown', e => {
+      if (e.key === 'Enter') this.responder();
+    });
+  },
 
-function reply(){
-  const scope = document.getElementById('scope').value;
-  const q = document.getElementById('userQuestion').value.trim().toLowerCase();
-  if(!q){ alert('Escribe tu pregunta.'); return; }
+  /* Responde a la entrada del usuario */
+  responder() {
+    const txt = document.getElementById('chat-input').value.trim().toLowerCase();
+    if (!txt) return;
 
-  const db = scope === 'qa_conceptos' ? qa_conceptos : qa_decisiones;
-  const hit = db.find(item => item.q.toLowerCase().includes(q) ||
-                              item.tags?.some(t=>q.includes(t)));
-  const answer = hit ? hit.a : 'No encontré una respuesta exacta. Intenta con otra palabra clave.';
-  document.getElementById('chatAnswer').textContent = answer;
-}
+    const dominio = document.getElementById('chat-domain').value;
+    const banco = this.bancos[dominio];
+
+    // Busca coincidencia simple en tags o pregunta
+    const hit = banco.find(item =>
+      item.tags?.some(t => txt.includes(t)) ||
+      item.q.toLowerCase().includes(txt)
+    );
+
+    const log = document.getElementById('chat-log');
+    const cardQ = `<div class="bubble user">${txt}</div>`;
+    const cardA = hit
+      ? `<div class="bubble bot">${hit.a}</div>`
+      : `<div class="bubble bot">❓ No encontré una respuesta guardada. Intenta otra palabra clave.</div>`;
+
+    log.insertAdjacentHTML('beforeend', cardQ + cardA);
+    log.scrollTop = log.scrollHeight;
+
+    document.getElementById('chat-input').value = '';
+  }
+};
+
+/* inicia cuando cargue el DOM */
+document.addEventListener('DOMContentLoaded', () => Chat.init());
