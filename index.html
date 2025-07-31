@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guía de Validación – Psicometría Aplicada</title>
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- ── Ajustes rápidos (puedes moverlos a styles.css) ─────────────── -->
+  <style>
+    /* Tarjetas de tests */
+    .cards-wrapper         {display:flex;flex-wrap:wrap;gap:1rem}
+    .card-test             {
+      flex:1 1 260px; min-height:160px;
+      border:1px solid #ccc; border-radius:8px; padding:1rem;
+      background:#fafcff; overflow:visible;
+    }
+    .card-test h3{margin:0 0 .3rem}
+    /* Iframe responsivo (Google Sheet) */
+    .iframe-wrap{position:relative;width:100%;padding-top:56.25%;margin:1rem 0}
+    .iframe-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+  </style>
+  <!-- ──────────────────────────────────────────────────────────────── -->
 </head>
 
 <body>
@@ -48,7 +64,6 @@
   <!-- ▸ ▸  2. CRONOGRAMA  ◂ ◂ -->
   <section id="cronograma">
     <h2>Cronograma y plan de trabajo</h2>
-    <!-- tabla reducida; la versión completa está en el spec -->
     <table class="cronograma">
       <thead><tr><th>Sem.</th><th>Actividad</th><th>Entregable</th><th>Estado</th></tr></thead>
       <tbody>
@@ -60,10 +75,10 @@
     </table>
   </section>
 
-  <!-- ▸ ▸  (3) LISTA DE TESTS  ◂ ◂ -->
+  <!-- ▸ ▸  3. LISTA DE TESTS  ◂ ◂ -->
   <section id="tests">
     <h2>Tests sugeridos</h2>
-    <div id="cards-tests"><!-- JS inyectará tarjetas --></div>
+    <div id="cards-tests" class="cards-wrapper"><!-- JS inyectará tarjetas --></div>
   </section>
 
   <!-- ▸ ▸  4. INSCRIPCIÓN  ◂ ◂ -->
@@ -71,12 +86,14 @@
     <h2>Inscripción de grupos y elección del test</h2>
     <p>Tamaño 3–5 integrantes. Verifica que tu test no esté repetido.</p>
 
-    <!-- Reemplaza FORM_ID y SHEET_ID por los tuyos -->
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdz4KRBX4btU91r9gJgZRrMGzJvGohZiqWzmLyJnTQuW1kODA/viewform?embedded=true"
             width="100%" height="1400" frameborder="0">Cargando…</iframe>
+
     <h3>Listado vivo de grupos</h3>
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSH3HdSIU9Waykz9kpQ-z7nOxyJF5k9syv3TIPaoC46kTVZP424xUT1_xC4dc4BVQVqGIcINsNWBFfa/pubhtml?gid=1955925198&amp;
-      single=true&amp;widget=true&amp;headers=false"></iframe>
+    <div class="iframe-wrap">
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSH3HdSIU9Waykz9kpQ-z7nOxyJF5k9syv3TIPaoC46kTVZP424xUT1_xC4dc4BVQVqGIcINsNWBFfa/pubhtml?gid=1955925198&single=true&widget=true&headers=false"
+              loading="lazy" frameborder="0"></iframe>
+    </div>
   </section>
 
   <!-- ▸ ▸  5. REVISIÓN INICIAL Y PLAN  ◂ ◂ -->
@@ -89,14 +106,7 @@
     </ul>
   </section>
 
-  <!-- ▸ ▸  6–10. BLOQUES DE APRENDIZAJE (plantilla)  ◂ ◂ -->
-  <!-- Validez, Pre-piloto, Ítems, Recolección, Psicométrico -->
-  <!-- Cada bloque sigue exactamente el mismo patrón: -->
-  <!--  - Audio           -->
-  <!--  - Texto resumen   -->
-  <!--  - Botón ‘Iniciar quiz’ (JS lo genera) -->
-  <!-- Se muestra un div con id="quiz-container-XX" donde XX es el tema -->
-
+  <!-- ▸ ▸  6. VALIDEZ  ◂ ◂ -->
   <section id="validez">
     <h2>Validez de contenido</h2>
     <audio controls><source src="media/02_validez_contenido.mp3" type="audio/mpeg"></audio>
@@ -107,8 +117,7 @@
     <div id="quiz-container-validez"></div>
   </section>
 
-  <!-- (Repite estructura para pre-piloto, items, recolección, psicométrico…) -->
-
+  <!-- ▸ ▸  7. INFORME FINAL  ◂ ◂ -->
   <section id="informe">
     <h2>Informe final</h2>
     <audio controls><source src="media/07_informe_final.mp3" type="audio/mpeg"></audio>
@@ -123,13 +132,13 @@
     <div id="quiz-container-informe"></div>
   </section>
 
-  <!-- ▸ ▸  11. DESCARGABLES  ◂ ◂ -->
+  <!-- ▸ ▸  8. DESCARGABLES  ◂ ◂ -->
   <section id="descargables">
     <h2>Descargables</h2>
     <div id="descargables-list"><!-- JS llenará la lista desde utils.js --></div>
   </section>
 
-  <!-- ▸ ▸  12. MINI-CHAT Q&A  ◂ ◂ -->
+  <!-- ▸ ▸  9. MINI-CHAT Q&A  ◂ ◂ -->
   <section id="chat">
     <h2>Mini-chat – Preguntas frecuentes</h2>
     <div class="chat-box">
@@ -143,16 +152,15 @@
     </div>
   </section>
 
-  <!-- ▸ ▸  13. BIBLIOGRAFÍA  ◂ ◂ -->
+  <!-- ▸ ▸  10. BIBLIOGRAFÍA  ◂ ◂ -->
   <section id="biblio">
     <h2>Bibliografía mínima (APA 7)</h2>
     <ul id="biblio-list"><!-- utils.js inserta las refs --></ul>
   </section>
 
-  <!-- ▸ ▸  14. CRÉDITOS  ◂ ◂ -->
+  <!-- ▸ ▸  11. CRÉDITOS  ◂ ◂ -->
   <footer id="creditos">
-    <p>Guía de Validación v1.0 – Psicometría Aplicada – UNA · Elaborada por Enrique Morosini con ChatGPT.  
-       Este sitio se actualiza continuamente; cita la fecha de consulta.</p>
+    <p>Guía de Validación v1.0 – Psicometría Aplicada – UNA · Elaborada por Enrique Morosini con ChatGPT. Este sitio se actualiza continuamente; cita la fecha de consulta.</p>
   </footer>
 
   <!-- ▸ ▸  JS  ◂ ◂ -->
