@@ -1,136 +1,121 @@
-/* Paleta */
-:root {
-  --dark: #2e3c5d;
-  --light: #eaf4fc;
-  --accent: #5199c2;
-  --white: #ffffff;
-  --gray: #f5f5f5;
-  --text: #333;
+/* ===== Paleta básica ================================================= */
+:root{
+  --dark:#2e3c5d;
+  --light:#eaf4fc;
+  --accent:#5199c2;
+  --white:#ffffff;
+  --gray:#f5f5f5;
+  --text:#333;
 }
 
-*,
-*::before,
-*::after { box-sizing: border-box; }
+/* ===== Reset mínimo ================================================== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
-body {
-  margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  color: var(--text);
-  line-height: 1.55;
-  background: var(--light);
+/* ===== Tipografía y fondo general ==================================== */
+body{
+  font-family:"Segoe UI",sans-serif;
+  color:var(--text);
+  line-height:1.55;
+  background:var(--light);
+  padding:0 1rem;
 }
 
-header   { background: var(--dark); }
-#menu    { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; margin: 0; padding: .75rem 1rem;}
-#menu a  { color: var(--white); text-decoration: none; font-size: .9rem; padding: .3rem .6rem; }
-#menu a:hover { background: var(--accent); border-radius: 4px; }
-
-section  { padding: 3rem 1rem; background: var(--white); margin-bottom: 1.5rem; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,.04); }
-section:nth-of-type(even) { background: var(--gray); }
-h1,h2    { color: var(--dark); margin-top: 0; }
-.subtitle{ color: var(--dark); opacity:.8; margin-bottom:1rem; }
-
-audio    { width: 100%; margin: 1rem 0; }
-
-.note    { background: var(--light); border-left: 4px solid var(--accent); padding: .8rem 1rem; margin:1rem 0; }
-
-table.cronograma { width: 100%; border-collapse: collapse; }
-table.cronograma th, table.cronograma td { padding: .5rem; border: 1px solid #ccc; font-size: .85rem; }
-table.cronograma th { background: var(--accent); color: var(--white); }
-
-.btn-quiz {
-  display: inline-block; background: var(--accent); color: var(--white); padding: .6rem 1rem;
-  border: none; border-radius:4px; cursor:pointer; margin: 1rem 0;
+/* ===== Menú superior ================================================= */
+header{background:var(--dark)}
+#menu{
+  display:flex;flex-wrap:wrap;gap:.5rem;
+  list-style:none;padding:.75rem 1rem
 }
-.btn-quiz:hover { background: var(--dark); }
+#menu a{
+  color:var(--white);text-decoration:none;font-size:.9rem;
+  padding:.3rem .6rem;border-radius:4px
+}
+#menu a:hover{background:var(--accent)}
 
-.chat-box {
-  max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: .5rem;
-}
-#chatAnswer { background: var(--gray); padding: .8rem 1rem; border-radius: 4px; min-height: 3rem; }
-
-@media (min-width: 800px){
-  body { padding: 0 2rem; }
-}
-  <style>
-    /* Tarjetas de tests */
-    .cards-wrapper         {display:flex;flex-wrap:wrap;gap:1rem}
-    .card-test             {
-      flex:1 1 260px; min-height:160px;
-      border:1px solid #ccc; border-radius:8px; padding:1rem;
-      background:#fafcff; overflow:visible;
-    }
-    .card-test h3{margin:0 0 .3rem}
-    /* Iframe responsivo (Google Sheet) */
-    .iframe-wrap{position:relative;width:100%;padding-top:56.25%;margin:1rem 0}
-    .iframe-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%}
-  </style>
-/* styles.css */
-.iframe-wrap {
-  position: relative;
-  width: 100%;
-  /* Relación 16:9  →  ajustar el 56.25% si quieres otra altura   */
-  padding-top: 56.25%;
-  margin: 1rem 0;
-}
-.iframe-wrap iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-}
-/* Tarjetas de test  (añádelo al final de styles.css) */
-.card-test {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 1rem;
-  margin: .8rem 0;
-  background: #fafcff;
-  /* evita que el contenido se corte */
-  overflow: visible;          /* ①  */
-  /* alto mínimo auto para crecer con el contenido */
-  min-height: 160px;          /* ② ajusta si hace falta */
-}
-.card-test h3 {margin-top:0}
-.card-test p  {margin:.4rem 0}
-
-.test-card{
-  flex: 1 1 260px;
-  border:1px solid #ccc;
+/* ===== Secciones ===================================================== */
+section{
+  background:var(--white);
+  margin:1.5rem auto;
+  padding:3rem 1rem;
   border-radius:6px;
+  box-shadow:0 2px 4px rgb(0 0 0 / .04);
+  max-width:1200px;
+}
+section:nth-of-type(even){background:var(--gray)}
+h1,h2{color:var(--dark);margin-bottom:.8rem}
+
+/* ===== Audio ========================================================= */
+audio{width:100%;margin:1rem 0}
+
+/* ===== Caja de nota ================================================== */
+.note{
+  background:var(--light);
+  border-left:4px solid var(--accent);
+  padding:.8rem 1rem;
+  margin:1rem 0
+}
+
+/* ===== Cronograma ==================================================== */
+table.cronograma{width:100%;border-collapse:collapse;font-size:.85rem}
+table.cronograma th,table.cronograma td{border:1px solid #ccc;padding:.5rem}
+table.cronograma th{background:var(--accent);color:var(--white)}
+
+/* ===== Botones ======================================================= */
+.btn-quiz{
+  display:inline-block;
+  background:var(--accent);
+  color:var(--white);
+  padding:.6rem 1rem;
+  border:none;border-radius:4px;
+  cursor:pointer;
+  margin:1rem 0
+}
+.btn-quiz:hover{background:var(--dark)}
+
+/* ===== Tarjetas de tests ============================================= */
+.cards-container,.cards-wrapper{display:flex;flex-wrap:wrap;gap:1rem}
+.card-test{
+  flex:1 1 260px;
+  min-height:160px;
+  border:1px solid #ccc;
+  border-radius:8px;
   padding:1rem;
-  box-shadow:2px 2px 8px #0001;
+  background:#fafcff;
+  overflow:visible
 }
+.card-test h3{margin:0 0 .4rem}
 
-/* 1 ✦ iframes responsivos */
-.responsive-frame{
+/* ===== Iframes responsivos (formularios / sheets) ==================== */
+.iframe-wrap{
+  position:relative;
   width:100%;
-  min-height:550px;        /* se adaptará a 100 % ancho y altura mínima */
-  border:0;
+  padding-top:56.25%;   /* 16:9  → ajusta si necesitas más alto */
+  margin:1rem 0
+}
+.iframe-wrap iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0
 }
 
-/* 2 ✦ tarjetas flexibles */
-.cards-container{
-  display:flex;
-  flex-wrap:wrap;
-  gap:1rem;
-}
-
-/* 3 ✦ caja del quiz */
-.quiz-box{
-  margin-top:1rem;
-}
-
-/* 4 ✦ chat */
+/* ===== Chat box ====================================================== */
 .chat-box{
   max-width:680px;
-  margin:auto;
+  margin:0 auto;
   display:flex;
   flex-direction:column;
-  gap:.5rem;
+  gap:.5rem
+}
+#chatAnswer{
+  background:var(--gray);
+  padding:.8rem 1rem;
+  border-radius:4px;
+  min-height:3rem
 }
 
-@media (max-width:600px){
-  .responsive-frame{min-height:700px}
+/* ===== Responsive: padding mayor en desktop ========================== */
+@media(min-width:800px){
+  body{padding:0 2rem}
 }
-
