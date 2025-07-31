@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Guía de Validación y Estandarización de Pruebas</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Guía de Validación y Estandarización de Pruebas Psicológicas</h1>
+  <nav>
+    <ul>
+      <li><a href="#presentacion">Presentación</a></li>
+      <li><a href="#cronograma">Cronograma</a></li>
+      <li><a href="#tests">Tests</a></li>
+      <li><a href="#inscripcion">Inscripción</a></li>
+      <li><a href="#revision-plan">Plan</a></li>
+      <li><a href="#validez">Validez</a></li>
+      <li><a href="#prepiloto">Pre-piloto</a></li>
+      <li><a href="#items">Ítems</a></li>
+      <li><a href="#recoleccion">Muestreo</a></li>
+      <li><a href="#psicometrico">Análisis</a></li>
+      <li><a href="#informe">Informe</a></li>
+      <li><a href="#descargables">Descargables</a></li>
+      <li><a href="#chat">Mini-chat</a></li>
+      <li><a href="#biblio">Bibliografía</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- 1 ▸ Presentación -->
+  <section id="presentacion">
+    <h2>Presentación</h2>
+    <p>Bienvenido/a a la guía paso a paso para tu trabajo práctico de Psicometría Aplicada…</p>
+    <audio controls>
+      <source src="media/01_presentacion_general.mp3" type="audio/mpeg">
+      <!-- fallback -->
+      Tu navegador no soporta audio HTML5.
+    </audio>
+  </section>
+
+  <!-- 2 ▸ Cronograma -->
+  <section id="cronograma">
+    <h2>Cronograma y plan</h2>
+    <!-- tabla generada con Markdown, se verá con estilos -->
+    <!-- … (tabla abreviada; puedes pegar aquí la tabla completa del documento) … -->
+  </section>
+
+  <!-- 3 ▸ Lista de Tests -->
+  <section id="tests">
+    <h2>Lista de tests sugeridos</h2>
+    <div class="tests-grid">
+      <!-- ejemplo de tarjeta -->
+      <article class="card">
+        <h3>GSE – 10 ítems</h3>
+        <p>Autoeficacia general percibida…</p>
+      </article>
+      <!-- más tarjetas mediante copy-paste -->
+    </div>
+  </section>
+
+  <!-- … Resto de secciones vacías; rellena cuando copies los textos … -->
+
+  <section id="validez">
+    <h2>Validez de contenido</h2>
+    <audio controls>
+      <source src="media/02_validez_contenido.mp3" type="audio/mpeg">
+    </audio>
+    <p class="note">Recuerda: la validez de contenido es la piedra angular…</p>
+
+    <!-- contenedor para el quiz (JS lo inyectará) -->
+    <div id="quiz-validez"></div>
+  </section>
+
+  <!-- Pre-piloto -->
+  <section id="prepiloto">
+    <h2>Estudio pre-piloto</h2>
+    <audio controls>
+      <source src="media/03_pre_piloto.mp3" type="audio/mpeg">
+    </audio>
+    <div id="quiz-prepiloto"></div>
+  </section>
+
+  <!-- …etc… -->
+
+  <!-- Mini-chat offline -->
+  <section id="chat">
+    <h2>Dudas frecuentes (mini-chat)</h2>
+    <div class="chat-box">
+      <select id="chat-dataset">
+        <option value="conceptos">Conceptos</option>
+        <option value="decisiones">Decisiones</option>
+      </select>
+      <input id="chat-input" placeholder="Escribe tu pregunta…" autocomplete="off">
+      <button id="chat-btn">Responder</button>
+      <div id="chat-respuesta"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <small>Versión piloto v0.9 – <time id="anio"></time> · Enrique Morosini y ChatGPT · Licencia CC-BY-SA.</small>
+</footer>
+
+<script src="js/utils.js"></script>
+<script src="js/quizzes.js"></script>
+<script src="js/chat.js"></script>
+<script>
+  // Añade automáticamente el año en el footer
+  document.getElementById('anio').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
