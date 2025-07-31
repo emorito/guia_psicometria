@@ -94,6 +94,13 @@ table.cronograma th { background: var(--accent); color: var(--white); }
 .card-test h3 {margin-top:0}
 .card-test p  {margin:.4rem 0}
 
+.test-card{
+  flex: 1 1 260px;
+  border:1px solid #ccc;
+  border-radius:6px;
+  padding:1rem;
+  box-shadow:2px 2px 8px #0001;
+}
 
 /* 1 ✦ iframes responsivos */
 .responsive-frame{
