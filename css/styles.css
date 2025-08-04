@@ -85,3 +85,159 @@ table.cronograma th{background:var(--accent);color:var(--white)}
 
 /* Media queries */
 @media(min-width:800px){body{padding:0 2rem}}
+
+/* ==================================================================== */
+/* ===         OPERACIÓN PÁGINA HERMOSA - CSS DE CHOQUE             === */
+/* ==================================================================== */
+
+/* --- PRINCIPIO 2: TIPOGRAFÍA PROFESIONAL --- */
+/* Primero, ve a tu index.html y, dentro del <head>, justo antes de tu
+   propio <link> de CSS, añade esta línea para importar la fuente 'Poppins': */
+/* <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> */
+
+/* --- PRINCIPIO 3: PALETA DE COLORES CON VARIABLES --- */
+:root {
+  --color-primario: #2c3e50;      /* Un azul oscuro/gris para el texto principal */
+  --color-secundario: #34495e;    /* Un tono ligeramente más claro para fondos */
+  --color-fondo: #f4f6f9;         /* Un gris muy claro para el fondo general */
+  --color-acento: #3498db;        /* Un azul vibrante para botones y enlaces */
+  --color-acento-hover: #2980b9;  /* El mismo azul, pero más oscuro para el hover */
+  --color-blanco: #ffffff;
+  --color-borde: #e0e0e0;         /* Un gris claro para los bordes */
+}
+
+/* --- ESTILOS GENERALES Y LAYOUT (PRINCIPIO 1) --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-primario);
+  line-height: 1.7; /* Aumenta el espacio entre líneas para mejor legibilidad */
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  background-color: var(--color-blanco);
+  margin: 2rem auto; /* Espacio vertical entre secciones */
+  padding: 2.5rem;   /* Mucho espacio interno (aire) */
+  max-width: 900px;  /* Centra el contenido y evita que sea demasiado ancho */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Sombra sutil (Principio 4) */
+  border: 1px solid var(--color-borde);
+}
+
+/* --- JERARQUÍA DE TÍTULOS (PRINCIPIO 2) --- */
+h1, h2, h3 {
+  font-weight: 700; /* Letra más gruesa para títulos */
+  line-height: 1.3;
+}
+
+h1 {
+  color: var(--color-acento);
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--color-acento);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--color-secundario);
+}
+
+/* --- ESTILOS PARA COMPONENTES (PRINCIPIO 5) --- */
+
+/* Estilo base para TODOS los botones */
+.btn-quiz, .btn-submit-quiz, .chat-send {
+  display: inline-block;
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-quiz:hover, .btn-submit-quiz:hover, .chat-send:hover {
+  background-color: var(--color-acento-hover);
+  transform: translateY(-2px); /* Efecto de "levantarse" */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para las tarjetas de los tests sugeridos */
+#cards-tests {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card-test {
+    background-color: var(--color-fondo);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 5px solid var(--color-acento);
+    transition: all 0.3s ease;
+}
+
+.card-test:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Estilo para los iframes responsivos */
+.iframe-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* Proporción 16:9 */
+  border-radius: 8px;
+  margin: 2rem 0;
+  border: 1px solid var(--color-borde);
+}
+
+.iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* --- ARREGLO PARA LOS DESCARGABLES --- */
+/* (Cuando crees la carpeta 'docs', esto hará que se vea bien) */
+#descargables-list ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+#descargables-list li a {
+  display: block;
+  background-color: var(--color-fondo);
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-acento);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+#descargables-list li a:hover {
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+  transform: scale(1.03);
+}
+
