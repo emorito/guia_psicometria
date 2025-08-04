@@ -183,10 +183,15 @@
      Este sitio se actualiza continuamente&nbsp;– cita la fecha de consulta.</p>
 </footer>
 
+
 <!-- JS -->
+<!-- 1. La herramienta para cargar datos (el NUEVO utils.js). Debe ir primero. -->
 <script src="js/utils.js"></script>
+
+<!-- 2. Scripts que usan la herramienta anterior para funcionar (Quizzes y Chat). -->
 <script src="js/quizzes.js"></script>
 <script src="js/chat.js"></script>
-</body>
-</html>
+
+<!-- 3. El script que dibuja el resto de la página (el archivo que renombraste). -->
+<script src="js/render-page.js"></script>
 
