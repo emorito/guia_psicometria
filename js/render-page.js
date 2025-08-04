@@ -74,31 +74,49 @@ function renderCronograma() {
 }
 
 /* === 4. Tarjetas de Tests (sólo informativas) ======================== */
+// Este array contiene los datos actualizados de los tests.
+// Se ha añadido el nombre completo para las siglas y se ha
+// ampliado la descripción para ser más clara y concisa.
+// También se ha incluido la cantidad de ítems ('it') para cada instrumento.
 const testsData = [
-  {sigla:'GSE',   nombre:'Escala de Autoeficacia General',           desc:'Percibida capacidad de manejar situaciones.'},
-  {sigla:'PANAS', nombre:'PANAS',                                    desc:'Afecto positivo y negativo.'},
-  {sigla:'RSES',  nombre:'Escala de Autoestima de Rosenberg',        desc:'Autoestima global.'},
-  {sigla:'ERS-14',nombre:'ERS-14 (Resiliencia)',                     desc:'Capacidad de recuperación ante la adversidad.'},
-  {sigla:'PSS',   nombre:'PSS',                                      desc:'Estrés percibido (último mes).'},
-  {sigla:'SIAS',  nombre:'SIAS',                                     desc:'Ansiedad social (interacciones).'},
-  {sigla:'PSWQ',  nombre:'PSWQ',                                     desc:'Tendencia a la preocupación excesiva.'},
-  {sigla:'EES',   nombre:'Escala de Somnolencia de Epworth',         desc:'Somnolencia diurna.'},
-  {sigla:'AUDIT', nombre:'AUDIT',                                    desc:'Tamizaje de consumo de alcohol.'},
-  {sigla:'DAST-10',nombre:'DAST-10',                                 desc:'Uso de drogas y problemas asociados.'},
-  {sigla:'CUBI-18',nombre:'CUBI-18 (Ideación suicida)',              desc:'Conductas e ideación suicida.'},
-  {sigla:'SD3',   nombre:'Triada Oscura Abreviada (SD3)',            desc:'Maldad, narcisismo y psicopatía.'},
-  {sigla:'CREA',  nombre:'Escala de Autopercepción de Creatividad',  desc:'Autoevaluación de creatividad.'},
+  {sigla:'GSE', nombre:'Escala de Autoeficacia General', desc:'Evalúa la creencia de una persona en su capacidad para manejar situaciones difíciles y afrontar nuevos desafíos.', it:10},
+  {sigla:'PANAS', nombre:'Escala de Afecto Positivo y Negativo', desc:'Mide las dimensiones de afecto positivo (entusiasmo, actividad, alerta) y afecto negativo (miedo, tristeza, irritabilidad).', it:20},
+  {sigla:'RSES', nombre:'Escala de Autoestima de Rosenberg', desc:'Evalúa los sentimientos globales de valía personal y aceptación de uno mismo.', it:10},
+  {sigla:'ERS-14', nombre:'Escala de Resiliencia ERS-14', desc:'Mide la capacidad de una persona para adaptarse y recuperarse positivamente ante situaciones de adversidad, trauma o estrés.', it:14},
+  {sigla:'PSS', nombre:'Escala de Estrés Percibido', desc:'Cuantifica el grado en que las situaciones de la vida de una persona son evaluadas como estresantes en el último mes.', it:10},
+  {sigla:'SIAS', nombre:'Escala de Ansiedad Social', desc:'Evalúa el miedo y la ansiedad en situaciones de interacción social y de actuación en público.', it:20},
+  {sigla:'PSWQ', nombre:'Cuestionario de Preocupación de Penn State', desc:'Mide la tendencia a experimentar una preocupación excesiva, intrusiva y difícil de controlar en diversas áreas.', it:16},
+  {sigla:'EES', nombre:'Escala de Somnolencia de Epworth', desc:'Evalúa la probabilidad de quedarse dormido en diferentes situaciones cotidianas, midiendo la somnolencia diurna general.', it:8},
+  {sigla:'AUDIT', nombre:'Cuestionario de Identificación de Trastornos por Consumo de Alcohol', desc:'Es una herramienta de cribado para identificar el consumo de alcohol de riesgo, perjudicial o dependiente.', it:10},
+  {sigla:'DAST-10', nombre:'Test de Abuso de Drogas de 10 ítems', desc:'Identifica el uso problemático de drogas y los problemas asociados en el último año.', it:10},
+  {sigla:'CUBI-18', nombre:'Cuestionario de Ideación Suicida de Barcelona', desc:'Evalúa la presencia de ideación y conductas suicidas en adolescentes y adultos jóvenes.', it:18},
+  {sigla:'SD3', nombre:'Triada Oscura Abreviada', desc:'Mide los rasgos de personalidad de la triada oscura: Maquiavelismo, Narcisismo y Psicopatía.', it:27},
+  {sigla:'CREA', nombre:'Escala de Autopercepción de Creatividad', desc:'Evalúa la percepción de una persona sobre su propia capacidad para generar ideas originales, resolver problemas y crear.', it:30},
 ];
 
+// Esta función se encarga de renderizar dinámicamente las tarjetas de los tests.
+// El HTML generado ahora incluye todos los datos solicitados de forma clara.
 function renderTestCards() {
   const cont = document.getElementById('cards-tests');
   if (!cont) return;
+  cont.innerHTML = '';
+
   testsData.forEach(t => {
+    // Definimos las variables con los datos del test, usando fallbacks seguros.
+    const siglaTest = t.sigla || 'N/A';
+    const nombreTest = t.nombre || 'Nombre no disponible';
+    const descripcionTest = t.desc || 'Descripción no disponible.';
+    const itemsTest = t.it ? `<strong>${t.it}</strong> ítems` : 'N/A';
+    
+    // Insertamos la tarjeta con todos los elementos formateados.
     cont.insertAdjacentHTML(
       'beforeend',
-      `<article class="card-test">
-         <h3>${t.nombre}</h3>
-         <p><strong>${t.it}</strong> ítems · ${t.desc}</p>
+      `<article class="card-test p-4 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+         <h3 class="text-xl font-bold text-gray-800 mb-2">
+           <span class="text-blue-600">${siglaTest}</span>: ${nombreTest}
+         </h3>
+         <p class="text-gray-600 text-sm mb-2">${descripcionTest}</p>
+         <p class="text-gray-500 text-xs font-semibold">${itemsTest}</p>
        </article>`
     );
   });
