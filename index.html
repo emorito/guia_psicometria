@@ -137,17 +137,36 @@
   <div id="descargables-list" class="descarga-grid"><!-- utils.js rellena --></div>
 </section>
 
+
 <!-- 13. MINI-CHAT -->
-<section id="chat">
+<section id="chat-section"> <!-- Cambiado id para evitar conflictos -->
   <h2>Mini-chat Q&A</h2>
   <div class="chat-box">
-    <select id="scope">
-      <option value="qa_conceptos">Conceptos</option>
-      <option value="qa_decisiones">Decisiones operativas</option>
-    </select>
-    <input type="text" id="userQuestion" placeholder="Escribe tu pregunta…" />
-    <button id="sendBtn">Responder</button>
-    <div id="chatAnswer"></div>
+
+    <!-- El log donde aparecen las burbujas del chat -->
+    <div id="chat-log" class="chat-log-style">
+        <!-- Puedes dejar un mensaje inicial si quieres -->
+        <div class="bubble bot">¡Hola! Selecciona un tema y hazme una pregunta sobre conceptos o decisiones.</div>
+    </div>
+    
+    <!-- Controles de entrada (área inferior) -->
+    <div class="chat-input-area">
+        <!-- 1. SELECTOR DE TEMA -->
+        <!-- Corregido: id="chat-domain" y los values -->
+        <select id="chat-domain">
+          <option value="conceptos">Conceptos</option>
+          <option value="decisiones">Decisiones operativas</option>
+        </select>
+
+        <!-- 2. CAMPO DE TEXTO -->
+        <!-- Corregido: id="chat-input" -->
+        <input type="text" id="chat-input" placeholder="Escribe tu pregunta…" />
+
+        <!-- 3. BOTÓN DE ENVÍO -->
+        <!-- Corregido: id="chat-send" -->
+        <button id="chat-send">Responder</button>
+    </div>
+    
   </div>
 </section>
 
@@ -170,3 +189,4 @@
 <script src="js/chat.js"></script>
 </body>
 </html>
+
