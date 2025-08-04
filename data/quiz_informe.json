@@ -1,0 +1,182 @@
+[
+  {
+    "id": "INF01",
+    "p": "¿Cuál es la sección del informe donde se detalla el tamaño de la muestra y los criterios de inclusión?",
+    "opciones": [
+      "Introducción",
+      "Método",
+      "Resultados",
+      "Apéndices"
+    ],
+    "correcta": 1,
+    "exp": "La descripción de participantes y el diseño de muestreo pertenece a la sección Método."
+  },
+  {
+    "id": "INF02",
+    "p": "Según la rúbrica propuesta, ¿qué puntuación recibe un informe que comunica todos los índices de ajuste (CFI, TLI, RMSEA, SRMR) y sus criterios de corte?",
+    "opciones": [
+      "Insuficiente",
+      "Aceptable",
+      "Bueno",
+      "Excelente"
+    ],
+    "correcta": 3,
+    "exp": "Informar múltiples índices y criterios de corte corresponde al nivel Excelente."
+  },
+  {
+    "id": "INF03",
+    "p": "¿Qué norma APA 7 se aplica al presentar una tabla de cargas factoriales?",
+    "opciones": [
+      "Incluir líneas verticales para separar columnas",
+      "Añadir una nota debajo con la explicación de símbolos o decisiones de eliminación",
+      "Usar letras mayúsculas para todos los encabezados de fila",
+      "Centrar todo el texto dentro de las celdas"
+    ],
+    "correcta": 1,
+    "exp": "APA 7 indica colocar debajo de la tabla notas que aclaren símbolos, criterios o supresiones."
+  },
+  {
+    "id": "INF04",
+    "p": "¿En qué parte del informe se construye el 'argumento de validez' integrando todas las evidencias reunidas?",
+    "opciones": [
+      "Marco teórico",
+      "Método",
+      "Discusión",
+      "Resultados"
+    ],
+    "correcta": 2,
+    "exp": "La Discusión integra las distintas fuentes de evidencia para justificar el uso del instrumento."
+  },
+  {
+    "id": "INF05",
+    "p": "La práctica de reportar solo los análisis con resultados significativos se denomina:",
+    "opciones": [
+      "Transparencia analítica",
+      "P-hacking",
+      "Validez convergente",
+      "Parsimonia estadística"
+    ],
+    "correcta": 1,
+    "exp": "Suprimir resultados no deseados es una forma de p-hacking y debe evitarse."
+  },
+  {
+    "id": "INF06",
+    "p": "Cuando se informa que el Alfa de Cronbach = .68 y el Omega = .74, ¿qué debe hacer el autor?",
+    "opciones": [
+      "Reportar solo el coeficiente más alto para simplificar",
+      "Omitir los intervalos de confianza porque no son necesarios",
+      "Presentar ambos coeficientes e incluir sus intervalos de confianza al 95 %",
+      "Recalcular alfa hasta que sea ≥ .70"
+    ],
+    "correcta": 2,
+    "exp": "Las buenas prácticas exigen reportar varios coeficientes y sus IC, no ocultar el más bajo."
+  },
+  {
+    "id": "INF07",
+    "p": "¿Cuál de los siguientes elementos **NO** se incluye normalmente en el Apéndice de un informe psicométrico?",
+    "opciones": [
+      "El instrumento completo",
+      "Matrices de correlación o patrón",
+      "Consentimientos informados en blanco",
+      "Justificación teórica del constructo"
+    ],
+    "correcta": 3,
+    "exp": "La justificación teórica va en el Marco teórico; los Apéndices alojan material complementario."
+  },
+  {
+    "id": "INF08",
+    "p": "Si el análisis CFA se re-especifica añadiendo covarianzas de errores, el paso correcto es:",
+    "opciones": [
+      "Omitirlo para evitar confusión",
+      "Explicarlo en la Introducción",
+      "Reportarlo y validar el nuevo modelo en una muestra independiente",
+      "Eliminar todos los ítems con covarianzas"
+    ],
+    "correcta": 2,
+    "exp": "Cualquier re-especificación debe validarse (cross-validation) en una nueva muestra."
+  },
+  {
+    "id": "INF09",
+    "p": "En la sección Resultados, la frase adecuada para reportar la prueba de Bartlett es:",
+    "opciones": [
+      "Bartlett no fue necesario porque los datos eran normales.",
+      "χ²(231) = 1450.32, p < .001, lo que indica que la matriz es factorable.",
+      "p-value de Bartlett < .05; por lo tanto, buen alfa.",
+      "KMO = .82 es suficiente; Bartlett se omite."
+    ],
+    "correcta": 1,
+    "exp": "APA exige reportar estadístico χ², grados de libertad y p."
+  },
+  {
+    "id": "INF10",
+    "p": "¿Qué tabla APA 7 debería acompañar a la descripción de participantes?",
+    "opciones": [
+      "Tabla de medias y desviaciones estándar de los ítems",
+      "Tabla de características demográficas (edad, género, etc.)",
+      "Tabla de fiabilidad interna",
+      "Tabla de índices de ajuste"
+    ],
+    "correcta": 1,
+    "exp": "Se recomienda una tabla específica para describir las características de la muestra."
+  },
+  {
+    "id": "INF11",
+    "p": "El uso de 'selective reporting' afecta principalmente a la:",
+    "opciones": [
+      "Fiabilidad de la prueba",
+      "Transparencia y replicabilidad del estudio",
+      "Forma de las gráficas",
+      "Elección de la escala Likert"
+    ],
+    "correcta": 1,
+    "exp": "Ocultar resultados distorsiona la transparencia y dificulta la replicación."
+  },
+  {
+    "id": "INF12",
+    "p": "¿Qué sistema de citación se emplea en la bibliografía del informe final?",
+    "opciones": [
+      "MLA 9.ª edición",
+      "Vancouver",
+      "APA 7.ª edición",
+      "Chicago notas-bibliografía"
+    ],
+    "correcta": 2,
+    "exp": "Todo el curso utiliza el estilo APA 7."
+  },
+  {
+    "id": "INF13",
+    "p": "Para describir los resultados del Análisis Factorial Exploratorio se deben reportar al menos:",
+    "opciones": [
+      "Carga factorial más alta y alfa global",
+      "Nombre de los factores, varianza explicada y matriz de patrón",
+      "Sólo el scree plot",
+      "Únicamente la solución rotada"
+    ],
+    "correcta": 1,
+    "exp": "Nombre/interpretación de factores, % de varianza y la matriz (o resumen) de cargas son esenciales."
+  },
+  {
+    "id": "INF14",
+    "p": "¿Cuál es la ventaja de añadir anexos con los códigos de análisis (por ejemplo, R o jamovi)?",
+    "opciones": [
+      "Aumentar el número de páginas para una nota más alta",
+      "Demostrar transparencia y permitir replicación completa",
+      "Evitar que otros comprendan el procedimiento",
+      "No tiene ventajas, sólo añade confusión"
+    ],
+    "correcta": 1,
+    "exp": "El código reproducible facilita la verificación y aprendizaje de los lectores."
+  },
+  {
+    "id": "INF15",
+    "p": "En el resumen del informe, ¿qué contenido es innecesario según APA 7?",
+    "opciones": [
+      "Objetivos y método en 1–2 frases cada uno",
+      "Resultados clave con uno o dos números importantes",
+      "Referencia bibliográfica detallada",
+      "Conclusión principal y aplicación"
+    ],
+    "correcta": 2,
+    "exp": "El abstract no incluye referencias completas; van en la lista de referencias."
+  }
+]

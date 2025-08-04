@@ -1,0 +1,107 @@
+[
+  {
+    "id": "ANAI01",
+    "p": "¿Cuál es el objetivo principal de realizar un pre-test en el desarrollo de un cuestionario?",
+    "opciones": ["Confirmar la estructura factorial de la escala.", "Evaluar la claridad y comprensión de los ítems por la población objetivo.", "Calcular la fiabilidad de la escala final.", "Determinar el tamaño de muestra para el estudio principal."],
+    "correcta": 1,
+    "exp": "El pre-test busca identificar problemas de redacción y comprensión de ítems antes de la aplicación masiva."
+  },
+  {
+    "id": "ANAI02",
+    "p": "¿Quiénes deberían participar en un estudio pre-test para evaluar la comprensión de un cuestionario?",
+    "opciones": ["Solo expertos en estadística.", "Un grupo grande y aleatorio de la población general.", "Individuos representativos de la población objetivo.", "Únicamente los diseñadores del cuestionario."],
+    "correcta": 2,
+    "exp": "Los participantes deben ser similares a los encuestados reales para un feedback relevante."
+  },
+  {
+    "id": "ANAI03",
+    "p": "¿Cuál es el tamaño de muestra típico para un estudio pre-test o entrevistas cognitivas?",
+    "opciones": ["Cientos de participantes para análisis estadísticos.", "Un número pequeño, generalmente entre 5 y 15 personas.", "Al menos 1000 participantes.", "No hay un tamaño de muestra recomendado."],
+    "correcta": 1,
+    "exp": "Los pre-tests con entrevistas cognitivas suelen usar muestras pequeñas, entre 5 y 15 personas."
+  },
+  {
+    "id": "ANAI04",
+    "p": "¿Qué técnica implica pedir a los participantes que verbalicen sus pensamientos mientras responden un cuestionario?",
+    "opciones": ["Análisis factorial.", "Entrevista cognitiva (pensar en voz alta).", "Prueba de consistencia interna.", "Análisis de regresión."],
+    "correcta": 1,
+    "exp": "Las entrevistas cognitivas con 'pensar en voz alta' revelan cómo los encuestados interpretan las preguntas."
+  },
+  {
+    "id": "ANAI05",
+    "p": "¿Qué tipo de problemas de los ítems se busca identificar con las entrevistas cognitivas?",
+    "opciones": ["La correlación con variables externas.", "La estructura subyacente de los factores.", "Ambigüedad, confusión o dificultad en la comprensión de los ítems.", "La fiabilidad test-retest."],
+    "correcta": 2,
+    "exp": "Ayudan a detectar ítems confusos, ambiguos o difíciles de entender para los participantes."
+  },
+  {
+    "id": "ANAI06",
+    "p": "¿Cuál es el propósito principal de la revisión de un cuestionario por un panel de expertos?",
+    "opciones": ["Calcular la media de las puntuaciones de los ítems.", "Obtener feedback sobre la calidad, relevancia y claridad de los ítems.", "Realizar un análisis factorial confirmatorio.", "Validar la correlación con un criterio externo."],
+    "correcta": 1,
+    "exp": "Los expertos evalúan la adecuación, claridad y relevancia del contenido del instrumento."
+  },
+  {
+    "id": "ANAI07",
+    "p": "¿Qué aspectos pueden evaluar los expertos durante la revisión de un instrumento?",
+    "opciones": ["La varianza total explicada por la escala.", "La validez de criterio predictiva.", "La validez de contenido, claridad, concisión y nivel de lectura de los ítems.", "La distribución de los datos de respuesta."],
+    "correcta": 2,
+    "exp": "Los expertos revisan si el contenido es relevante, claro, conciso y adecuado para el público."
+  },
+  {
+    "id": "ANAI08",
+    "p": "¿Qué tipos de expertos se recomiendan para la revisión de un instrumento de medida?",
+    "opciones": ["Solo expertos en estadística.", "Únicamente expertos en el tema a medir.", "Metodólogos (expertos en encuestas) y expertos en el contenido del tema.", "Solo personas que no estén familiarizadas con el cuestionario."],
+    "correcta": 2,
+    "exp": "Se sugiere incluir expertos en metodología y en el contenido para una revisión completa."
+  },
+  {
+    "id": "ANAI09",
+    "p": "¿Cuál es el número recomendado de expertos para un panel de validación de contenido?",
+    "opciones": ["Uno o dos expertos para agilizar el proceso.", "Entre 3 y 10 expertos, idealmente.", "Más de 20 para asegurar representatividad.", "El número no es relevante, solo su experiencia."],
+    "correcta": 1,
+    "exp": "Se recomienda un panel de entre 3 y 10 expertos para una validación robusta del contenido."
+  },
+  {
+    "id": "ANAI10",
+    "p": "¿Qué característica esencial debe tener la redacción de un ítem para un cuestionario?",
+    "opciones": ["Ser lo más larga y detallada posible.", "Incluir doble negación para asegurar la comprensión.", "Ser clara, concisa y simple.", "Usar jerga técnica para mayor precisión."],
+    "correcta": 2,
+    "exp": "Los ítems deben ser claros, concisos y simples para evitar ambigüedad y facilitar la respuesta."
+  },
+  {
+    "id": "ANAI11",
+    "p": "¿Qué tipo de ítems se deberían considerar para descartar en la fase de revisión inicial?",
+    "opciones": ["Ítems con alta correlación con el puntaje total.", "Ítems de 'doble barril' (que preguntan dos cosas a la vez).", "Ítems que son muy fáciles de responder.", "Ítems con carga factorial única y alta."],
+    "correcta": 1,
+    "exp": "Los ítems de 'doble barril' son confusos y deben evitarse para asegurar la claridad."
+  },
+  {
+    "id": "ANAI12",
+    "p": "¿Qué tan grande se recomienda que sea el banco inicial de ítems comparado con la versión final de la escala?",
+    "opciones": ["El mismo tamaño para evitar trabajo extra.", "Aproximadamente la mitad de los ítems finales.", "De dos a cinco veces el número de ítems finales.", "No hay recomendación, depende del investigador."],
+    "correcta": 2,
+    "exp": "Se sugiere un pool inicial 2-5 veces más grande que la escala final para una mejor selección."
+  },
+  {
+    "id": "ANAI13",
+    "p": "Si en el análisis descriptivo de ítems, el 95% de las respuestas se concentran en una única categoría, ¿qué acción se podría considerar?",
+    "opciones": ["Aumentar el número de categorías de respuesta.", "Mantener el ítem, ya que indica alta relevancia.", "Excluir el ítem o fusionar categorías debido a la falta de variación.", "Invertir la codificación del ítem."],
+    "correcta": 2,
+    "exp": "La falta de variación en las respuestas indica que el ítem no discrimina y podría ser excluido."
+  },
+  {
+    "id": "ANAI14",
+    "p": "Si en el análisis de correlaciones se encuentran asociaciones negativas consistentes entre ítems que miden el mismo constructo, ¿qué podría indicar?",
+    "opciones": ["Que los ítems miden constructos diferentes.", "Que el cuestionario no es fiable.", "La necesidad de recodificar (invertir la puntuación) algunos ítems.", "Que el tamaño de la muestra es muy pequeño."],
+    "correcta": 2,
+    "exp": "Las correlaciones negativas entre ítems de una misma escala pueden indicar que algunos ítems necesitan ser recodificados inversamente."
+  },
+  {
+    "id": "ANAI15",
+    "p": "¿Cuál de las siguientes es considerada la forma más débil de evidencia de validez?",
+    "opciones": ["Validez de contenido.", "Validez aparente (Face validity).", "Validez de constructo.", "Validez de criterio."],
+    "correcta": 1,
+    "exp": "La validez aparente es subjetiva y no proporciona una evidencia robusta de la validez del instrumento."
+  }
+]

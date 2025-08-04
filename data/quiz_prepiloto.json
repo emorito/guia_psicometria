@@ -1,0 +1,108 @@
+[
+  {
+    "id": "PREPILOTO01",
+    "p": "¿Cuál es el objetivo principal de un estudio pre-piloto en el desarrollo de un cuestionario?",
+    "opciones": ["Establecer la validez de criterio de la escala.", "Evaluar la claridad y comprensión de los ítems antes de una administración a gran escala.", "Realizar un análisis factorial exploratorio de los datos.", "Calcular la fiabilidad de la consistencia interna final."],
+    "correcta": 1,
+    "exp": "El pre-piloto busca feedback inicial sobre la redacción y diseño del cuestionario para refinarlos."
+  },
+  {
+    "id": "PREPILOTO02",
+    "p": "¿Quiénes deberían participar en un estudio pre-piloto para evaluar la comprensión de un nuevo cuestionario?",
+    "opciones": ["Solo expertos en estadística psicométrica.", "Un grupo grande y aleatorio de la población general.", "Individuos representativos de la población objetivo.", "Únicamente los diseñadores del cuestionario."],
+    "correcta": 2,
+    "exp": "Los participantes deben ser similares a los encuestados objetivo para obtener feedback relevante sobre el instrumento."
+  },
+  {
+    "id": "PREPILOTO03",
+    "p": "¿Cuál es el tamaño de muestra recomendado para un estudio pre-piloto o pre-test?",
+    "opciones": ["Cientos de participantes para análisis estadísticos robustos.", "Un número pequeño, generalmente entre 5 y 15 personas.", "Al menos 1000 participantes para garantizar la generalizabilidad.", "No hay un tamaño de muestra recomendado, solo se necesita un grupo de enfoque."],
+    "correcta": 1,
+    "exp": "Los pre-tests se realizan con muestras pequeñas, entre 5 y 100 personas, o 5-15 para entrevistas cognitivas."
+  },
+  {
+    "id": "PREPILOTO04",
+    "p": "¿Qué técnica cualitativa es especialmente útil en un estudio pre-piloto para entender cómo los participantes interpretan las preguntas?",
+    "opciones": ["Análisis factorial exploratorio.", "Entrevistas cognitivas.", "Encuestas de satisfacción masivas.", "Cálculo del coeficiente Alfa de Cronbach."],
+    "correcta": 1,
+    "exp": "Las entrevistas cognitivas permiten observar y entender el proceso de pensamiento del encuestado al responder."
+  },
+  {
+    "id": "PREPILOTO05",
+    "p": "¿Qué se busca identificar principalmente mediante entrevistas cognitivas en un pre-piloto?",
+    "opciones": ["La estructura subyacente de los factores de la escala.", "Problemas de ambigüedad, confusión o doble negación en los ítems.", "El porcentaje de varianza explicada por cada dimensión.", "La correlación de los ítems con un criterio externo."],
+    "correcta": 1,
+    "exp": "Las entrevistas cognitivas identifican problemas de redacción, ambigüedad y comprensión de los ítems."
+  },
+  {
+    "id": "PREPILOTO06",
+    "p": "¿Cómo contribuye el estudio pre-piloto a mejorar la calidad de la medición de un instrumento?",
+    "opciones": ["Aumentando el número de ítems para lograr mayor redundancia.", "Reduciendo el error de medición al refinar la claridad y precisión de las preguntas.", "Asegurando una distribución normal de las respuestas.", "Estableciendo la fiabilidad test-retest de la escala."],
+    "correcta": 1,
+    "exp": "El objetivo es reducir el error de medición y la inexactitud de las preguntas mediante refinamiento."
+  },
+  {
+    "id": "PREPILOTO07",
+    "p": "¿Qué tipo de información se recopila predominantemente en un estudio pre-piloto para la mejora de ítems?",
+    "opciones": ["Datos cuantitativos para análisis estadísticos complejos.", "Comentarios cualitativos y observaciones sobre la comprensión.", "Puntuaciones directas para comparar con un grupo de control.", "Grandes volúmenes de datos para machine learning."],
+    "correcta": 1,
+    "exp": "Se busca feedback sobre la redacción, claridad y adecuación de los ítems, que es de naturaleza cualitativa."
+  },
+  {
+    "id": "PREPILOTO08",
+    "p": "¿Cuál es una diferencia clave entre un 'pre-test' (o estudio pre-piloto) y un 'pilot test' (estudio piloto)?",
+    "opciones": ["El pre-test es más costoso y requiere más tiempo.", "El pilot test se enfoca en la recolección de datos cuantitativos para análisis estadísticos iniciales, mientras el pre-test es más cualitativo.", "El pre-test solo se realiza en condiciones de laboratorio.", "El pilot test es siempre el primer paso en el desarrollo de una escala."],
+    "correcta": 1,
+    "exp": "El pilot test enfoca en datos cuantitativos para análisis, el pre-test es más cualitativo para feedback de ítems."
+  },
+  {
+    "id": "PREPILOTO09",
+    "p": "¿Además de la redacción, qué otros aspectos de un cuestionario pueden evaluarse con el feedback de un pre-piloto?",
+    "opciones": ["La validez de constructo y convergente.", "El diseño del cuestionario y la estructura del modelo de respuesta.", "La capacidad predictiva del instrumento.", "La invarianza de la medición entre diferentes grupos."],
+    "correcta": 1,
+    "exp": "El feedback del pre-piloto es útil para evaluar el diseño del cuestionario y la validez de los ítems."
+  },
+  {
+    "id": "PREPILOTO10",
+    "p": "¿Cuál es uno de los propósitos principales del pre-testing de preguntas en el desarrollo de escalas?",
+    "opciones": ["Establecer la representatividad de la muestra para el estudio principal.", "Minimizar malentendidos y errores de medición futuros.", "Cuantificar el acuerdo entre expertos mediante índices avanzados.", "Determinar el tiempo exacto de respuesta para cada ítem."],
+    "correcta": 1,
+    "exp": "El pre-testing minimiza malentendidos y errores de medición al asegurar la comprensión de los ítems."
+  },
+  {
+    "id": "PREPILOTO11",
+    "p": "¿Qué tipo de problemas con los ítems es común identificar durante un pre-test?",
+    "opciones": ["Ítems con correlaciones bajas con el puntaje total de la escala.", "Ítems con carga factorial cruzada significativa.", "Preguntas ambiguas, sesgadas, confusas o de doble barril.", "Ítems con varianza muy alta o muy baja."],
+    "correcta": 2,
+    "exp": "El pre-test aborda preguntas ambiguas, confusas, difíciles o con sesgos."
+  },
+  {
+    "id": "PREPILOTO12",
+    "p": "¿Cómo se describe el proceso de refinamiento de ítems durante la fase de pre-piloto?",
+    "opciones": ["Como un proceso lineal y único, sin repeticiones.", "Como un proceso puramente estadístico, sin subjetividad.", "Como un proceso iterativo de refinamiento y mejora continua.", "Como una fase que solo implica la eliminación de ítems."],
+    "correcta": 2,
+    "exp": "Los pasos de selección y revisión de ítems son un proceso iterativo de refinamiento y mejora."
+  },
+  {
+    "id": "PREPILOTO13",
+    "p": "¿Cuál es una acción clave que el investigador realiza durante las entrevistas cognitivas en un pre-piloto?",
+    "opciones": ["Registrar solo las respuestas finales de los participantes.", "Pedir a los participantes que verbalicen sus pensamientos mientras responden las preguntas.", "Aplicar pruebas estandarizadas de rendimiento cognitivo.", "Calcular la media y desviación estándar de las respuestas."],
+    "correcta": 1,
+    "exp": "Las entrevistas cognitivas consisten en 'pensar en voz alta' y usar 'sondas' para comprender la interpretación del encuestado."
+  },
+  {
+    "id": "PREPILOTO14",
+    "p": "¿Por qué es importante mantener el cuestionario lo más corto y simple posible, incluso en las fases iniciales como el pre-piloto?",
+    "opciones": ["Para facilitar análisis estadísticos complejos.", "Para evitar la fatiga del participante y maximizar las respuestas.", "Para reducir la cantidad de expertos necesarios.", "Porque solo los ítems cortos son válidos."],
+    "correcta": 1,
+    "exp": "Un cuestionario más corto y simple maximiza las respuestas y reduce la fatiga del participante."
+  },
+  {
+    "id": "PREPILOTO15",
+    "p": "¿Qué papel juega el pre-piloto como fuente de evidencia de validez de contenido?",
+    "opciones": ["Demuestra la correlación de la escala con variables externas.", "Es una de las cuatro formas principales de evidenciar la validez de contenido junto con el marco empírico, el plan teórico y la revisión de expertos.", "Sirve como confirmación de la estructura factorial de la escala.", "Proporciona únicamente datos sobre la fiabilidad test-retest de los ítems."],
+    "correcta": 1,
+    "exp": "El pre-piloto es una de las principales formas de demostrar la validez de contenido."
+  }
+]
+```

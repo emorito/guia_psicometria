@@ -1,0 +1,107 @@
+[
+  {
+    "id": "VAL01",
+    "p": "¿Qué aspecto de una escala evalúa principalmente la validez de contenido?",
+    "opciones": ["La coherencia de sus puntuaciones a lo largo del tiempo.", "La correspondencia de sus ítems con el constructo que se quiere medir.", "La capacidad de predecir un resultado futuro.", "Su relación con otras variables ya existentes."],
+    "correcta": 1,
+    "exp": "La validez de contenido asegura que los ítems reflejen el constructo deseado."
+  },
+  {
+    "id": "VAL02",
+    "p": "¿Por qué la validez de contenido se considera la propiedad psicométrica más fundamental en el desarrollo de escalas?",
+    "opciones": ["Porque es la más fácil de calcular.", "Porque garantiza la consistencia interna perfecta.", "Porque sin ella, otras formas de validez pueden ser cuestionables.", "Porque permite usar muestras pequeñas."],
+    "correcta": 2,
+    "exp": "Es la propiedad psicométrica más crítica para asegurar que la escala mide lo que debe."
+  },
+  {
+    "id": "VAL03",
+    "p": "¿Quiénes son los principales participantes en la evaluación de la validez de contenido de una escala?",
+    "opciones": ["Estudiantes universitarios sin experiencia.", "Analistas de datos estadísticos.", "Jueces expertos en el área del constructo.", "Participantes de la población general."],
+    "correcta": 2,
+    "exp": "Los expertos en el tema son los principales evaluadores de la relevancia del contenido."
+  },
+  {
+    "id": "VAL04",
+    "p": "¿Cuál es una tarea clave que realizan los jueces expertos durante la validación de contenido?",
+    "opciones": ["Realizar análisis factoriales confirmatorios.", "Juzgar la relevancia y claridad de cada ítem.", "Determinar el tamaño de muestra final.", "Calcular coeficientes de fiabilidad."],
+    "correcta": 1,
+    "exp": "Los expertos juzgan si los ítems son adecuados y claros para el constructo."
+  },
+  {
+    "id": "VAL05",
+    "p": "¿Cuál es una medida cuantitativa desarrollada por Lawshe (1975) para evaluar la validez de contenido a nivel de ítem?",
+    "opciones": ["El Coeficiente Alpha de Cronbach.", "El Índice Kaiser-Meyer-Olkin (KMO).", "La Razón de Validez de Contenido (CVR).", "El Coeficiente de Correlación de Pearson."],
+    "correcta": 2,
+    "exp": "El CVR de Lawshe es una medida cuantitativa de la validez de contenido por ítem."
+  },
+  {
+    "id": "VAL06",
+    "p": "¿Qué índice se utiliza comúnmente para cuantificar la validez de contenido a nivel de escala, promediando las valoraciones de los expertos?",
+    "opciones": ["El Índice de Validez de Contenido (CVI).", "El p-valor.", "La Varianza Total Explicada.", "El Error Estándar de Medición."],
+    "correcta": 0,
+    "exp": "El CVI es un índice común para cuantificar la validez de contenido a nivel de escala."
+  },
+  {
+    "id": "VAL07",
+    "p": "¿A qué se refiere principalmente la 'validez aparente' de una escala?",
+    "opciones": ["A su correlación con medidas externas.", "A si los ítems parecen relevantes y apropiados superficialmente.", "A la consistencia interna de la escala.", "A su capacidad para predecir comportamientos futuros."],
+    "correcta": 1,
+    "exp": "La validez aparente se refiere a si los ítems parecen, superficialmente, medir el constructo."
+  },
+  {
+    "id": "VAL08",
+    "p": "¿Cuál es un número de expertos comúnmente recomendado para un panel de validación de contenido?",
+    "opciones": ["1-2 expertos.", "3-5 expertos.", "6-10 expertos.", "Más de 50 expertos."],
+    "correcta": 2,
+    "exp": "Se recomiendan entre 6 y 10 expertos para una validación de contenido robusta."
+  },
+  {
+    "id": "VAL09",
+    "p": "¿Qué método de generación de ítems implica derivarlos de la teoría existente, revisiones de literatura y escalas previas?",
+    "opciones": ["Método inductivo.", "Entrevistas cognitivas.", "Método deductivo.", "Análisis de componentes principales."],
+    "correcta": 2,
+    "exp": "El método deductivo genera ítems desde la teoría y revisiones bibliográficas existentes."
+  },
+  {
+    "id": "VAL10",
+    "p": "Cuando se generan ítems para una escala a partir de discusiones de grupos focales y entrevistas con la población objetivo, ¿qué método se está utilizando?",
+    "opciones": ["Método confirmatorio.", "Método inductivo.", "Análisis factorial exploratorio.", "Evaluación por expertos metodológicos."],
+    "correcta": 1,
+    "exp": "El método inductivo genera ítems a partir de datos cualitativos de la población objetivo."
+  },
+  {
+    "id": "VAL11",
+    "p": "¿Cuál es el objetivo principal de realizar un pre-test o estudio piloto en el desarrollo de escalas?",
+    "opciones": ["Confirmar la estructura dimensional de la escala.", "Calcular los índices de fiabilidad finales.", "Asegurar que las preguntas sean claras y comprensibles para los encuestados.", "Establecer la validez concurrente."],
+    "correcta": 2,
+    "exp": "Los pre-tests y estudios piloto verifican la comprensión y adecuación de las preguntas."
+  },
+  {
+    "id": "VAL12",
+    "p": "¿Cuál es la función primordial de las entrevistas cognitivas en la fase de evaluación de ítems de una escala?",
+    "opciones": ["Identificar patrones de respuesta anómalos.", "Determinar la dificultad estadística de los ítems.", "Comprender cómo los encuestados interpretan las preguntas y formulan sus respuestas.", "Medir el tiempo de respuesta promedio por ítem."],
+    "correcta": 2,
+    "exp": "Las entrevistas cognitivas revelan cómo los encuestados interpretan y responden a los ítems."
+  },
+  {
+    "id": "VAL13",
+    "p": "Para un desarrollo de escala riguroso, ¿qué relación se recomienda entre el tamaño del pool inicial de ítems y la versión final de la escala?",
+    "opciones": ["Deben ser idénticos.", "El pool inicial debe ser el doble.", "El pool inicial debe ser tres o cuatro veces mayor.", "El pool inicial debe ser ligeramente menor."],
+    "correcta": 2,
+    "exp": "Se sugiere que el pool inicial de ítems sea de 3 a 4 veces mayor que la escala final."
+  },
+  {
+    "id": "VAL14",
+    "p": "¿Qué característica es fundamental para una redacción clara y concisa de los ítems en una escala?",
+    "opciones": ["Utilizar jerga especializada.", "Incluir dobles negaciones.", "Ser breves, directos y con lenguaje simple.", "Formular preguntas con múltiples ideas a la vez."],
+    "correcta": 2,
+    "exp": "Los ítems deben ser claros, concisos y directos para facilitar la comprensión."
+  },
+  {
+    "id": "VAL15",
+    "p": "¿Cómo se describe comúnmente el proceso de desarrollo de escalas en psicometría?",
+    "opciones": ["Como un proceso lineal y estático.", "Como un proceso puramente estadístico.", "Como un proceso dinámico, iterativo y multifacético.", "Como un proceso que solo se realiza una vez."],
+    "correcta": 2,
+    "exp": "El desarrollo de escalas es un proceso continuo de refinamiento y mejora."
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "PSICAN01",
+    "p": "¿Cuál es el objetivo principal del desarrollo de una escala psicométrica?",
+    "opciones": ["Publicar rápidamente los resultados de la investigación.", "Crear un instrumento fiable y válido para medir un constructo.", "Minimizar la cantidad de ítems en el cuestionario final.", "Asegurar que solo expertos entiendan las preguntas formuladas."],
+    "correcta": 1,
+    "exp": "El objetivo es desarrollar un instrumento que mida de forma precisa y consistente un atributo no observable."
+  },
+  {
+    "id": "PSICAN02",
+    "p": "En psicometría, ¿qué se entiende por un 'constructo' o 'variable latente'?",
+    "opciones": ["Una variable que puede observarse directamente en el mundo real.", "Un concepto abstracto o idea que se infiere a partir de comportamientos observables.", "El resultado numérico de un análisis estadístico complejo.", "Una característica demográfica de la población de estudio."],
+    "correcta": 1,
+    "exp": "Un constructo es una idea abstracta no observable directamente, inferida de conductas o características manifiestas."
+  },
+  {
+    "id": "PSICAN03",
+    "p": "¿Qué tipo de ítems se recomienda evitar al redactar un cuestionario para minimizar la confusión?",
+    "opciones": ["Ítems con una sola idea clara.", "Ítems con lenguaje sencillo y directo.", "Ítems de 'doble barril' que pregunten dos cosas a la vez.", "Ítems que incluyan una escala de respuesta."],
+    "correcta": 2,
+    "exp": "Los ítems de 'doble barril' deben evitarse porque preguntan dos cosas a la vez, causando confusión en las respuestas."
+  },
+  {
+    "id": "PSICAN04",
+    "p": "¿Cuál es el propósito principal de involucrar a un panel de expertos en el desarrollo de una escala?",
+    "opciones": ["Reducir el costo total de la investigación.", "Obtener retroalimentación sobre la calidad y relevancia del contenido de los ítems.", "Administrar el cuestionario a la población objetivo.", "Realizar análisis estadísticos avanzados de los datos."],
+    "correcta": 1,
+    "exp": "Los expertos revisan los ítems para asegurar su calidad, claridad y que reflejen el constructo deseado."
+  },
+  {
+    "id": "PSICAN05",
+    "p": "¿Qué aspecto de la validez se refiere al grado en que los ítems de un instrumento reflejan el universo de contenido que se pretende medir?",
+    "opciones": ["Validez de criterio.", "Validez de constructo.", "Validez de contenido.", "Validez predictiva."],
+    "correcta": 2,
+    "exp": "La validez de contenido evalúa si los ítems del instrumento cubren adecuadamente el dominio del constructo."
+  },
+  {
+    "id": "PSICAN06",
+    "p": "¿Cuál es el objetivo principal de realizar entrevistas cognitivas durante el desarrollo de un cuestionario?",
+    "opciones": ["Validar la estructura factorial del instrumento.", "Establecer la fiabilidad test-retest de la escala.", "Evaluar cómo los encuestados comprenden y procesan las preguntas.", "Determinar el tamaño de muestra necesario para el estudio principal."],
+    "correcta": 2,
+    "exp": "Las entrevistas cognitivas revelan si los encuestados entienden las preguntas como se pretende y cómo formulan sus respuestas."
+  },
+  {
+    "id": "PSICAN07",
+    "p": "¿Qué tamaño de muestra se considera ideal para las entrevistas cognitivas en la fase de pre-test?",
+    "opciones": ["Más de 200 participantes.", "Entre 5 y 15 participantes.", "Cientos de participantes para análisis estadísticos.", "Al menos 50 participantes para un estudio piloto."],
+    "correcta": 1,
+    "exp": "Las entrevistas cognitivas se realizan típicamente con un pequeño grupo de 5 a 15 participantes hasta la saturación."
+  },
+  {
+    "id": "PSICAN08",
+    "p": "¿Para qué se utiliza un estudio piloto (pilot test) en las etapas finales del desarrollo de una escala?",
+    "opciones": ["Para generar la lista inicial de ítems.", "Para probar el cuestionario en condiciones reales de campo y ver cómo se comportan los datos.", "Para obtener la aprobación ética de la investigación.", "Para determinar el nombre final de la escala."],
+    "correcta": 1,
+    "exp": "Un estudio piloto es un ensayo general en condiciones de campo para evaluar el comportamiento de los ítems y el proceso de recolección."
+  },
+  {
+    "id": "PSICAN09",
+    "p": "Para determinar el tamaño de muestra mínimo en un estudio psicométrico, ¿cuál es una proporción sujetos-a-variables (STV) comúnmente aceptada?",
+    "opciones": ["1:1", "5:1", "10:1", "20:1"],
+    "correcta": 2,
+    "exp": "Una proporción de 10:1 (sujetos por variable) es generalmente considerada aceptable como guía para el tamaño de la muestra."
+  },
+  {
+    "id": "PSICAN10",
+    "p": "¿Cuándo es más apropiado emplear un Análisis Factorial Exploratorio (AFE) en el desarrollo de una escala?",
+    "opciones": ["Cuando la estructura factorial de la escala ya está confirmada.", "Cuando se busca reducir el número de participantes necesarios.", "Cuando la estructura de las variables latentes de un constructo es desconocida o incierta.", "Cuando se desea probar una hipótesis específica sobre las relaciones entre factores."],
+    "correcta": 2,
+    "exp": "El AFE se usa cuando la estructura del cuestionario es desconocida y necesita ser descubierta, proporcionando guía sobre el número de factores."
+  },
+  {
+    "id": "PSICAN11",
+    "p": "¿Cuál es el propósito principal de un Análisis Factorial Confirmatorio (AFC) en la validación de una escala?",
+    "opciones": ["Identificar nuevas dimensiones no exploradas previamente.", "Reducir la cantidad total de ítems en la escala.", "Confirmar una estructura de factores hipotetizada en una nueva muestra de participantes.", "Explorar la relación entre variables observadas y latentes."],
+    "correcta": 2,
+    "exp": "El AFC se utiliza para confirmar si la estructura factorial hipotetizada de una escala se replica en una nueva muestra de participantes."
+  },
+  {
+    "id": "PSICAN12",
+    "p": "¿Qué propiedad psicométrica mide principalmente el Coeficiente Alfa de Cronbach?",
+    "opciones": ["La validez de criterio.", "La capacidad de un ítem para discriminar entre individuos.", "La consistencia interna de los ítems de una escala.", "La validez de contenido por juicio de expertos."],
+    "correcta": 2,
+    "exp": "El Alfa de Cronbach es una medida de la consistencia interna, indicando si los ítems de una escala miden consistentemente el mismo constructo."
+  },
+  {
+    "id": "PSICAN13",
+    "p": "En la jerarquía de propiedades psicométricas en el desarrollo de instrumentos, ¿cuál se considera la más crítica?",
+    "opciones": ["La fiabilidad.", "La practicidad.", "La validez.", "La eficiencia temporal."],
+    "correcta": 2,
+    "exp": "La validez es el dominio más crítico, ya que la fiabilidad es irrelevante si el instrumento no mide lo que debe."
+  },
+  {
+    "id": "PSICAN14",
+    "p": "¿Qué tipo de escala de respuesta se utiliza comúnmente para medir actitudes o percepciones, con opciones como 'Totalmente en desacuerdo' a 'Totalmente de acuerdo'?",
+    "opciones": ["Escala Guttman.", "Escala de Thurstone.", "Escala Likert.", "Escala de diferencial semántico."],
+    "correcta": 2,
+    "exp": "La escala Likert es la más popular en psicología para medir actitudes, con alternativas de intensidad verbal."
+  },
+  {
+    "id": "PSICAN15",
+    "p": "¿Cuántas opciones de respuesta se recomienda generalmente para una escala tipo Likert?",
+    "opciones": ["Solo 2 (dicotómica).", "Entre 5 y 9 puntos.", "Más de 10 puntos para mayor precisión.", "Un número par de puntos para forzar una decisión."],
+    "correcta": 1,
+    "exp": "Se sugiere que las escalas de 5 a 9 puntos son adecuadas para la mayoría de las situaciones y son las más utilizadas."
+  }
+]
