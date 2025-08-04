@@ -75,12 +75,19 @@ function renderCronograma() {
 
 /* === 4. Tarjetas de Tests (sólo informativas) ======================== */
 const testsData = [
-  { sigla:'GSE',  nombre:'Escala de Autoeficacia General',          desc:'Percibida capacidad para afrontar dificultades.', it:10 },
-  { sigla:'PANAS',nombre:'PANAS',                                   desc:'Afecto positivo y negativo (estado afectivo).',   it:20 },
-  { sigla:'RSES', nombre:'Escala de Autoestima de Rosenberg',       desc:'Autoestima global.',                               it:10 },
-  { sigla:'PSS',  nombre:'PSS (Perceived Stress Scale)',            desc:'Estrés percibido (último mes).',                   it:10 },
-  { sigla:'SD3',  nombre:'Triada Oscura Abreviada',                 desc:'Maquiavelismo, narcisismo, psicopatía.',          it:27 },
-  { sigla:'OTRO', nombre:'Otro',                                    desc:'Espacio abierto para propuestas del equipo.',     it:'—'}
+  {sigla:'GSE',   nombre:'Escala de Autoeficacia General',           desc:'Percibida capacidad de manejar situaciones.'},
+  {sigla:'PANAS', nombre:'PANAS',                                    desc:'Afecto positivo y negativo.'},
+  {sigla:'RSES',  nombre:'Escala de Autoestima de Rosenberg',        desc:'Autoestima global.'},
+  {sigla:'ERS-14',nombre:'ERS-14 (Resiliencia)',                     desc:'Capacidad de recuperación ante la adversidad.'},
+  {sigla:'PSS',   nombre:'PSS',                                      desc:'Estrés percibido (último mes).'},
+  {sigla:'SIAS',  nombre:'SIAS',                                     desc:'Ansiedad social (interacciones).'},
+  {sigla:'PSWQ',  nombre:'PSWQ',                                     desc:'Tendencia a la preocupación excesiva.'},
+  {sigla:'EES',   nombre:'Escala de Somnolencia de Epworth',         desc:'Somnolencia diurna.'},
+  {sigla:'AUDIT', nombre:'AUDIT',                                    desc:'Tamizaje de consumo de alcohol.'},
+  {sigla:'DAST-10',nombre:'DAST-10',                                 desc:'Uso de drogas y problemas asociados.'},
+  {sigla:'CUBI-18',nombre:'CUBI-18 (Ideación suicida)',              desc:'Conductas e ideación suicida.'},
+  {sigla:'SD3',   nombre:'Triada Oscura Abreviada (SD3)',            desc:'Maldad, narcisismo y psicopatía.'},
+  {sigla:'CREA',  nombre:'Escala de Autopercepción de Creatividad',  desc:'Autoevaluación de creatividad.'},
 ];
 
 function renderTestCards() {
@@ -96,3 +103,4 @@ function renderTestCards() {
     );
   });
 }
+
