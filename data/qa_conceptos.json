@@ -1,0 +1,577 @@
+[
+  {
+    "q": "¿Qué es una escala o cuestionario en investigación psicológica?",
+    "tags": ["escala", "cuestionario", "definición", "instrumento"],
+    "a": "Una escala o cuestionario se define como un conjunto de ítems diseñados para medir uno o más constructos subyacentes, también conocidos como variables latentes [1]. Es una serie de preguntas estandarizadas de auto-reporte cuyas respuestas se suman para obtener una puntuación [1]."
+  },
+  {
+    "q": "¿Por qué es fundamental el desarrollo y validación de escalas en la investigación social y de la salud?",
+    "tags": ["importancia", "rigor", "validez", "confiabilidad", "conocimiento científico"],
+    "a": "El desarrollo de escalas es fundamental porque los términos científicos organizan nuestro pensamiento sobre la investigación [2]. Las medidas imprecisas pueden llevar a un conocimiento inexacto [2]. Un desarrollo adecuado produce datos válidos y confiables, esenciales para la investigación empírica [3], asegurando que los hallazgos describan con precisión los conceptos subyacentes previstos [3]."
+  },
+  {
+    "q": "¿Qué son los constructos latentes en el desarrollo de escalas?",
+    "tags": ["constructo latente", "concepto abstracto", "medición"],
+    "a": "Los constructos latentes son **conceptos o ideas abstractas que no son directamente observables**, sino que se infieren de comportamientos, actitudes y características observables [4-6]. Ejemplos incluyen la soledad o la depresión [4, 6]. La validez de contenido asegura que los elementos de un instrumento de evaluación sean relevantes y representativos de este constructo objetivo [7]."
+  },
+  {
+    "q": "¿Cuáles son las fases principales en el proceso de desarrollo de una escala?",
+    "tags": ["fases", "proceso", "desarrollo de escalas"],
+    "a": "El proceso de desarrollo de una escala generalmente comprende tres fases principales: **desarrollo de ítems**, que implica la generación de las preguntas iniciales y la evaluación de la validez de contenido; **construcción de la escala**, que incluye la pre-prueba de las preguntas, la administración de la encuesta, la reducción de ítems y la determinación de la dimensionalidad; y **evaluación de la escala**, donde se prueba la dimensionalidad, confiabilidad y validez [8]. Otros modelos proponen 5 fases y 18 pasos [9]."
+  },
+  {
+    "q": "¿Qué es la validez de contenido en el desarrollo de escalas?",
+    "tags": ["validez de contenido", "definición", "representatividad", "relevancia"],
+    "a": "La **validez de contenido** es el grado en que los elementos de un instrumento de evaluación son **relevantes y representativos** del constructo objetivo para un propósito de evaluación particular [7, 10, 11]. Implica evaluar la idoneidad con la que una medida evalúa el dominio de interés [11, 12]."
+  },
+  {
+    "q": "¿Cómo se puede establecer la validez de contenido?",
+    "tags": ["validez de contenido", "métodos", "expertos", "revisión de literatura", "Delphi"],
+    "a": "La validez de contenido puede establecerse de varias maneras, incluyendo: el uso de un **panel de expertos** [13-15], una **revisión exhaustiva de la literatura** [13, 14, 16, 17], o el método **Delphi** [14, 18]. Los enfoques más robustos son aquellos que utilizan **múltiples fuentes** para establecer la validez de contenido [19]."
+  },
+  {
+    "q": "¿Cuál es el papel de un panel de expertos en la validación de contenido?",
+    "tags": ["panel de expertos", "validez de contenido", "evaluación de ítems", "relevancia", "claridad"],
+    "a": "Los expertos revisan la escala propuesta para confirmar que su propósito e intención son válidos [20-22]. Evalúan los ítems en cuanto a su **relevancia, representatividad y calidad técnica** [11, 16], así como su **claridad, concisión, gramática y nivel de lectura** [21]. También pueden sugerir la adición de nuevos ítems o la duración de la administración [21]."
+  },
+  {
+    "q": "¿Cuántos expertos se recomiendan para un panel de validación de contenido?",
+    "tags": ["expertos", "panel", "validez de contenido", "tamaño de panel", "recomendaciones"],
+    "a": "Las recomendaciones sobre el número de expertos varían [23]. Generalmente, se proponen entre **3 y 10 expertos**, incluyendo metodólogos y expertos en contenido (investigadores y clínicos) [22, 24]. Otras fuentes sugieren típicamente entre **5 y 7 jueces expertos** [25]. Algunas recomendaciones indican un mínimo de seis expertos y no más de diez para la validación de contenido [26]."
+  },
+  {
+    "q": "¿Qué es el test Aiken V y para qué se usa en la validación de contenido?",
+    "tags": ["Aiken V", "validez de contenido", "cuantificación", "acuerdo entre expertos"],
+    "a": "El test Aiken V es una medida cuantitativa para evaluar el acuerdo entre expertos en la validación de contenido [27-29]. Cuantifica el acuerdo sobre la validez del contenido de un cuestionario [28]. Los valores van de 0 (sin acuerdo) a 1 (acuerdo total), y valores cercanos a 1 indican validez [28]. Un valor V final de 0.95 (IC del 95%: 0.90–1.00) se considera muy fuerte para la validez de contenido de un cuestionario [27, 29]."
+  },
+  {
+    "q": "¿Qué es el Content Validity Ratio (CVR) y cómo se interpreta?",
+    "tags": ["CVR", "validez de contenido", "Lawshe", "cuantificación de ítems"],
+    "a": "El Content Validity Ratio (CVR), desarrollado por Lawshe (1975), es una medida cuantitativa para evaluar la validez de contenido a nivel de ítem [30-32]. Se calcula como la proporción de expertos que consideran el ítem 'Esencial' o 'Importante, pero no esencial' [33]. Un valor CVR negativo sugiere que más del 50% de los expertos encontraron el ítem irrelevante [34]."
+  },
+  {
+    "q": "¿Cuántos ítems se deben generar inicialmente para una escala?",
+    "tags": ["generación de ítems", "pool inicial", "tamaño de escala"],
+    "a": "Se recomienda que el pool inicial de ítems sea **aproximadamente de dos a cinco veces mayor** que el número de ítems deseado en la escala final [35-41]. Esto permite una selección más juiciosa y la eliminación de ítems problemáticos [36, 38, 40]."
+  },
+  {
+    "q": "¿De dónde provienen las ideas para generar ítems en una escala?",
+    "tags": ["generación de ítems", "fuentes", "deductivo", "inductivo", "expertos", "literatura", "grupos focales"],
+    "a": "Las fuentes de ítems pueden ser: **revisión de la literatura** [42, 43], **teoría** [42], **investigación existente** [42], **opinión de expertos** o entrevistas con informantes clave [42, 44-46], y **observación clínica** [42]. Se recomienda combinar métodos **deductivos** (de la literatura y teorías) e **inductivos** (de stakeholders como grupos focales o entrevistas) [46, 47]."
+  },
+  {
+    "q": "¿Cuáles son los principios clave para la redacción efectiva de ítems de una escala?",
+    "tags": ["redacción de ítems", "claridad", "concisión", "simplicidad", "sesgo"],
+    "a": "Los ítems deben ser **claros, concisos, legibles y distintos** [48]. Se debe evitar el lenguaje complejo o la jerga [49, 50], las preguntas de doble barril [51, 52], las dobles negaciones [49], las palabras absolutas como 'solo' o 'siempre' [49], y los ítems que probablemente sean aprobados por todos [49]. También se recomienda mantener los ítems por debajo de 20 palabras [49] y en un nivel de lectura de aproximadamente sexto grado [49, 53, 54]."
+  },
+  {
+    "q": "¿Es deseable la redundancia de ítems en las etapas iniciales del desarrollo de una escala?",
+    "tags": ["redundancia", "generación de ítems", "precisión", "confiabilidad"],
+    "a": "Sí, la redundancia de contenido es un activo durante la construcción del pool inicial, ya que **impulsa la confiabilidad de la consistencia interna**, lo que a su vez respalda la validez [38, 39]. Múltiples ítems similares apoyan una buena cobertura de contenido, asegurando una muestra exhaustiva y representativa del constructo objetivo [39]."
+  },
+  {
+    "q": "¿Cuál es el propósito de realizar una pre-prueba o prueba piloto de una escala?",
+    "tags": ["pre-prueba", "piloto", "evaluación de ítems", "errores", "retroalimentación"],
+    "a": "La pre-prueba permite evaluar la redacción de los ítems, la validez del ítem, el diseño del cuestionario y la estructura del modelo [55]. Su objetivo es **reducir el error de medición, la carga de respuesta y la inexactitud de las preguntas** [56]. También ayuda a identificar preguntas ambiguas, confusas o sensibles [51] y a detectar errores en la imputación de datos o problemas tecnológicos [57]."
+  },
+  {
+    "q": "¿Cuál es el tamaño de muestra recomendado para una pre-prueba o prueba piloto?",
+    "tags": ["pre-prueba", "piloto", "muestra", "tamaño de muestra"],
+    "a": "El tamaño de la muestra para las pre-pruebas debe ser pequeño, pero lo más parecido posible a los encuestados objetivo [56]. Puede variar de **5 a 100 personas**, dependiendo de la diversidad de las subpoblaciones objetivo [56]. Otros sugieren rangos de **25 a 150 participantes** [57] o de **5 a 15 entrevistados** en dos o tres rondas [58, 59]."
+  },
+  {
+    "q": "¿Qué son las entrevistas cognitivas y cómo se utilizan en la validación de escalas?",
+    "tags": ["entrevistas cognitivas", "pre-prueba", "validación", "comprensión de ítems"],
+    "a": "Las entrevistas cognitivas son un método de pre-prueba que consiste en **sondas** (preguntas como '¿Qué significa 'algunas veces' para usted?') y **pensamientos en voz alta** (el entrevistador pide al encuestado que verbalice lo que piensa al leer cada pregunta) [56, 60]. Ayudan a identificar y resolver ambigüedades potenciales en los ítems de evaluación, tal como son entendidos por los representantes de la población objetivo [61, 62]."
+  },
+  {
+    "q": "¿Cuál es el tamaño de muestra general recomendado para un análisis factorial?",
+    "tags": ["análisis factorial", "tamaño de muestra", "AFE", "AFC", "recomendaciones"],
+    "a": "Generalmente, la mayoría de los estudios recomiendan un tamaño de muestra de **al menos 300** [63-65]. Las pautas de Comrey y Lee (1992) varían desde 'muy pobre' (50) hasta 'excelente' (1000) [63, 65-67]. Para una estimación precisa, se recomienda que el tamaño de la muestra sea de **al menos 200 participantes** [66, 68, 69]."
+  },
+  {
+    "q": "¿Qué es la relación sujetos-variables (STV) y cuál es la recomendación?",
+    "tags": ["STV", "relación sujetos-variables", "tamaño de muestra", "análisis factorial"],
+    "a": "La relación sujetos-variables (STV) es la relación entre el número de participantes y el número de ítems o variables que se analizan [66]. Las recomendaciones varían de **3:1 a 20:1** [64, 66], pero **10:1** se considera típicamente aceptable [66, 70]. La recomendación óptima para reducir la tasa de error es una relación de **20:1**, aunque 5:1 es un estándar mínimo [35]."
+  },
+  {
+    "q": "¿Cómo influyen las comunalidades y las cargas factoriales en el tamaño de muestra requerido para el análisis factorial?",
+    "tags": ["comunalidades", "cargas factoriales", "tamaño de muestra", "análisis factorial"],
+    "a": "Si las comunalidades y las cargas factoriales son bajas, se sugiere aumentar el tamaño de la muestra [63, 71]. Si las comunalidades son **inferiores a 0.50**, se requiere un tamaño de muestra de **300 o más** para obtener estimaciones precisas [68, 71]. Muestras más pequeñas pueden ser adecuadas si la mayoría de las comunalidades están por encima de 0.50 y las cargas factoriales por encima de 0.40 [63, 71], o si todas las comunalidades son 0.60 o mayores y las cargas factoriales son mayores de 0.6 [72, 73]."
+  },
+  {
+    "q": "¿Cuál es el propósito del Análisis Factorial Exploratorio (AFE) en el desarrollo de escalas?",
+    "tags": ["AFE", "análisis factorial", "dimensionalidad", "estructura de la escala"],
+    "a": "El AFE es el enfoque más aplicado para evaluar escalas propuestas [74]. Su propósito es **identificar correlaciones entre variables observables** para ayudar en la reducción de datos relacionados con cada dimensión (factor) del constructo [74]. Esencialmente, explora los datos y proporciona orientación sobre el número de factores [74, 75]."
+  },
+  {
+    "q": "¿Cuál es el propósito del Análisis Factorial Confirmatorio (AFC) en el desarrollo de escalas?",
+    "tags": ["AFC", "análisis factorial", "confirmación de estructura", "modelo de medición"],
+    "a": "En el AFC, los investigadores **especifican el número de factores y las variables asociadas** con cada factor antes de realizarlo [74, 76]. Su objetivo es **evaluar o confirmar** en qué medida el modelo de medición del investigador se replica en los datos de la muestra [76, 77]. Debe realizarse en una muestra separada para confirmar la estructura de la escala propuesta resultante de un AFE [74]."
+  },
+  {
+    "q": "¿Cuál es la secuencia recomendada entre el Análisis Factorial Exploratorio (AFE) y el Análisis Factorial Confirmatorio (AFC) en el desarrollo de nuevas escalas?",
+    "tags": ["AFE", "AFC", "secuencia", "desarrollo de escalas", "mejores prácticas"],
+    "a": "Se recomienda que el **AFE preceda al AFC** en el desarrollo de nuevas escalas [73, 74, 78]. El AFE se prefiere inicialmente porque los investigadores pueden estar equivocados respecto a sus suposiciones sobre la dimensionalidad del constructo, y ayuda a asegurar la calidad del ítem [74]. El AFC se utiliza después para confirmar la estructura obtenida en una nueva muestra [74, 78]."
+  },
+  {
+    "q": "¿Qué pruebas se utilizan para verificar la 'factorabilidad' de los datos antes de realizar un análisis factorial?",
+    "tags": ["factorabilidad", "pruebas estadísticas", "Bartlett's Test", "KMO", "matriz de correlación"],
+    "a": "Para verificar la factorabilidad de los datos se utilizan: el **Test de Esfericidad de Bartlett** (p ≤ .05) [55, 79-81], y la prueba **Kaiser-Meyer-Olkin (KMO)** de adecuación del muestreo (≥ .60) [55, 79-82]. También se recomienda **inspeccionar la matriz de correlación** (≥ .30) [55]."
+  },
+  {
+    "q": "¿Cuál es el método de rotación recomendado en el análisis factorial para la investigación en ciencias sociales?",
+    "tags": ["rotación factorial", "oblicua", "ortogonal", "Varimax", "Promax"],
+    "a": "Se recomienda utilizar la **rotación oblicua** (como Promax) porque representa con mayor precisión la mayoría de los modelos en la investigación en ciencias sociales, ya que **permite que los factores se correlacionen** [83]. La rotación ortogonal (como Varimax) fuerza a los factores a no correlacionarse, lo cual es poco común en las ciencias sociales [83]."
+  },
+  {
+    "q": "¿Cuáles son los criterios principales para la selección o eliminación de ítems en una escala?",
+    "tags": ["eliminación de ítems", "selección de ítems", "criterios", "cargas factoriales", "ítems cruzados"],
+    "a": "Los criterios incluyen: **cargas factoriales** al o por encima del nivel de .30–.50 [84-86], **ausencia de cargas cruzadas** (cargas significativas en más de un factor) [84, 86], **no factores con menos de tres ítems** [84, 87], niveles de confiabilidad [84], convergencia teórica [84], comunalidades de variables [79, 85], y el porcentaje de varianza explicada por una subescala [79]. La **redundancia** en la redacción o significado también es un criterio [79]."
+  },
+  {
+    "q": "¿Cuál es el nivel de corte recomendado para las cargas factoriales mínimas de los ítems?",
+    "tags": ["carga factorial", "corte", "ítem", "significancia"],
+    "a": "Se recomienda un nivel de corte significativo de **.32**, aunque un rango entre **.30–.40** está respaldado por la literatura [85]. Una carga factorial es una correlación entre un ítem y un factor [85]."
+  },
+  {
+    "q": "¿Cuántos ítems se recomiendan por factor o subescala?",
+    "tags": ["ítems por factor", "subescala", "dimensionalidad", "mínimo de ítems"],
+    "a": "Se recomienda que cada subescala incluya **al menos tres ítems** para capturar el verdadero centro de cada dimensión [87, 88]. Sin embargo, la mayoría de los metodólogos respaldan un mínimo de tres variables por factor, y se recomiendan al menos **cuatro o cinco variables por dimensión** [40, 87]."
+  },
+  {
+    "q": "¿Qué es la confiabilidad y cuál es su medida más comúnmente utilizada?",
+    "tags": ["confiabilidad", "consistencia interna", "Cronbach's Alpha", "fiabilidad"],
+    "a": "La confiabilidad de las mediciones se refiere al grado en que una puntuación muestra **precisión, consistencia y replicabilidad** [5, 89]. La medida más comúnmente utilizada de consistencia interna es el **Coeficiente Alfa de Cronbach (α)** [90, 91]."
+  },
+  {
+    "q": "¿Cómo se interpreta el Coeficiente Alfa de Cronbach?",
+    "tags": ["Cronbach's Alpha", "interpretación", "confiabilidad", "niveles de corte"],
+    "a": "El Coeficiente Alfa de Cronbach oscila entre 0 y 1, donde los valores más cercanos a 1 indican una mayor confiabilidad [90]. Las pautas generales sugieren: **α > .9 – Excelente, α > .8 – Bueno, α > .7 – Aceptable** [90]. Sin embargo, el umbral de un valor 'aceptable' debe depender del constructo medido y de las implicaciones para los examinados [90]."
+  },
+  {
+    "q": "¿Qué es la validez aparente (face validity)?",
+    "tags": ["validez aparente", "face validity", "percepción", "expertos", "usuarios"],
+    "a": "La validez aparente es el grado en que los encuestados o usuarios finales (o personas legas) **juzgan que los ítems de un instrumento de evaluación son apropiados** para el constructo objetivo y los objetivos de evaluación [92]. Los ítems deben parecer aceptables y relevantes [93]. También se refiere al grado de adecuación de las evaluaciones subjetivas sobre si los elementos del instrumento parecen ser pertinentes, razonables, inequívocos y claros [94]."
+  },
+  {
+    "q": "¿Qué implica la validez del proceso de respuesta?",
+    "tags": ["validez de proceso de respuesta", "interpretación", "pensamiento del participante", "sesgo"],
+    "a": "La validez del proceso de respuesta se refiere a la **superposición entre el constructo previsto y las respuestas de los participantes** [95, 96]. Implica investigar si los procesos de pensamiento utilizados por los participantes al responder a los ítems reflejan el constructo deseado [95]. Ayuda a determinar si los individuos pueden completar la escala como se espera [97]."
+  },
+  {
+    "q": "¿Qué es la validez de la estructura interna?",
+    "tags": ["validez de estructura interna", "dimensionalidad", "análisis factorial", "homogeneidad"],
+    "a": "La validez de la estructura interna se refiere a la **medida en que las relaciones entre los ítems y las subescalas corresponden al constructo** al que están diseñadas para ajustarse [98, 99]. Se establece investigando la estructura factorial de la escala a través de técnicas como el análisis factorial exploratorio (AFE) y el análisis factorial confirmatorio (AFC) [91, 98-100]."
+  },
+  {
+    "q": "¿Qué es la validez de la estructura externa y cómo se relaciona con la red nomológica?",
+    "tags": ["validez de estructura externa", "red nomológica", "constructos relacionados", "validación"],
+    "a": "La validez de la estructura externa se facilita al recolectar datos dentro de la **red nomológica de la escala**, que son constructos conceptualmente relacionados [101]. Implica examinar la relación entre las puntuaciones en tests recién desarrollados con constructos teóricos establecidos [102]. Las similitudes sin redundancia son una indicación de esta validez [101]."
+  },
+  {
+    "q": "¿Qué es la validez convergente?",
+    "tags": ["validez convergente", "validación", "correlación", "mismo constructo"],
+    "a": "La validez convergente es la **relación entre diferentes medidas del mismo constructo** [102, 103]. Por ejemplo, se espera que las puntuaciones en una nueva medida de depresión se correlacionen positivamente con las puntuaciones de una herramienta de detección de depresión ya establecida [102]. Correlaciones más altas (ej., r > 0.5) proporcionan evidencia más sólida [102]."
+  },
+  {
+    "q": "¿Qué es la validez discriminante?",
+    "tags": ["validez discriminante", "constructos diferentes", "validación"],
+    "a": "La validez discriminante se refiere a la **no relación entre las puntuaciones de un test y los constructos con los que no se espera que se correlacionen** [103, 104]. Por ejemplo, una nueva medida de depresión debería tener una baja correlación con una medida de ansiedad si la literatura sugiere que son constructos separados [104]."
+  },
+  {
+    "q": "¿Qué es la validez consecuencial?",
+    "tags": ["validez consecuencial", "utilidad", "impacto", "consecuencias"],
+    "a": "La validez consecuencial se refiere a la **utilidad de la información de la variable latente** tal como la representan los resultados de la escala [7, 101, 105]. Implica examinar las consecuencias del uso del test, tanto las esperadas como las inesperadas [7, 105]."
+  },
+  {
+    "q": "¿Cómo se equilibran la parsimonia y el poder explicativo en el diseño de una escala?",
+    "tags": ["parsimonia", "poder explicativo", "diseño de escala", "optimización"],
+    "a": "Una buena escala debe ser lo más **simple posible (parsimonia)**, pero maximizando la varianza explicada del constructo (poder explicativo) [4, 106]. Esto asegura que los factores identificados sean significativos y fáciles de interpretar y usar [106]."
+  },
+  {
+    "q": "¿Por qué es importante establecer un marco empírico o teórico en el desarrollo de escalas?",
+    "tags": ["marco teórico", "marco empírico", "validez de contenido", "fundamentación"],
+    "a": "Es crucial identificar una o varias teorías y/o hallazgos sintetizados de la literatura para establecer un marco empírico para el proceso de desarrollo de ítems [107, 108]. Esto ayuda a garantizar la **validez de contenido**, es decir, hasta qué punto los ítems del test representan adecuadamente el alcance de un constructo de medición [107]."
+  },
+  {
+    "q": "¿Qué es un 'plano teórico' (theoretical blueprint) y cuál es su utilidad?",
+    "tags": ["plano teórico", "blueprint", "validez de contenido", "organización de ítems"],
+    "a": "Un plano teórico es una herramienta que mejora la validez de contenido al permitir a los investigadores **crear las áreas de contenido y dominio del constructo** y determinar la **proporción aproximada de ítems** que deben desarrollarse en cada área [108, 109]. Es una representación gráfica que organiza la investigación sobre el significado y la amplitud del constructo [110]."
+  },
+  {
+    "q": "¿Por qué el desarrollo de escalas es un proceso iterativo?",
+    "tags": ["proceso iterativo", "refinamiento", "mejora continua", "ciclo de desarrollo"],
+    "a": "El desarrollo de escalas es un proceso iterativo porque las escalas suelen administrarse, analizarse, revisarse y readministrarse varias veces antes de que sus propiedades psicométricas sean aceptables [100, 111]. Esto permite el **refinamiento continuo** del pool inicial de ítems hasta que las propiedades de la escala sean adecuadas [100, 112]."
+  },
+  {
+    "q": "¿Qué consideraciones son importantes al adaptar una escala a diferentes contextos culturales?",
+    "tags": ["adaptación transcultural", "validez", "población", "cultura"],
+    "a": "Es necesario considerar la **dimensión multicultural** al evaluar constructos, ya que la comprensión de un concepto puede variar entre países y dentro de un mismo país [106]. A menudo, es necesario **confirmar la validación de escalas** previamente validadas en otras poblaciones [106, 113]. Esto implica abordar no solo la traducción del idioma, sino también la relevancia conceptual y cultural [62]."
+  },
+  {
+    "q": "¿Cuál es el número óptimo de puntos o categorías de respuesta en una escala Likert?",
+    "tags": ["escala Likert", "categorías de respuesta", "puntos de escala", "óptimo"],
+    "a": "Las escalas Likert suelen utilizar **5 puntos** [114, 115]. Aunque no hay un consenso claro [114], un número mayor de opciones permite gradaciones más finas y aumenta la confiabilidad, desapareciendo este aumento después de **7 puntos** [116]. Generalmente, de **5 a 9 puntos** son adecuados para la mayoría de las ocasiones [114, 117]."
+  },
+  {
+    "q": "¿Se debe incluir una opción neutral en una escala Likert?",
+    "tags": ["escala Likert", "opción neutral", "punto medio", "sesgo de respuesta"],
+    "a": "Un **número impar de opciones** (normalmente cinco) ofrece a los encuestados una opción neutral [118, 119]. Sin embargo, la decisión de incluir o excluir un punto medio debe basarse en las necesidades de la investigación [120]. La exclusión puede forzar una elección, mientras que la inclusión puede ser utilizada para evitar responder [120]."
+  },
+  {
+    "q": "¿Cuál es la diferencia fundamental entre una 'escala' y un 'índice' en psicometría?",
+    "tags": ["escala", "índice", "constructo latente", "medida formativa", "medida reflectiva"],
+    "a": "Una **escala** típicamente mide un **constructo latente** donde múltiples ítems se agregan para reflejar un rasgo subyacente e inobservable (medida reflectiva) [6, 121]. Los ítems están correlacionados y son manifestaciones del mismo concepto [6]. Un **índice**, en contraste, combina indicadores observables que definen directamente los componentes de un concepto (medida formativa) [6, 121]. A diferencia de las escalas, los ítems de un índice pueden no estar correlacionados, ya que cada uno contribuye independientemente al constructo general [6, 121]."
+  },
+  {
+    "q": "¿Qué papel juegan las revistas y los revisores en la promoción de mejores prácticas en el desarrollo de escalas?",
+    "tags": ["revistas científicas", "revisores", "mejores prácticas", "calidad de investigación"],
+    "a": "Los editores y revisores de revistas desempeñan un papel crítico al elevar los estándares del campo [122]. Deben alentar los manuscritos que se centran en el desarrollo de la medición [122]. Su atención puede ayudar a clarificar conceptos y enseñar a los lectores sobre las mejores prácticas [122]."
+  },
+  {
+    "q": "¿Qué es la Teoría de Respuesta al Ítem (TRI) y cómo se diferencia de la Teoría Clásica de los Tests (TCT)?",
+    "tags": ["TRI", "TCT", "Item Response Theory", "Classical Test Theory", "modelos de medición"],
+    "a": "La **Teoría Clásica de los Tests (TCT)** asume que la puntuación observada es una combinación de la puntuación 'verdadera' del constructo latente y errores aleatorios distribuidos uniformemente, pudiendo la confiabilidad inflarse por el número de ítems [5, 123]. La **Teoría de Respuesta al Ítem (TRI)** es una teoría de medición alternativa que estipula que la propiedad medida es no observable y determina causalmente las respuestas a los ítems individuales [99]. La TCT es considerada la teoría tradicional, y la TRI la moderna, pudiendo usarse solas o en conjunto [124]."
+  },
+  {
+    "q": "¿Qué porcentaje de varianza debe explicar una escala en su totalidad?",
+    "tags": ["varianza explicada", "calidad de la escala", "psicometría"],
+    "a": "Una escala debería explicar al menos el **50% de la varianza**, pero se prefiere un rango de **75% a 90%** [125]."
+  },
+  {
+    "q": "¿Qué es una comunalidad (h²) en el análisis factorial?",
+    "tags": ["comunalidad", "análisis factorial", "varianza", "ítem"],
+    "a": "Una comunalidad (h²) es la **proporción de varianza explicada por cada variable individual para un factor** [63]. Se consideran altas si están por encima de .80, pero el rango más común en las ciencias sociales es de .40 a .70 [63]."
+  },
+  {
+    "q": "¿Qué información esencial debe reportarse al publicar un estudio de desarrollo de escalas?",
+    "tags": ["reporte", "publicación", "transparencia", "decisiones", "mejores prácticas"],
+    "a": "Los investigadores deben reportar: la lógica de denominación del constructo y subescalas, las definiciones conceptuales, la lógica del tamaño de la muestra, los métodos para determinar el número de factores, los resultados del test de Bartlett y KMO, el método de extracción factorial, el método de rotación, las estrategias de selección de ítems, los valores propios para todos los factores, la matriz de patrones, el paquete informático, las comunalidades, las estadísticas descriptivas, las confiabilidades de las subescalas, y el porcentaje de varianza explicada por cada factor [81, 126, 127]. Es crucial evitar el reporte selectivo [127]."
+  },
+  {
+    "q": "¿Qué métodos cualitativos son útiles en la generación de ítems para una escala?",
+    "tags": ["métodos cualitativos", "generación de ítems", "grupos focales", "entrevistas"],
+    "a": "Métodos como las **entrevistas en profundidad** y los **grupos focales** son críticos en el proceso de generación de ítems y la identificación de dimensiones [42, 46, 128]. Estos pueden revelar dimensiones adicionales o el fraseo de ítems directamente de los participantes [129]."
+  },
+  {
+    "q": "¿Cómo se utiliza la retroalimentación de expertos para refinar una escala?",
+    "tags": ["retroalimentación de expertos", "refinamiento de ítems", "validez", "calidad de ítems"],
+    "a": "Los expertos, que deben incluir metodólogos, participantes previstos e investigadores de la materia, deben proporcionar retroalimentación sobre la **calidad de los ítems** y qué tan bien cada ítem refleja el constructo general [130]. Pueden evaluar la validez de los ítems mediante una escala tipo Likert o comentarios abiertos [130]."
+  },
+  {
+    "q": "¿Cuál es la diferencia entre un 'pre-test' y un 'pilot test' en el desarrollo de escalas?",
+    "tags": ["pre-test", "pilot test", "diferencia", "fases de prueba"],
+    "a": "Un **pre-test** en muestras más pequeñas es útil para la retroalimentación de la encuesta y los ítems antes del lanzamiento de la recolección de datos, abordando áreas como preguntas ambiguas o confusas [51, 56]. Un **pilot test**, que sigue a un pre-test, puede emplearse para evaluar cómo se comportarán los datos y determinar si se deben añadir o eliminar ítems [51]. Es un 'ensayo' de la encuesta real en condiciones de campo [130]."
+  },
+  {
+    "q": "¿Cuál es el tamaño de muestra recomendado para una prueba piloto si se planea realizar un AFE con los datos de esta prueba?",
+    "tags": ["prueba piloto", "AFE", "tamaño de muestra", "análisis factorial"],
+    "a": "Para realizar un AFE, el tamaño de la muestra de la prueba piloto debe oscilar entre **50 y 100 participantes** [130]. Idealmente, una muestra piloto de 100+ es deseable para calcular análisis de ítems iniciales [57]."
+  },
+  {
+    "q": "¿Qué es la prueba de sedimentación (scree test) en el análisis factorial?",
+    "tags": ["scree test", "análisis factorial", "número de factores", "valores propios"],
+    "a": "La prueba de sedimentación es un **gráfico** que permite a los investigadores estimar el número de factores a retener [131, 132]. Es una representación visual de los **valores propios** derivados de los factores [131]. Se considera más precisa que la regla del valor propio > 1 [131]."
+  },
+  {
+    "q": "¿Qué es el análisis paralelo (PA) y por qué se recomienda para determinar el número de factores?",
+    "tags": ["análisis paralelo", "PA", "número de factores", "eigenvalues", "determinación de factores"],
+    "a": "El análisis paralelo (PA) compara los valores propios de los resultados del análisis factorial con los de un conjunto de datos ordenados aleatoriamente [131, 132]. Se recomienda para determinar un número preciso de factores a aceptar, reteniendo factores cuando sus valores propios son mayores que los producidos por el conjunto de datos aleatorio [131]."
+  },
+  {
+    "q": "¿Cuáles son las consideraciones éticas clave en la recolección de datos para el desarrollo de escalas?",
+    "tags": ["ética", "recolección de datos", "IRB", "privacidad", "consentimiento"],
+    "a": "Antes de recolectar datos, los investigadores deben obtener la aprobación de la **Junta de Revisión Institucional (IRB)** [57]. Es fundamental asegurar la **protección de datos** y obtener el **consentimiento informado** [133]. Se debe recolectar solo la cantidad de datos estrictamente necesaria y, idealmente, de manera anónima y desidentificada [133]. Nunca se debe forzar una respuesta [133]."
+  },
+  {
+    "q": "¿Cuáles son los formatos de respuesta comunes utilizados en los cuestionarios?",
+    "tags": ["formatos de respuesta", "escalamiento", "opciones de respuesta"],
+    "a": "Los formatos comunes incluyen las **escalas Likert**, las escalas de **diferencial semántico** y las **escalas analógicas visuales (VAS)** [134-136]. También pueden ser categóricas (como binarias u ordinales) o continuas [117, 137]. Las opciones de respuesta deben seguir el marco de los ítems [118]."
+  },
+  {
+    "q": "¿Cuáles son los beneficios de desarrollar escalas bien diseñadas y validadas?",
+    "tags": ["beneficios", "escalas de calidad", "investigación", "conocimiento científico"],
+    "a": "Las escalas bien diseñadas y validadas son la base de gran parte de nuestra comprensión de diversos fenómenos [138]. Aseguran que las inferencias de los instrumentos de evaluación sean confiables y que los resultados de la investigación describan con precisión los conceptos subyacentes previstos [3, 139]. Esto contribuye a un cuerpo más sólido de conocimiento científico [140]."
+  },
+  {
+    "q": "¿Por qué es importante adoptar un enfoque integral para la validación de una escala?",
+    "tags": ["validación integral", "enfoque multifacético", "evidencia de validez", "confiabilidad"],
+    "a": "Un enfoque integral es crucial porque una única fuente de evidencia de validez rara vez es suficiente [141, 142]. La validez no es una propiedad inherente de una prueba, sino de las inferencias basadas en la medición en un contexto específico [98, 104, 142, 143]. Un argumento de validez sólido extrae evidencia de múltiples fuentes, como contenido, procesos de respuesta, estructura interna, relación con otras variables y consecuencias [7, 142]. La validez tiene prioridad sobre la confiabilidad, ya que una prueba confiable pero no válida es inútil [144]."
+  },
+  {
+    "q": "¿Cómo se pueden categorizar las fases de validación de un instrumento de investigación?",
+    "tags": ["fases de validación", "categorización", "instrumento", "diseño"],
+    "a": "Un documento sugiere categorizar las etapas de validación de un instrumento de investigación en revisión documental, diseño del instrumento con una matriz de ítems, y remisión a evaluadores expertos junto con un pilotaje de usabilidad para sistematizar criterios de validez [145-147]."
+  },
+  {
+    "q": "¿Por qué es importante la calidad de la recolección de datos en la investigación?",
+    "tags": ["calidad de datos", "recolección de datos", "investigación empírica", "fundamento"],
+    "a": "La importancia de los datos válidos y confiables y su recolección es fundamental para la investigación empírica [3]. Métodos inadecuados pueden llevar a prácticas incorrectas [148]."
+  },
+  {
+    "q": "¿Cuál es el objetivo principal al crear un instrumento para medir un constructo?",
+    "tags": ["objetivo", "medición", "constructo", "precisión", "representación"],
+    "a": "El objetivo final es llegar a un conjunto de ítems que representen claramente el constructo de interés, de modo que las técnicas de reducción de datos produzcan un conjunto estable de factores subyacentes que reflejen con precisión el constructo [48]."
+  },
+  {
+    "q": "¿Cómo pueden los editores de revistas fomentar mejores prácticas en el desarrollo de escalas?",
+    "tags": ["editores", "revistas", "prácticas", "fomento", "estándares"],
+    "a": "Los editores de revistas pueden alentar los manuscritos que se centran en el desarrollo de la medición, reconociendo que no toda la ciencia consiste en la prueba de hipótesis, sino también en el desarrollo teórico de medidas [122]. Su atención puede ayudar a clarificar conceptos y enseñar a los lectores sobre las mejores prácticas [122]."
+  },
+  {
+    "q": "¿Qué se entiende por 'validez' de un cuestionario?",
+    "tags": ["validez", "cuestionario", "capacidad de medición", "diseño"],
+    "a": "La validez de un cuestionario se refiere a su **capacidad para medir aquello para lo que fue diseñado** [149]. Esto implica que el instrumento debe ser cuidadosamente diseñado en términos de las dimensiones y componentes que cubre [149]."
+  },
+  {
+    "q": "¿Cómo contribuye el 'diseño gráfico y de interfaz' a la validez aparente de un instrumento?",
+    "tags": ["diseño gráfico", "interfaz", "validez aparente", "comunicación visual", "navegabilidad"],
+    "a": "La validez aparente de la interfaz gráfica de una prueba significa que su contenido no solo es visualmente atractivo, sino que además es **relevante para la comunicación efectiva** de los grupos sociales que desarrollan las actividades de la prueba [150, 151]. Se evalúa en términos de viabilidad visual, legibilidad, coherencia de estilo y formato, y claridad tipográfica del lenguaje [151]."
+  },
+  {
+    "q": "¿Qué se busca en el análisis de los datos de una pre-prueba o prueba piloto, más allá de la retroalimentación de los participantes?",
+    "tags": ["pre-prueba", "piloto", "análisis de datos", "correlaciones", "estadísticas descriptivas"],
+    "a": "Se pueden computar tentativamente **análisis de ítems iniciales**, como correlaciones inter-ítem y estadísticas descriptivas [57]. Esto permite revisar la información sobre el contenido del ítem, incluyendo claridad y legibilidad, así como cualquier error en los procedimientos de administración [57]."
+  },
+  {
+    "q": "¿Qué es la 'over-determinación' en el contexto del tamaño de la muestra para análisis factorial?",
+    "tags": ["over-determinación", "análisis factorial", "tamaño de muestra", "variables a factores"],
+    "a": "La 'over-determinación' se refiere a la **relación de variables con el número de factores** [69]. El tamaño de muestra necesario depende de esto, así como del nivel de variación entre las variables [69]."
+  },
+  {
+    "q": "¿Cuál es la función del índice Kappa de Cohen (CKI) en la validación aparente?",
+    "tags": ["Kappa de Cohen", "CKI", "validez aparente", "acuerdo entre tasas", "precisión"],
+    "a": "El índice Kappa de Cohen (CKI) se utiliza para determinar la validez del instrumento con un **mínimo del 95% de precisión** [152]. En estudios sobre infancia, se recomienda un índice Kappa mínimamente aceptable de 0.60 para el acuerdo entre tasas [152]."
+  },
+  {
+    "q": "¿Qué se evalúa en una revisión de contenido de ítems por expertos?",
+    "tags": ["revisión de expertos", "ítems", "contenido", "precisión", "sesgo"],
+    "a": "Las revisiones de expertos pueden incluir: **revisiones de contenido** (relevancia, precisión, completitud del contenido), **revisiones de sensibilidad** (evaluación de posible sesgo de ítem) y **establecimiento de estándares** (identificación de puntuaciones de corte) [153]."
+  },
+  {
+    "q": "¿Cómo se aborda la 'no normalidad' de los datos en el análisis estadístico de una escala?",
+    "tags": ["no normalidad", "análisis estadístico", "pruebas de hipótesis", "tamaño de muestra"],
+    "a": "Estadísticamente, la normalidad se comprueba con pruebas como **Kolmogorov-Smirnov-Lillefors o Shapiro-Wilk** [154]. La violación del supuesto de normalidad no afecta significativamente al estadístico F de Fisher-Snedecor si los tamaños muestrales son grandes (más de 30 o 50 casos) [154]."
+  },
+  {
+    "q": "¿Qué es la 'triangulación' en el contexto de la validación de un instrumento de investigación?",
+    "tags": ["triangulación", "validez", "fuentes de datos", "análisis cualitativo"],
+    "a": "La triangulación formal del contenido implica el análisis documental de diversas fuentes de datos, como marcos de referencia internacionales, respuestas de los participantes y caracterización sociodemográfica [155]. Permite mejorar las prácticas de investigación y analizar los resultados a la luz del marco teórico [156]."
+  },
+  {
+    "q": "¿Qué se entiende por 'depuración de las bases de datos' en el desarrollo de escalas?",
+    "tags": ["depuración de datos", "datos atípicos", "calidad de datos", "análisis estadístico"],
+    "a": "La depuración busca que los datos no tengan ingresos atípicos, utilizando **modelos gráficos de caja y bigotes (Box Plot)** para identificar visualmente el comportamiento de la población y el programa SPSS para registrar el valor e incidencia de valores atípicos [157-159]."
+  },
+  {
+    "q": "¿Cuál es el riesgo de usar un tamaño de muestra insuficiente en el desarrollo de escalas?",
+    "tags": ["tamaño de muestra", "riesgo", "estabilidad", "generalizabilidad", "factores"],
+    "a": "El uso de pocos participantes conlleva dos riesgos principales: (a) los patrones de covariación pueden no ser estables, ya que el azar puede influir sustancialmente en las correlaciones, y (b) la muestra de desarrollo puede no representar adecuadamente la población prevista [64]."
+  },
+  {
+    "q": "¿Qué son los 'criterios de corte' (cut-off criteria) para los índices de ajuste en el AFC?",
+    "tags": ["criterios de corte", "índices de ajuste", "AFC", "modelo de ajuste"],
+    "a": "Son valores recomendados para interpretar el ajuste de un modelo. Por ejemplo, se buscan valores de CFI y TLI >0.95, RMSEA <0.06 y SRMR <0.08 [160, 161]. Es importante destacar que estos umbrales son pautas generales y no reglas definitivas, ya que su sensibilidad varía según la muestra, los ítems y las cargas factoriales [161, 162]."
+  },
+  {
+    "q": "¿Cómo se optimiza la longitud de una escala después de la evaluación de los ítems?",
+    "tags": ["optimización de escala", "longitud de escala", "fiabilidad", "eliminación de ítems"],
+    "a": "Una vez evaluados los ítems, es útil comparar la longitud y la fiabilidad para optimizar la longitud de la escala [163]. Se pueden eliminar ítems que tengan las cargas factoriales más bajas, las cargas cruzadas más altas, que contribuyan menos a la consistencia interna, o que tengan baja consistencia conceptual con otros ítems en el factor [163]."
+  },
+  {
+    "q": "¿Qué es el 'análisis de distracción' (distractor efficiency analysis) y para qué sirve en el desarrollo de escalas?",
+    "tags": ["análisis de distracción", "ítems de opción múltiple", "calidad de ítems", "distractores"],
+    "a": "El análisis de distracción muestra la distribución de las opciones incorrectas ('distractores') y cómo contribuyen a la calidad de un ítem de opción múltiple [164]. Ayuda a determinar si los ítems están bien construidos, son significativos y funcionales [164]."
+  },
+  {
+    "q": "¿Qué es la 'factorización de la matriz de correlación' (factorability of the correlation matrix)?",
+    "tags": ["factorabilidad", "matriz de correlación", "análisis factorial", "KMO", "Bartlett"],
+    "a": "Se refiere a si la matriz de correlación es adecuada para el análisis factorial [165]. Se evalúa con el test KMO (Kaiser-Meyer-Olkin), que debe ser de 0.60 o más, y el test de esfericidad de Bartlett [82]."
+  },
+  {
+    "q": "¿Qué son las 'cargas cruzadas' (cross-loadings) en el análisis factorial y por qué son problemáticas?",
+    "tags": ["cargas cruzadas", "análisis factorial", "estructura simple", "ítems complejos"],
+    "a": "Las cargas cruzadas son cuando los ítems cargan significativamente en dos o más factores (ej., > .32) [84, 86, 166]. Los ítems con cargas cruzadas se consideran complejos porque reflejan la influencia de más de un factor [166]. Reducen la 'estructura simple' y pueden requerir rotación oblicua [86, 166]."
+  },
+  {
+    "q": "¿Qué es la 'estructura simple' (simple structure) en el análisis factorial?",
+    "tags": ["estructura simple", "análisis factorial", "cargas factoriales", "ítems"],
+    "a": "Una estructura simple se da cuando varios ítems cargan fuertemente en un solo factor y los ítems tienen una correlación cercana a cero con otros factores en la solución [166]. El SEM (Modelado de Ecuaciones Estructurales) fuerza estas relaciones para producir una estructura simple [76, 166]."
+  },
+  {
+    "q": "¿Cuál es la relación entre el número de opciones de respuesta y la confiabilidad de una escala?",
+    "tags": ["opciones de respuesta", "confiabilidad", "puntos de escala", "gradaciones"],
+    "a": "Un número relativamente grande de opciones de respuesta permite gradaciones más finas y, generalmente, la **confiabilidad es menor para escalas con solo dos o tres puntos** en comparación con escalas con más puntos [116, 119]. Este aumento de confiabilidad desaparece después de siete puntos [116]."
+  },
+  {
+    "q": "¿Cómo se decide el orden de los ítems en el diseño final de una escala?",
+    "tags": ["orden de ítems", "secuencia", "diseño de encuesta", "fatiga del participante"],
+    "a": "La secuencia de los ítems es crucial para optimizar la participación del participante y asegurar la fiabilidad y validez de los resultados [167]. Se deben evitar agrupar ítems de la misma dimensión para reducir el sesgo, y las preguntas sociodemográficas a menudo se colocan al final para evitar abrumar a los participantes [167, 168]."
+  },
+  {
+    "q": "¿Cuál es la 'regla del pulgar' (rule of thumb) para el tamaño de la muestra en el análisis factorial?",
+    "tags": ["regla del pulgar", "tamaño de muestra", "análisis factorial", "muestreo"],
+    "a": "Una 'regla del pulgar' común ha sido de al menos **10 participantes por cada ítem de la escala**, es decir, una relación ideal de encuestados a ítems de 10:1 [66, 69]. Sin embargo, existen otras recomendaciones que varían [66, 69]."
+  },
+  {
+    "q": "¿Qué es la 'validez de constructo' y cómo se establece?",
+    "tags": ["validez de constructo", "definición", "validación", "análisis factorial"],
+    "a": "La validez de constructo es la medida en que 'un instrumento realmente mide la dimensión latente o constructo que fue desarrollado para evaluar' [103]. Se evidencia principalmente por la consistencia correlacional y de medición del constructo objetivo y sus ítems, principalmente a través del análisis factorial [89]."
+  },
+  {
+    "q": "¿Cómo se relaciona la 'precisión' con la probabilidad en la validación de instrumentos?",
+    "tags": ["precisión", "probabilidad", "validación", "métodos cuantitativos", "cualitativos"],
+    "a": "La precisión se garantiza a través del concepto estadístico de probabilidad, concebido en los procesos de contraste de hipótesis [169]. Es una herramienta de precisión del proceso explicativo causal cuya función es garantizar la precisión del producto analítico en los métodos cuantitativos, y puede extrapolarse a los procesos cualitativos [169]."
+  },
+  {
+    "q": "¿Cuáles son las limitaciones de la 'validez aparente' (face validity)?",
+    "tags": ["validez aparente", "limitaciones", "debilidad", "subjetividad", "credibilidad"],
+    "a": "La validez aparente es la forma más débil de validez, y muchos investigadores no le darían credibilidad total porque no es la más precisa en el sentido estricto de la investigación científica [170]. Es sensible a la subjetividad [171]."
+  },
+  {
+    "q": "¿Qué son los 'balung concepts' y los 'latent constructs' en el contexto de la medición de la salud?",
+    "tags": ["balung concepts", "latent constructs", "medición en salud", "complejidad", "psicometría"],
+    "a": "Son términos utilizados para describir **conceptos complejos y no directamente observables** en la medición de la salud, como emociones, creencias, funcionamiento o percepciones de rol social [172, 173]. Su naturaleza abstracta hace que su medición sea un desafío [172, 173]."
+  },
+  {
+    "q": "¿Cómo puede el uso de un equipo de investigación mejorar la fase de desarrollo de ítems?",
+    "tags": ["equipo de investigación", "desarrollo de ítems", "triangulación", "rigor", "consenso"],
+    "a": "La creación inicial de ítems es cualitativa, por lo que incorporar principios de **triangulación de múltiples investigadores** (un equipo de investigación) puede aumentar el rigor [53]. Los miembros del equipo desarrollan individualmente listas de ítems y luego se reúnen para revisar y consensuar el pool inicial [53, 54]."
+  },
+  {
+    "q": "¿Qué es el COSMIN (COnsensus-based Standards for the selection of health status Measurement INstruments)?",
+    "tags": ["COSMIN", "estándares de medición", "salud", "calidad de instrumentos", "evaluación"],
+    "a": "COSMIN es una iniciativa establecida en 2005 para **mejorar la calidad de los estudios de propiedades de medición** de escalas e instrumentos clínicos [174]. Es un marco internacional basado en el consenso para la terminología, el análisis preferido y el informe de propiedades de medición [77, 144, 174]."
+  },
+  {
+    "q": "¿Por qué se desaconseja el 'item parceling' (agrupación de ítems) en el SEM para el desarrollo de escalas?",
+    "tags": ["item parceling", "SEM", "agrupación de ítems", "modelamiento de ecuaciones estructurales", "sesgo"],
+    "a": "Se desaconseja el 'item parceling' en el SEM para la investigación de desarrollo de escalas porque puede ocultar (a) las verdaderas relaciones entre los ítems en la escala y (b) la especificación incorrecta del modelo, lo que va en contra de los propósitos subyacentes del AFC [175]."
+  },
+  {
+    "q": "¿Qué se recomienda hacer si el ajuste del modelo en un AFC no es satisfactorio?",
+    "tags": ["AFC", "ajuste del modelo", "ítems de bajo rendimiento", "índices de modificación"],
+    "a": "La falta de ajuste satisfactorio ofrece la oportunidad de identificar ítems adicionales de bajo rendimiento para su eliminación [176]. Los ítems con cargas muy pobres (≤0.3) pueden considerarse para su eliminación. Además, los índices de modificación pueden ayudar a identificar ítems que necesitan ser modificados [176]."
+  },
+  {
+    "q": "¿Qué es el 'poder estadístico' y por qué es importante en el análisis factorial?",
+    "tags": ["poder estadístico", "análisis factorial", "tamaño de muestra", "replicabilidad"],
+    "a": "El poder estadístico se relaciona con la probabilidad de detectar un efecto cuando existe [66]. Muestras más grandes son deseables para el análisis factorial debido a los aumentos en el poder estadístico, lo que lleva a estimaciones más precisas, cargas factoriales más estables y factores más replicables [67, 72]."
+  },
+  {
+    "q": "¿Qué es el 'Alpha de Cronbach ordinal' y cuándo se utiliza?",
+    "tags": ["Alpha de Cronbach ordinal", "confiabilidad", "escalas Likert", "datos ordinales"],
+    "a": "El Alfa de Cronbach ordinal es una versión del coeficiente Alfa de Cronbach adecuada para datos de escalas tipo Likert o datos de respuesta a ítems ordinales [177, 178]. Es una estimación de la confiabilidad de la consistencia interna cuando los datos son de naturaleza ordinal."
+  },
+  {
+    "q": "¿Qué es el 'Modelo del Rasch' y en qué contexto se aplica?",
+    "tags": ["Modelo del Rasch", "Teoría de Respuesta al Ítem", "escalas", "medición de habilidad"],
+    "a": "El Modelo del Rasch es un tipo de escala basada en la Teoría de Respuesta al Ítem (TRI) que se centra en la noción de que los examinados tienen más probabilidades de responder correctamente a los ítems que miden grados más fáciles de un rasgo [134]. Es útil para pruebas de alto impacto, como tests de inteligencia o habilidad cognitiva [134]."
+  },
+  {
+    "q": "¿Cómo se aborda la validez cuando hay diferencias culturales en la comprensión de un constructo?",
+    "tags": ["validez cultural", "adaptación transcultural", "comprensión", "grupos culturales"],
+    "a": "En contextos transculturales, es particularmente importante asegurar que los ítems se entiendan como se pretende por los diferentes grupos culturales [62]. Esto implica abordar no solo la traducción del idioma, sino también la relevancia conceptual y cultural, que puede variar significativamente entre poblaciones [62]."
+  },
+  {
+    "q": "¿Qué significa que la 'confiabilidad es moot si un instrumento tiene una validez deficiente'?",
+    "tags": ["confiabilidad", "validez", "jerarquía de propiedades psicométricas", "instrumento inútil"],
+    "a": "Significa que la validez es el dominio más crítico de la calidad de un instrumento [144]. Si un instrumento tiene una alta confiabilidad pero los ítems no representan adecuadamente la variable latente objetivo, independientemente de si el instrumento es repetible o consistente, es inútil [144]. La validez tiene prioridad sobre la confiabilidad en la jerarquía de propiedades psicométricas [144]."
+  },
+  {
+    "q": "¿Cuáles son las ventajas de usar formatos de respuesta politómicos frente a dicotómicos?",
+    "tags": ["formatos de respuesta", "politómico", "dicotómico", "variabilidad", "precisión"],
+    "a": "Generalmente, los formatos politómicos (múltiples categorías) permiten una **mayor variabilidad y un mayor grado de precisión** en la medición [119]. También son más adecuados para diversos análisis estadísticos en comparación con los formatos dicotómicos (Sí/No) [119]."
+  },
+  {
+    "q": "¿Qué es el 'test-retest reliability' (confiabilidad test-retest)?",
+    "tags": ["confiabilidad test-retest", "estabilidad", "medición", "consistencia temporal"],
+    "a": "Aunque no está incluido en el protocolo de 6 pasos de Dima, es otra forma de confiabilidad relevante para la validación de escalas [123]. Se refiere a la **consistencia de las puntuaciones de un instrumento a lo largo del tiempo**, indicando la estabilidad de la medida."
+  },
+  {
+    "q": "¿Qué es el 'análisis de ítems' (item analysis) y cuándo se realiza?",
+    "tags": ["análisis de ítems", "calidad de ítems", "pre-prueba", "validación"],
+    "a": "El análisis de ítems se utiliza para seleccionar los mejores ítems [179]. Permite detectar ítems que son ambiguos, incorrectamente puntuados, demasiado fáciles o difíciles, o que no discriminan lo suficiente [179]. Se realiza durante la fase de pre-prueba y también en la fase final de evaluación psicométrica [111, 179]."
+  },
+  {
+    "q": "¿Qué sucede si los ítems de una escala tienen 'correlaciones negativas'?",
+    "tags": ["correlaciones negativas", "ítems", "puntuación inversa", "eliminación"],
+    "a": "Si aparecen ítems con correlaciones negativas con otros ítems, se puede considerar la **puntuación inversa** (reverse scoring) [180]. Si esto no elimina las correlaciones negativas en un conjunto homogéneo, los ítems correlacionados positivamente con algunos y negativamente con otros deberían eliminarse [180]."
+  },
+  {
+    "q": "¿Qué tipo de estudios de investigación se examinaron para identificar las mejores prácticas de desarrollo de escalas en comunicación?",
+    "tags": ["estudios", "prácticas", "comunicación", "análisis de contenido", "revistas"],
+    "a": "Se examinaron las prácticas de investigadores que aplicaron procedimientos para desarrollar sus escalas en las **principales revistas de comunicación** clasificadas por Thomson Reuter, cubriendo un período de diez años (2005-2015), mediante un **análisis de contenido cuantitativo** [148, 181, 182]."
+  },
+  {
+    "q": "¿Por qué la 'validez' es considerada el dominio más crítico en la calidad de un instrumento de medición?",
+    "tags": ["validez", "importancia", "fiabilidad", "medición", "calidad"],
+    "a": "La validez es el dominio más crítico porque, aunque la fiabilidad sea alta, si los ítems no representan adecuadamente el constructo latente, la fiabilidad es 'moot' (irrelevante) [144]. Un instrumento confiable pero sin evidencia de validez es inútil [144]."
+  },
+  {
+    "q": "¿Qué son los 'indicadores de ajuste' (fit indices) en el Modelado de Ecuaciones Estructurales (SEM) y cuáles son los esenciales a reportar?",
+    "tags": ["indicadores de ajuste", "fit indices", "SEM", "reporte", "modelo"],
+    "a": "Los indicadores de ajuste se utilizan para evaluar cuán bien un modelo hipotetizado se ajusta a los datos [160, 162]. Un mínimo de indicadores a reportar incluye: el **estadístico Chi-cuadrado (χ²)** con sus grados de libertad y nivel de significancia, el **RMSEA** (Root Mean Square Error of Approximation) con su intervalo de confianza del 90%, el **CFI** (Comparative Fit Index), y el **SRMR** (Standardized Root Mean Square Residual) [183, 184]."
+  },
+  {
+    "q": "¿Qué es la 'red nomológica' en el contexto de la validez de constructo?",
+    "tags": ["red nomológica", "validez de constructo", "relaciones teóricas", "constructos"],
+    "a": "La red nomológica es un sistema teórico de constructos interrelacionados en el que el constructo que se mide está incrustado [101]. La validez de constructo se evalúa examinando cómo la nueva medida se relaciona teóricamente con otros constructos dentro de esta red [101, 102]."
+  },
+  {
+    "q": "¿Cuál es la diferencia en la forma de puntuación entre las escalas categóricas y continuas?",
+    "tags": ["escalas", "categóricas", "continuas", "puntuación", "Likert"],
+    "a": "En una escala categórica, la puntuación se obtiene sumando o promediando ítems que reciben respuestas con valores binarios (ej., 1=verdadero, 0=falso) [137]. En una escala continua, las puntuaciones se suman o promedian basándose en ítems con números asignados a categorías de respuesta, ej., de 1='totalmente en desacuerdo' a 5='totalmente de acuerdo' para una escala Likert de cinco puntos [137]."
+  },
+  {
+    "q": "¿Qué implicaciones tiene el nivel de lectura de los ítems en el desarrollo de escalas?",
+    "tags": ["nivel de lectura", "redacción de ítems", "claridad", "comprensión", "población objetivo"],
+    "a": "Los ítems deben estar escritos a un nivel de lectura apropiado, idealmente alrededor de un **sexto grado**, para asegurar que el lenguaje sea fácilmente comprendido por la audiencia objetivo y reducir la carga cognitiva [49, 50, 53, 54]. Esto mejora la claridad y validez [50]."
+  },
+  {
+    "q": "¿Cómo se decide si un constructo tiene una naturaleza unidimensional o multidimensional?",
+    "tags": ["unidimensionalidad", "multidimensionalidad", "constructo", "análisis factorial", "teoría"],
+    "a": "La dimensionalidad de una escala se examina con el Análisis Factorial Exploratorio (AFE) y el Análisis Factorial Confirmatorio (AFC) [111]. Idealmente, las relaciones entre los ítems deben ser consistentes con las expectativas del investigador derivadas de la teoría y el proceso de desarrollo de la medida [99]."
+  },
+  {
+    "q": "¿Qué se recomienda hacer antes de desarrollar un nuevo instrumento si ya existen instrumentos similares?",
+    "tags": ["instrumentos existentes", "necesidad", "justificación", "revisión", "evitar duplicación"],
+    "a": "Se recomienda primero **revisar exhaustivamente la literatura existente** para determinar si ya hay instrumentos que sirvan al mismo propósito [139, 185-187]. Si existe uno similar, se debe **justificar por qué es apropiado desarrollar un nuevo instrumento** y cómo se diferenciará de los existentes [17, 186]."
+  },
+  {
+    "q": "¿Cuál es el propósito de preparar un 'manual de inventario' o 'artículo ancla' en la fase final de desarrollo de una escala?",
+    "tags": ["manual de inventario", "artículo ancla", "diseminación", "documentación", "accesibilidad"],
+    "a": "El manual o artículo ancla busca **diseminar el instrumento a una audiencia más amplia** [127]. Debe incluir fundamentos teóricos, procedimientos detallados para la administración, puntuación e interpretación de resultados, y documentación de sus propiedades psicométricas [127]. También es importante publicarlo en revistas revisadas por pares y considerar plataformas de acceso abierto [127, 188]."
+  },
+  {
+    "q": "¿Qué consideraciones se deben tener para las revisiones periódicas de un instrumento ya desarrollado?",
+    "tags": ["revisiones", "actualización", "teoría", "ítems desactualizados", "retroalimentación"],
+    "a": "Se recomiendan revisiones periódicas para tener en cuenta los **avances en la teoría, los cambios en el constructo** que se está midiendo o la presencia de ítems desactualizados [188]. La frecuencia de estas revisiones debe guiarse por pruebas empíricas y retroalimentación del campo, asegurando que el instrumento siga siendo relevante y fiable con el tiempo [188]."
+  },
+  {
+    "q": "¿Cuál es el rol de los 'valores propios' (eigenvalues) en la determinación del número de factores?",
+    "tags": ["valores propios", "eigenvalues", "número de factores", "scree test", "análisis paralelo"],
+    "a": "Los valores propios son la base para determinar el número de factores a retener [131, 132]. En la prueba de sedimentación (scree test), los valores propios se grafican para identificar una 'rodilla' donde la línea se quiebra [131]. En el análisis paralelo, se comparan con valores propios de datos aleatorios para decidir qué factores retener [131]."
+  },
+  {
+    "q": "¿Qué son los 'áncoras verbales' (verbal anchors) en las escalas de respuesta?",
+    "tags": ["áncoras verbales", "escalas de respuesta", "Likert", "interpretación"],
+    "a": "Los áncoras verbales son los **descriptores verbales** que acompañan a los valores numéricos de las categorías de respuesta en una escala (ej., 'Totalmente en desacuerdo', 'De acuerdo') [189]. Añaden claridad a las categorías de respuesta [189]."
+  },
+  {
+    "q": "¿Qué es la 'validez de las inferencias' (validity of inferences) en psicometría?",
+    "tags": ["validez de las inferencias", "uso de test", "propósito", "evidencia"],
+    "a": "Se refiere a la **validez del uso de las puntuaciones de un test para sus propósitos previstos**, más que a la validez inherente del test mismo [104, 142, 190]. La validación es el proceso de recopilar evidencia para respaldar estas inferencias [98, 191]."
+  },
+  {
+    "q": "¿Qué se entiende por 'modelo de clusters independientes' (independent clusters model) en el AFC?",
+    "tags": ["modelo de clusters independientes", "AFC", "cargas cruzadas", "estructura simple"],
+    "a": "Es un supuesto estricto en el Análisis Factorial Confirmatorio (AFC) que presume que **las cargas cruzadas entre los ítems y los factores no objetivo son exactamente cero** [161]. Esto implica que cada ítem solo se relaciona con un único factor subyacente."
+  },
+  {
+    "q": "¿Por qué es importante considerar la 'cultura' en la validez del contenido de un cuestionario?",
+    "tags": ["cultura", "validez de contenido", "relevancia", "contexto", "adaptación"],
+    "a": "Es crucial considerar la cultura porque el significado de un concepto y la relevancia de los ítems pueden variar significativamente entre diferentes contextos culturales [39, 106]. Esto asegura que el instrumento sea apropiado y representativo para la población objetivo [39, 192]."
+  }
+]
