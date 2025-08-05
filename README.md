@@ -86,7 +86,7 @@ El repositorio está organizado de la siguiente manera para facilitar su compren
 
 ## 📄 Licencia
 
-Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
 *Elaborado por Enrique Morosini con la asistencia de IA (Gemini de Google). Un proyecto que demuestra la increíble sinergia entre la visión humana y la capacidad de la inteligencia artificial para acelerar el desarrollo y refinar el diseño.*
