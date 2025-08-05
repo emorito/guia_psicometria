@@ -1,345 +1,106 @@
-/* styles.css  –  v1.0 compacto y sin duplicados  ──────────────────── */
+/* =================================================================== */
+/* ===         GUÍA DE PSICOMETRÍA - HOJA DE ESTILOS FINAL         === */
+/* =================================================================== */
 
-/* ----- 1. Variables y reset ----- */
-:root{
-  --dark:#2e3c5d;
-  --light:#eaf4fc;
-  --accent:#5199c2;
-  --white:#fff;
-  --gray:#f5f5f5;
-  --text:#333;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-  font-family:"Segoe UI",sans-serif;
-  color:var(--text);background:var(--light);line-height:1.55;
-}
-
-/* ----- 2. Hero header ----- */
-.hero{
-  background:linear-gradient(120deg,var(--dark) 0%,#1c2740 100%);
-  color:var(--white);text-align:center;padding:4rem 1rem 5rem;
-}
-.hero h1{font-size:2rem;margin-bottom:.3rem}
-.hero p {opacity:.9}
-
-/* ----- 3. Navbar ----- */
-header{background:var(--dark)}
-#menu{
-  display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;
-  padding:.75rem 1rem;
-}
-#menu a{
-  color:var(--white);text-decoration:none;font-size:.9rem;
-  padding:.35rem .7rem;border-radius:4px;
-}
-#menu a:hover{background:var(--accent)}
-
-/* ----- 4. Secciones ----- */
-section{
-  background:var(--white);margin:1.5rem 0;padding:3rem 1rem;
-  border-radius:6px;box-shadow:0 2px 4px #0002;
-}
-section:nth-of-type(even){background:var(--gray)}
-h2{color:var(--dark);margin-bottom:.8rem}
-.subtitle{color:var(--dark);opacity:.8;margin:0 0 1rem}
-
-/* ----- 5. Componentes ----- */
-audio{width:100%;margin:1rem 0}
-.note{
-  background:var(--light);border-left:4px solid var(--accent);
-  padding:.8rem 1rem;margin:1rem 0;
-}
-.btn-quiz{
-  background:var(--accent);color:var(--white);border:none;
-  padding:.6rem 1rem;border-radius:4px;cursor:pointer;
-}
-.btn-quiz:hover{background:var(--dark)}
-
-/* Cronograma */
-table.cronograma{width:100%;border-collapse:collapse;font-size:.85rem}
-table.cronograma th,table.cronograma td{border:1px solid #ccc;padding:.5rem}
-table.cronograma th{background:var(--accent);color:var(--white)}
-
-/* Tarjetas de tests */
-.cards-container,
-#cards-tests{display:flex;flex-wrap:wrap;gap:1rem}
-.card-test{
-  flex:1 1 260px;background:#fafcff;border:1px solid #ccc;
-  border-radius:8px;padding:1rem;min-height:150px;overflow:visible
-}
-.card-test h3{margin:0 0 .3rem}
-.card-test p{margin:.4rem 0}
-
-/* Iframe responsivo */
-.iframe-wrap{position:relative;width:100%;padding-top:56.25%;margin:1rem 0}
-.iframe-wrap iframe{
-  position:absolute;top:0;left:0;width:100%;height:100%;border:0
-}
-
-/* Chat */
-.chat-box{
-  max-width:680px;margin:auto;display:flex;flex-direction:column;gap:.5rem
-}
-#chatAnswer{background:var(--gray);padding:.8rem 1rem;border-radius:4px}
-
-/* Media queries */
-@media(min-width:800px){body{padding:0 2rem}}
-
-/* ==================================================================== */
-/* ===         OPERACIÓN PÁGINA HERMOSA - CSS DE CHOQUE             === */
-/* ==================================================================== */
-
-/* --- PRINCIPIO 2: TIPOGRAFÍA PROFESIONAL --- */
-/* Primero, ve a tu index.html y, dentro del <head>, justo antes de tu
-   propio <link> de CSS, añade esta línea para importar la fuente 'Poppins': */
-/* <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> */
-
-/* --- PRINCIPIO 3: PALETA DE COLORES CON VARIABLES --- */
+/* --- 1. CONFIGURACIÓN GLOBAL Y VARIABLES DE COLOR --- */
 :root {
-  --color-primario: #2c3e50;      /* Un azul oscuro/gris para el texto principal */
-  --color-secundario: #34495e;    /* Un tono ligeramente más claro para fondos */
-  --color-fondo: #f4f6f9;         /* Un gris muy claro para el fondo general */
-  --color-acento: #3498db;        /* Un azul vibrante para botones y enlaces */
-  --color-acento-hover: #2980b9;  /* El mismo azul, pero más oscuro para el hover */
+  --color-primario: #2c3e50;      /* Azul oscuro/gris para texto principal */
+  --color-secundario: #34495e;    /* Un tono más claro para el menú y fondos */
+  --color-fondo: #f4f6f9;         /* Gris muy claro para el fondo general */
+  --color-acento: #3498db;        /* Azul vibrante para botones, enlaces y bordes */
+  --color-acento-hover: #2980b9;  /* Azul más oscuro para el hover */
   --color-blanco: #ffffff;
-  --color-borde: #e0e0e0;         /* Un gris claro para los bordes */
+  --color-borde: #e0e0e0;         /* Gris claro para bordes sutiles */
 }
 
-/* --- ESTILOS GENERALES Y LAYOUT (PRINCIPIO 1) --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
   background-color: var(--color-fondo);
   color: var(--color-primario);
-  line-height: 1.7; /* Aumenta el espacio entre líneas para mejor legibilidad */
-  margin: 0;
-  padding: 0;
+  line-height: 1.7;
 }
 
-section {
-  background-color: var(--color-blanco);
-  margin: 2rem auto; /* Espacio vertical entre secciones */
-  padding: 2.5rem;   /* Mucho espacio interno (aire) */
-  max-width: 900px;  /* Centra el contenido y evita que sea demasiado ancho */
-  border-radius: 12px; /* Bordes redondeados */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Sombra sutil (Principio 4) */
-  border: 1px solid var(--color-borde);
-}
 
-/* --- JERARQUÍA DE TÍTULOS (PRINCIPIO 2) --- */
-h1, h2, h3 {
-  font-weight: 700; /* Letra más gruesa para títulos */
-  line-height: 1.3;
-}
-
-h1 {
-  color: var(--color-acento);
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-  border-bottom: 2px solid var(--color-acento);
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  color: var(--color-secundario);
-}
-
-/* --- ESTILOS PARA COMPONENTES (PRINCIPIO 5) --- */
-
-/* Estilo base para TODOS los botones */
-.btn-quiz, .btn-submit-quiz, .chat-send {
-  display: inline-block;
-  background-color: var(--color-acento);
-  color: var(--color-blanco);
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.btn-quiz:hover, .btn-submit-quiz:hover, .chat-send:hover {
-  background-color: var(--color-acento-hover);
-  transform: translateY(-2px); /* Efecto de "levantarse" */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-/* Estilo para las tarjetas de los tests sugeridos */
-#cards-tests {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-}
-
-.card-test {
-    background-color: var(--color-fondo);
-    padding: 1.5rem;
-    border-radius: 10px;
-    border-left: 5px solid var(--color-acento);
-    transition: all 0.3s ease;
-}
-
-.card-test:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* Estilo para los iframes responsivos */
-.iframe-wrap {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* Proporción 16:9 */
-  border-radius: 8px;
-  margin: 2rem 0;
-  border: 1px solid var(--color-borde);
-}
-
-.iframe-wrap iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/* --- ESTILO MEJORADO PARA LA SECCIÓN DE DESCARGABLES --- */
-
-/* Contenedor principal de la lista de descargables */
-#descargables-list {
-  margin-top: 2rem; /* Añade espacio arriba, separándolo del texto anterior */
-  margin-bottom: 2rem; /* Añade espacio abajo, separándolo del botón del quiz */
-  background-color: var(--color-fondo); /* Un fondo sutil para agrupar los elementos */
-  padding: 1.5rem; /* Espacio interno */
-  border-radius: 10px; /* Bordes redondeados consistentes */
-  border: 1px solid var(--color-borde);
-}
-
-/* La lista (ul) dentro del contenedor */
-#descargables-list ul {
-  list-style: none;
-  padding: 0;
-  margin: 0; /* Quitamos márgenes por defecto de la lista */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
-/* Cada elemento de la lista (li) */
-#descargables-list li {
-  /* No necesita estilos específicos, los ponemos en el enlace */
-}
-
-/* El enlace (a) dentro de cada elemento de la lista */
-#descargables-list li a {
-  display: flex; /* Usamos flexbox para alinear el icono y el texto */
-  align-items: center; /* Centramos verticalmente */
-  background-color: var(--color-blanco);
-  padding: 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  color: var(--color-acento);
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  border: 1px solid var(--color-borde);
-}
-
-#descargables-list li a:hover {
-  background-color: var(--color-acento);
-  color: var(--color-blanco);
-  transform: translateY(-3px); /* Efecto de elevación */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Un icono de descarga para un toque profesional */
-#descargables-list li a::before {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 12px; /* Espacio entre el icono y el texto */
-  background-color: currentColor; /* El icono tomará el color del texto (azul o blanco) */
-  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3E%3Cpath d='M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z'/%3E%3C/svg%3E") no-repeat center / contain;
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3E%3Cpath d='M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z'/%3E%3C/svg%3E") no-repeat center / contain;
-}
-
-/* ==================================================================== */
-/* ===       MEJORAS DE ENCABEZADO: BANNER Y MENÚ MINIMALISTA      === */
-/* ==================================================================== */
-
-/* --- 1. EL BANNER DEL ENCABEZADO --- */
+/* --- 2. ENCABEZADO (BANNER PRINCIPAL) --- */
 header {
-  /* Imagen de fondo */
-  background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('../media/banner-bg.jpg');
-  background-size: cover; /* Cubre todo el espacio */
-  background-position: center center; /* Centra la imagen */
-  background-attachment: fixed; /* Efecto parallax sutil al hacer scroll */
-
-  /* Estilos del texto */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('../media/banner-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   color: var(--color-blanco);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 4rem 2rem; /* Más espacio para que se vea la imagen */
+  padding: 6rem 2rem;
+  min-height: 85vh;
 }
 
-/* El Hero es la sección de presentación que está DENTRO del header ahora */
 section.hero {
-  background-color: transparent; /* Hacemos transparente la sección de presentación */
-  box-shadow: none; /* Quitamos la sombra */
-  border: none; /* Quitamos el borde */
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
   padding: 0;
   margin: 0;
+  max-width: 950px;
 }
 
 section.hero h1 {
-  color: var(--color-blanco);
-  font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra al texto para legibilidad */
+  font-size: 5rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--color-blanco);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+  line-height: 1.1;
+  margin-bottom: 1rem;
 }
 
 section.hero .subtitle {
-  font-size: 1.2rem;
-  opacity: 0.9;
+  font-size: 1.4rem;
+  font-weight: 400; /* Tipografía más delgada */
+  color: var(--color-blanco);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.85);
+  opacity: 0.95;
+  letter-spacing: 0.5px;
+}
+
+.hero audio {
+  margin-top: 2rem;
+  max-width: 100%;
 }
 
 
-/* --- 2. EL MENÚ DE NAVEGACIÓN MINIMALISTA Y FIJO --- */
+/* --- 3. BARRA DE NAVEGACIÓN FIJA --- */
 nav {
-  position: sticky; /* ¡La magia! Se pega arriba */
+  position: sticky;
   top: 0;
   width: 100%;
   background-color: var(--color-secundario);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000; /* Se asegura que esté por encima de todo */
-  padding: 0.5rem 2rem; /* Espaciado interno */
-  box-sizing: border-box; /* Asegura que el padding no desborde */
+  z-index: 1000;
+  padding: 0.5rem 2rem;
+  box-sizing: border-box;
 }
 
 #menu {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex; /* La clave para poner los elementos en horizontal */
-  justify-content: center; /* Centra los elementos */
-  flex-wrap: wrap; /* Si no caben, se van a la siguiente línea */
-  gap: 1.5rem; /* Espacio entre los elementos del menú */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 #menu li a {
   color: var(--color-blanco);
   text-decoration: none;
-  font-size: 0.9rem; /* Letras más pequeñas */
+  font-size: 0.9rem;
   font-weight: 600;
   padding: 0.5rem 0;
   position: relative;
@@ -367,22 +128,76 @@ nav {
 }
 
 
-/* ==================================================================== */
-/* ===       ESTILO PARA BOTONES DE DESCARGA INDIVIDUALES         === */
-/* ==================================================================== */
+/* --- 4. ESTRUCTURA Y TÍTULOS DE LAS SECCIONES --- */
+main {
+  /* Contenedor principal para las secciones */
+}
 
-/* Estilo para los enlaces de descarga dentro de las secciones */
+section {
+  background-color: var(--color-blanco);
+  margin: 2rem auto;
+  padding: 2.5rem;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-borde);
+}
+
+h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--color-primario);
+  border-bottom: 4px solid var(--color-acento);
+  padding-bottom: 0.8rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-secundario);
+  line-height: 1.3;
+}
+
+
+/* --- 5. COMPONENTES REUTILIZABLES --- */
+
+/* --- Botones --- */
+.btn-quiz, .btn-submit-quiz, #chat-send {
+  display: inline-block;
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-quiz:hover, .btn-submit-quiz:hover, #chat-send:hover {
+  background-color: var(--color-acento-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Botones de Descarga (individuales) --- */
 .btn-descarga {
-  display: inline-flex; /* Permite alinear el icono y el texto */
-  align-items: center;  /* Centra verticalmente */
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   font-weight: 600;
-  color: var(--color-acento); /* Texto azul */
-  background-color: var(--color-fondo); /* Fondo gris claro */
+  color: var(--color-acento);
+  background-color: var(--color-fondo);
   padding: 10px 20px;
   border-radius: 8px;
   border: 1px solid var(--color-borde);
-  margin: 0.5rem 0.5rem 0.5rem 0; /* Espacio alrededor para que no se pegue */
+  margin: 0.5rem 0.5rem 0.5rem 0;
   transition: all 0.3s ease;
 }
 
@@ -393,30 +208,195 @@ nav {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Icono para el botón de descarga */
 .btn-descarga::before {
   content: '';
   display: inline-block;
   width: 18px;
   height: 18px;
-  margin-right: 10px; /* Espacio entre icono y texto */
-  background-color: currentColor; /* El icono hereda el color del texto */
+  margin-right: 10px;
+  background-color: currentColor;
   -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3E%3Cpath d='M5 20h14v-2H5v2zm7-18C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h2.55V7h2.9v4H16l-4 4z'/%3E%3C/svg%3E") no-repeat center / contain;
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3E%3Cpath d='M5 20h14v-2H5v2zm7-18C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h2.55V7h2.9v4H16l-4 4z'/%3E%3C/svg%3E") no-repeat center / contain;
 }
 
-/* Espacio para los contenedores de botones de descarga */
-.descargables-en-seccion, #revision-plan div {
+.descargables-en-seccion {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
+/* --- Iframes (Google Forms/Sheets) --- */
+.iframe-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 8px;
+  margin: 2rem 0;
+  border: 1px solid var(--color-borde);
+}
 
-/* ==================================================================== */
-/* ===       ESTILO PARA CHECKLISTS INTERACTIVOS                  === */
-/* ==================================================================== */
+.iframe-wrap iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
 
-/* El contenedor principal del checklist */
+/* --- Nota de Propósito (Centrada) --- */
+.note {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--color-fondo);
+  border-left: 5px solid var(--color-acento);
+  border-radius: 0 8px 8px 0;
+}
+
+/* --- Tabla de Cronograma --- */
+table.cronograma {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+table.cronograma th, table.cronograma td {
+  border: 1px solid var(--color-borde);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+table.cronograma th {
+  background: var(--color-secundario);
+  color: var(--color-blanco);
+  font-weight: 600;
+}
+
+/* --- 6. SECCIONES Y COMPONENTES ESPECÍFICOS --- */
+
+/* --- Centro de Recursos (Descargables) --- */
+#descargables-list {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--color-fondo);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--color-borde);
+}
+
+#descargables-list ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+#descargables-list li a {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-blanco);
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-acento);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border: 1px solid var(--color-borde);
+}
+
+#descargables-list li a:hover {
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#descargables-list li a::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3E%3Cpath d='M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z'/%3E%3C/svg%3E") no-repeat center / contain;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3E%3Cpath d='M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+.btn-jamovi-guide {
+  display: flex; align-items: center; text-decoration: none; font-weight: 600;
+  color: var(--color-acento); background-color: var(--color-blanco);
+  padding: 1rem; border-radius: 8px; border: 1px solid var(--color-borde);
+  width: 100%;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-jamovi-guide:hover {
+  background-color: var(--color-acento); color: var(--color-blanco);
+  transform: translateY(-3px); box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- Acordeón (Asistente IA) --- */
+.accordion {
+  margin: 2rem 0;
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.accordion-item label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-primario);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+  padding: 0 1rem;
+}
+
+.accordion-item input[type="checkbox"] {
+  display: none;
+}
+
+.accordion-item input[type="checkbox"]:checked ~ .accordion-content {
+  max-height: 1000px;
+  padding: 0 1rem 1.5rem 1rem;
+}
+
+.accordion-item label::after {
+  content: '\002B';
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-acento);
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-item input[type="checkbox"]:checked ~ label::after {
+  transform: rotate(45deg);
+}
+
+.accordion-content h4 { color: var(--color-acento); margin-top: 0; }
+.accordion-content ul { list-style-type: disc; padding-left: 20px; }
+.accordion-content li { margin-bottom: 0.5rem; }
+.accordion-content blockquote {
+  border-left: 4px solid var(--color-acento);
+  padding-left: 1rem; margin-left: 0;
+  font-style: italic; color: #6c757d;
+}
+
+/* --- Checklists Interactivos --- */
 .checklist-container {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
@@ -436,18 +416,14 @@ nav {
   padding-bottom: 0.5rem;
 }
 
-/* La lista en sí */
 .checklist {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .checklist li {
   margin-bottom: 0.75rem;
 }
 
-/* La etiqueta que contiene el checkbox y el texto, para hacerla clickeable */
 .checklist label {
   display: flex;
   align-items: center;
@@ -456,49 +432,24 @@ nav {
   transition: color 0.3s ease;
 }
 
-/* El texto dentro de la etiqueta */
 .checklist label span {
   transition: all 0.3s ease;
 }
 
-/* El checkbox en sí */
 .checklist input[type="checkbox"] {
   margin-right: 12px;
-  /* Hacemos el checkbox un poco más grande y fácil de clickear */
   width: 18px;
   height: 18px;
   cursor: pointer;
 }
 
-/* LA MAGIA: Qué pasa cuando un checkbox está MARCADO */
 .checklist input[type="checkbox"]:checked + span {
-  text-decoration: line-through; /* Tacha el texto */
-  color: #95a5a6; /* Color gris suave */
-  opacity: 0.8; /* Lo hace un poco más transparente */
+  text-decoration: line-through;
+  color: #95a5a6;
+  opacity: 0.8;
 }
 
-/* ==================================================================== */
-/* ===       ESTILO PARA VENTANA MODAL (GUÍA JAMOVI)              === */
-/* ==================================================================== */
-
-/* El botón especial para abrir la guía */
-.btn-jamovi-guide {
-  /* Copiamos el estilo de los enlaces de descarga para consistencia */
-  display: flex; align-items: center; text-decoration: none; font-weight: 600;
-  color: var(--color-acento); background-color: var(--color-fondo);
-  padding: 1rem; border-radius: 8px; border: 1px solid var(--color-borde);
-  width: 100%; /* Para que ocupe todo el espacio de la tarjeta */
-  justify-content: center;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.btn-jamovi-guide:hover {
-  background-color: var(--color-acento); color: var(--color-blanco);
-  transform: translateY(-3px); box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* El fondo oscuro semi-transparente */
+/* --- Modal (Guía Jamovi) --- */
 .modal-backdrop {
   position: fixed; top: 0; left: 0;
   width: 100%; height: 100%;
@@ -507,7 +458,6 @@ nav {
   display: flex; align-items: center; justify-content: center;
 }
 
-/* La ventana blanca */
 .modal-window {
   background-color: var(--color-blanco);
   padding: 2rem 2.5rem;
@@ -515,206 +465,53 @@ nav {
   box-shadow: 0 5px 25px rgba(0,0,0,0.2);
   width: 90%;
   max-width: 800px;
-  max-height: 90vh; /* Para que no ocupe toda la altura */
-  overflow-y: auto; /* Scroll si el contenido es muy largo */
+  max-height: 90vh;
+  overflow-y: auto;
   position: relative;
 }
 
-/* El botón de cerrar (X) */
 .modal-close {
   position: absolute; top: 10px; right: 20px;
   font-size: 2.5rem; line-height: 1;
   color: #aaa; background: none; border: none;
   cursor: pointer; transition: color 0.2s ease;
 }
+
 .modal-close:hover { color: var(--color-primario); }
 
-/* Para que no se vea el modal por defecto */
 .hidden { display: none; }
 
-/* Estilos para el contenido DENTRO del modal */
 #modal-content h2 { margin-top: 0; }
 #modal-content table { width: 100%; margin-top: 1rem; border-collapse: collapse; }
 #modal-content th, #modal-content td { padding: 12px; text-align: left; border-bottom: 1px solid var(--color-borde); }
 #modal-content th { background-color: var(--color-fondo); }
 #modal-content a { font-weight: 600; }
 
-/* ==================================================================== */
-/* ===       ESTILO PARA LA SECCIÓN DEL NOTEBOOK DE COLAB         === */
-/* ==================================================================== */
+/* --- Sección Notebook de Colab --- */
 .colab-section {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  background-color: #e8f0fe; /* Un azul muy claro de Google */
+  flex-wrap: wrap; /* Para mejor responsividad en móviles */
+  gap: 1.5rem;
+  background-color: #e8f0fe;
   border: 1px solid #d2e3fc;
 }
-.colab-icon img { width: 60px; height: 60px; }
+.colab-icon { flex-shrink: 0; }
+.colab-icon img { width: 50px; height: 50px; }
 .colab-text { flex-grow: 1; }
-.colab-text h2 { border: none; margin-bottom: 0.5rem; color: #1967d2; }
-.colab-text p { margin: 0; }
+.colab-text h2 { border: none; margin-bottom: 0.5rem; color: #1967d2; font-size: 1.5rem; }
+.colab-text p { margin: 0; line-height: 1.6; }
+.colab-action { flex-shrink: 0; }
 .btn-colab {
-  background-color: #1a73e8; /* Azul de Google */
+  background-color: #1a73e8;
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  white-space: nowrap; /* Evita que el texto se parta */
+  white-space: nowrap;
   transition: background-color 0.2s ease;
 }
 .btn-colab:hover { background-color: #1765cc; }
 
-/* ==================================================================== */
-/* ===         RETOQUES FINALES: ENCABEZADO Y TÍTULOS v2.0        === */
-/* ==================================================================== */
-
-/* --- 1. EL BANNER DEL ENCABEZADO (CON MEJOR CONTRASTE Y CENTRADO) --- */
-header {
-  /* La superposición oscura ahora es un degradado más sutil */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../media/banner-bg.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  color: var(--color-blanco);
-  
-  /* Usamos Flexbox para un centrado perfecto del contenido */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 6rem 2rem; /* Aumentamos el padding para más impacto */
-  min-height: 80vh; /* Asegura que el banner ocupe una buena parte de la pantalla inicial */
-}
-
-/* La sección de presentación dentro del header */
-section.hero {
-  background-color: transparent;
-  box-shadow: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  max-width: 900px; /* Mantenemos el ancho máximo para consistencia */
-}
-
-/* --- 2. EL TÍTULO Y SUBTÍTULO IMPRESIONANTES --- */
-section.hero h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 4.5rem; /* ¡Letras mucho más grandes! */
-  font-weight: 700; /* Tipografía más gruesa */
-  color: transparent; /* Hacemos el relleno del texto transparente */
-  -webkit-text-stroke: 1.5px var(--color-blanco); /* ¡El contorno blanco! */
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* Sombra para resaltar el contorno */
-  line-height: 1.1;
-  margin-bottom: 1rem;
-}
-
-section.hero .subtitle {
-  font-size: 1.5rem; /* Subtítulo también más grande */
-  font-weight: 600;
-  color: var(--color-blanco);
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.8); /* Sombra para legibilidad */
-  opacity: 0.95;
-}
-
-/* --- 3. TÍTULOS DE SECCIÓN CON MÁS DESTAQUE --- */
-h2 {
-  font-size: 2.2rem; /* Un poco más grande */
-  font-weight: 700;
-  color: var(--color-primario);
-  border-bottom: 3px solid var(--color-acento); /* Borde más grueso y de color de acento */
-  padding-bottom: 0.75rem;
-  margin-bottom: 2rem; /* Más espacio después del título */
-  display: inline-block; /* Hace que el borde solo ocupe el ancho del texto */
-}
-
-/* Contenedor de sección (para asegurar que el h2 se centre si la sección es centrada) */
-section {
-  /* ... mantenemos los estilos de sección que ya tenías ... */
-  /* Si la sección necesita centrar su título, puedes añadir text-align: center; a esa sección específica si es necesario */
-}
-
-/* Ajuste final para el audio, para que no desentone */
-.hero audio {
-  margin-top: 2rem;
-  max-width: 100%; /* Asegura que no se desborde */
-}
-
-/* ==================================================================== */
-/* ===       ESTILO PARA EL ACORDEÓN / DESPLEGABLE                === */
-/* ==================================================================== */
-
-/* El contenedor de todo el acordeón */
-.accordion {
-  margin: 2rem 0; /* Espacio arriba y abajo */
-}
-
-/* Cada ítem del acordeón */
-.accordion-item {
-  border-bottom: 1px solid var(--color-borde);
-}
-
-/* La etiqueta que funciona como el "botón" para abrir/cerrar */
-.accordion-item label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 0;
-  cursor: pointer;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--color-primario);
-}
-
-/* El contenido que se oculta/muestra */
-.accordion-content {
-  max-height: 0; /* La magia: por defecto, la altura es 0 y está oculto */
-  overflow: hidden; /* Oculta el contenido que se desborda */
-  transition: max-height 0.4s ease-out, padding 0.4s ease-out; /* Animación suave */
-  padding: 0 1rem;
-}
-
-/* Ocultamos el checkbox original, es solo un mecanismo */
-.accordion-item input[type="checkbox"] {
-  display: none;
-}
-
-/* LA MAGIA: Cuando el checkbox está marcado, mostramos el contenido */
-.accordion-item input[type="checkbox"]:checked ~ .accordion-content {
-  max-height: 1000px; /* Le damos una altura máxima grande para que se expanda */
-  padding: 0 1rem 1.5rem 1rem; /* Añadimos padding cuando está abierto */
-}
-
-/* El icono de "+" que se convierte en "-" */
-.accordion-item label::after {
-  content: '\002B'; /* Código para el símbolo "+" */
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--color-acento);
-  transition: transform 0.3s ease-in-out;
-}
-
-.accordion-item input[type="checkbox"]:checked ~ label::after {
-  transform: rotate(45deg); /* Gira el "+" para que parezca una "x" */
-}
-
-/* Estilos para el contenido DENTRO del acordeón */
-.accordion-content h4 {
-  color: var(--color-acento);
-  margin-top: 0;
-}
-.accordion-content ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-.accordion-content li {
-  margin-bottom: 0.5rem;
-}
-.accordion-content blockquote {
-  border-left: 4px solid var(--color-acento);
-  padding-left: 1rem;
-  margin-left: 0;
-  font-style: italic;
-  color: #6c757d;
-}
+/* Las tarjetas de tests de Tailwind no necesitan CSS aquí si se usa el CDN */
