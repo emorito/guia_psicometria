@@ -95,6 +95,16 @@
     <h2>Validez de Contenido</h2>
     <audio controls><source src="media/02_validez_contenido.mp3" type="audio/mpeg" /></audio>
     <p class="section-description">En esta etapa se asegura que las preguntas del test cubran de forma representativa lo que se busca medir. Se utiliza un <strong>panel de expertos</strong> para evaluar cada ítem y asegurar que el instrumento sea una medida fiel del constructo, documentando todos los ajustes tras su retroalimentación.</p>
+    <div class="checklist-container">
+  <h4>Checklist de Validez de Contenido</h4>
+  <ul class="checklist">
+    <li><label><input type="checkbox"><span>Definición clara y exhaustiva del constructo.</span></label></li>
+    <li><label><input type="checkbox"><span>Selección de un panel de 5 a 10 expertos cualificados.</span></label></li>
+    <li><label><input type="checkbox"><span>Elaboración de una matriz de evaluación para los jueces (pertinencia, claridad, etc.).</span></label></li>
+    <li><label><input type="checkbox"><span>Recopilación y análisis cuantitativo del feedback (ej. V de Aiken).</span></label></li>
+    <li><label><input type="checkbox"><span>Documentación de los cambios realizados a los ítems basados en el feedback.</span></label></li>
+  </ul>
+  </div>    
     <button class="btn-quiz" data-json="data/quiz_validez.json" data-target="quiz-container-validez">Iniciar Quiz de Validez</button>
     <div id="quiz-container-validez" class="quiz-box"></div>
   </section>
@@ -102,6 +112,16 @@
   <section id="prepiloto" class="unidad">
     <h2>Estudio Pre-Piloto</h2>
     <p class="section-description">Es una <strong>prueba a pequeña escala</strong> para detectar problemas antes de la recolección principal. Se aplican entrevistas cognitivas o grupos focales a una muestra reducida para registrar el tiempo de respuesta y los comentarios de los participantes sobre la claridad de las instrucciones e ítems.</p>
+    <div class="checklist-container">
+  <h4>Checklist del Estudio Pre-Piloto</h4>
+  <ul class="checklist">
+    <li><label><input type="checkbox"><span>Selección de una muestra pequeña (10-30 personas) representativa de la población final.</span></label></li>
+    <li><label><input type="checkbox"><span>Redacción de un guion para las entrevistas cognitivas (ej. método "pensar en voz alta").</span></label></li>
+    <li><label><input type="checkbox"><span>Revisión de la claridad de las instrucciones generales y de cada ítem.</span></label></li>
+    <li><label><input type="checkbox"><span>Registro del tiempo promedio que toma completar el cuestionario.</span></label></li>
+    <li><label><input type="checkbox"><span>Análisis de los comentarios cualitativos para identificar ítems problemáticos o ambiguos.</span></label></li>
+  </ul>
+</div>
     <button class="btn-quiz" data-json="data/quiz_prepiloto.json" data-target="quiz-container-prepiloto">Iniciar Quiz de Pre-Piloto</button>
     <div id="quiz-container-prepiloto" class="quiz-box"></div>
   </section>
@@ -109,20 +129,50 @@
   <section id="items" class="unidad">
     <h2>Análisis de Ítems</h2>
     <p class="section-description">Se examinan las propiedades estadísticas de cada pregunta. Se calculan estadísticos descriptivos, como la <strong>correlación ítem-total</strong>, para identificar y marcar los ítems con un desempeño débil. El objetivo es decidir qué ítems se mantienen, revisan o eliminan para fortalecer el instrumento.</p>
-    <button class="btn-quiz" data-json="data/quiz_items.json" data-target="quiz-container-items">Iniciar Quiz de Análisis de Ítems</button>
+    <div class="checklist-container">
+  <h4>Checklist del Análisis de Ítems</h4>
+  <ul class="checklist">
+    <li><label><input type="checkbox"><span>Cálculo de estadísticos descriptivos para cada ítem (media, desviación estándar).</span></label></li>
+    <li><label><input type="checkbox"><span>Análisis de la distribución de respuestas para cada ítem.</span></label></li>
+    <li><label><input type="checkbox"><span>Cálculo del índice de homogeneidad (correlación ítem-total corregida).</span></label></li>
+    <li><label><input type="checkbox"><span>Identificación de ítems con baja correlación (ej. < .20 o .30).</span></label></li>
+    <li><label><input type="checkbox"><span>Toma de decisión documentada: mantener, revisar o eliminar cada ítem analizado.</span></label></li>
+  </ul>
+  </div>
+      <button class="btn-quiz" data-json="data/quiz_items.json" data-target="quiz-container-items">Iniciar Quiz de Análisis de Ítems</button>
     <div id="quiz-container-items" class="quiz-box"></div>
   </section>
 
   <section id="recoleccion" class="unidad">
     <h2>Recolección Principal y Muestreo</h2>
     <p class="section-description">Aquí se pone a prueba el instrumento a gran escala. Las decisiones más importantes son: determinar un <strong>tamaño de muestra adecuado</strong> (más de 300 participantes es una buena práctica), elegir un método de muestreo y seguir un estricto protocolo ético-logístico con <strong>consentimiento informado</strong> y autorización del comité de ética.</p>
-    <button class="btn-quiz" data-json="data/quiz_muestreo.json" data-target="quiz-container-muestreo">Iniciar Quiz de Muestreo</g>
+    <div class="checklist-container">
+  <h4>Checklist de Recolección y Muestreo</h4>
+  <ul class="checklist">
+    <li><label><input type="checkbox"><span>Definición y justificación del tamaño muestral (objetivo > 300).</span></label></li>
+    <li><label><input type="checkbox"><span>Elección del método de muestreo (ej. no probabilístico por conveniencia, bola de nieve).</span></label></li>
+    <li><label><input type="checkbox"><span>Obtención de la aprobación de un Comité de Ética.</span></label></li>
+    <li><label><input type="checkbox"><span>Preparación del formulario de consentimiento informado.</span></label></li>
+    <li><label><input type="checkbox"><span>Creación de la base de datos y plan de codificación de variables.</span></label></li>
+  </ul>
+  </div>
+      <button class="btn-quiz" data-json="data/quiz_muestreo.json" data-target="quiz-container-muestreo">Iniciar Quiz de Muestreo</g>
     <div id="quiz-container-muestreo" class="quiz-box"></div>
   </section>
 
   <section id="psicometrico" class="unidad">
     <h2>Análisis Psicométrico</h2>
     <p class="section-description">En esta fase se procesan los datos. Primero se realiza una limpieza para manejar valores faltantes y atípicos. Luego se evalúa la estructura interna del test con <strong>Análisis Factorial Exploratorio (AFE)</strong>, se analiza la fiabilidad (ej. Alfa de Cronbach, Omega) y, finalmente, se crean los <strong>baremos</strong> para estandarizar e interpretar las puntuaciones.</p>
+    <div class="checklist-container">
+  <h4>Checklist del Análisis Psicométrico</h4>
+  <ul class="checklist">
+    <li><label><input type="checkbox"><span>Realización de la limpieza de la base de datos (valores atípicos, faltantes).</span></label></li>
+    <li><label><input type="checkbox"><span>Verificación de la adecuación de los datos para el AFE (prueba de Bartlett y KMO).</span></label></li>
+    <li><label><input type="checkbox"><span>Ejecución del Análisis Factorial Exploratorio (AFE) para evaluar la estructura interna.</span></label></li>
+    <li><label><input type="checkbox"><span>Cálculo de la fiabilidad de la consistencia interna (Alfa de Cronbach y Omega de McDonald).</span></label></li>
+    <li><label><input type="checkbox"><span>Elaboración de los baremos (cálculo de percentiles o puntuaciones T).</span></label></li>
+  </ul>
+</div>
     <button class="btn-quiz" data-json="data/quiz_analisis.json" data-target="quiz-container-analisis">Iniciar Quiz de Análisis Psicométrico</button>
     <div id="quiz-container-analisis" class="quiz-box"></div>
   </section>
@@ -182,3 +232,4 @@
 
 </body>
 </html>
+
