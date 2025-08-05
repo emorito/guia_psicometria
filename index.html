@@ -232,6 +232,59 @@
   <p>Guía de Validación v1.1 – Psicometría Aplicada – UNA.<br>
      Elaborada por Enrique Morosini con asistencia de IA.<br>
      Este sitio se actualiza continuamente – cita la fecha de consulta.</p>
+  <!-- ========================================================== -->
+<!-- ===      VENTANA MODAL PARA LA GUÍA DE JAMOVI          === -->
+<!-- ========================================================== -->
+<div id="jamovi-modal" class="modal-backdrop hidden">
+  <div class="modal-window">
+    <button id="modal-close" class="modal-close" title="Cerrar">×</button>
+    <div id="modal-content">
+      <h2>Guía Práctica de Análisis en Jamovi</h2>
+      <p>Pasos esenciales para análisis psicométricos en Jamovi, con enlaces a manuales y tutoriales para profundizar y mantener la guía siempre actualizada.</p>
+
+      <h3>1. Configurar Jamovi</h3>
+      <ul>
+        <li>Descargue e instale la última versión desde la <a href="https://www.jamovi.org/download.html" target="_blank">Página Oficial de Jamovi</a>.</li>
+        <li>Consulte el <a href="https://www.jamovi.org/user-manual.html" target="_blank">Manual de Usuario Oficial</a> para soporte general.</li>
+      </ul>
+
+      <h3>2. Importar Datos</h3>
+      <ul>
+        <li>Video-Tutorial: <a href="https://youtu.be/7u4zXG7gA-E" target="_blank">Importar y gestionar datos en Jamovi (YouTube)</a>.</li>
+        <li>Pasos: Archivo → Abrir → Seleccionar archivo (.csv, .xlsx, .sav) → Verificar tipos de variable.</li>
+      </ul>
+      
+      <h3>3. Módulos Necesarios</h3>
+      <p>Para agregar módulos: pestaña <strong>Modules</strong> (icono de puzzle) → Jamovi Library → Install from Jamovi library.</p>
+      <table>
+        <thead><tr><th>Módulo</th><th>Propósito</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Factor</strong></td><td>Análisis Factorial Exploratorio (EFA)</td></tr>
+          <tr><td><strong>jmv</strong> (Reliability)</td><td>Coeficientes de fiabilidad (Alfa, Omega)</td></tr>
+          <tr><td><strong>lavaan</strong> (SEM)</td><td>Análisis Factorial Confirmatorio (CFA)</td></tr>
+        </tbody>
+      </table>
+
+      <h3>4. Análisis Factorial Exploratorio (EFA)</h3>
+      <ul>
+        <li>Ruta: <strong>Analyses → Factor → Exploratory Factor Analysis</strong>.</li>
+        <li>Guía de referencia: <a href="https://bookdown.org/gsparrow/efa/" target="_blank">EFA in R and jamovi</a>.</li>
+      </ul>
+
+      <h3>5. Análisis de Fiabilidad</h3>
+      <ul>
+        <li>Ruta: <strong>Analyses → Factor → Reliability Analysis</strong>.</li>
+        <li>Lectura recomendada: <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2012.00443/full" target="_blank">Interpretación de Alfa y Omega</a>.</li>
+      </ul>
+
+      <h3>Recursos Adicionales</h3>
+      <ul>
+        <li>Comunidad y foro oficial: <a href="https://forum.jamovi.org" target="_blank">Foro de Jamovi</a>.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  
 </footer>
 
 <!-- SCRIPTS FUNDAMENTALES - EL ORDEN ES CRÍTICO -->
@@ -242,5 +295,6 @@
 
 </body>
 </html>
+
 
 
