@@ -589,3 +589,44 @@ p.section-description {
   }
 }
 
+
+/* =================================================================== */
+/* ===         LA EDICIÓN FINAL: LAYOUT Y ESPACIADO              === */
+/* =================================================================== */
+
+/* --- 1. NUEVO LAYOUT PARA EL WIDGET DEL ASISTENTE IA --- */
+.colab-section {
+  flex-direction: column; /* Apila los bloques principales verticalmente */
+  align-items: flex-start; /* Alinea todo a la izquierda */
+  gap: 1rem; /* Espacio entre el header, el texto y el botón */
+}
+
+.colab-header {
+  display: flex; /* Pone el icono y el título uno al lado del otro */
+  align-items: center;
+  gap: 1rem; /* Espacio entre el icono y el título */
+}
+
+.colab-text {
+  padding-left: 0; /* Aseguramos que el texto esté alineado */
+}
+
+.colab-action {
+  width: 100%; /* El contenedor del botón ocupa todo el ancho */
+}
+
+.btn-colab {
+  width: 100%; /* El botón se expande para un look moderno en móvil */
+}
+
+/* --- 2. ESPACIADO FINAL PARA CHAT Y BIBLIOGRAFÍA --- */
+
+/* Espacio superior para la ventana del chat */
+#chat-log {
+  margin-top: 1.5rem;
+}
+
+/* Espacio superior para la lista de bibliografía */
+#biblio-list {
+  margin-top: 1.5rem;
+}
