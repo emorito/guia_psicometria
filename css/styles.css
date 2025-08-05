@@ -538,3 +538,29 @@ nav {
 #modal-content th, #modal-content td { padding: 12px; text-align: left; border-bottom: 1px solid var(--color-borde); }
 #modal-content th { background-color: var(--color-fondo); }
 #modal-content a { font-weight: 600; }
+
+/* ==================================================================== */
+/* ===       ESTILO PARA LA SECCIÓN DEL NOTEBOOK DE COLAB         === */
+/* ==================================================================== */
+.colab-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #e8f0fe; /* Un azul muy claro de Google */
+  border: 1px solid #d2e3fc;
+}
+.colab-icon img { width: 60px; height: 60px; }
+.colab-text { flex-grow: 1; }
+.colab-text h2 { border: none; margin-bottom: 0.5rem; color: #1967d2; }
+.colab-text p { margin: 0; }
+.btn-colab {
+  background-color: #1a73e8; /* Azul de Google */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap; /* Evita que el texto se parta */
+  transition: background-color 0.2s ease;
+}
+.btn-colab:hover { background-color: #1765cc; }
