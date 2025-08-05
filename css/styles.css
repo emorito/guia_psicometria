@@ -462,3 +462,54 @@ table.cronograma th {
     color: #6c757d;
 }
 
+/* =================================================================== */
+/* ===                LA CORRECCIÓN FINAL DE ESTILO                === */
+/* =================================================================== */
+
+/* --- 1. REORGANIZACIÓN DEL LAYOUT DEL CHAT --- */
+
+/* Contenedor principal del área de entrada del chat */
+.chat-input-area {
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  gap: 0.75rem; /* Espacio entre los elementos */
+  margin-top: 1rem;
+}
+
+/* Estilos para el selector y el campo de texto */
+#chat-domain,
+#chat-input {
+  width: 100%; /* Ocupan todo el ancho disponible */
+  padding: 12px;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+#chat-input {
+  /* El campo de texto ya no necesita ser estrecho */
+}
+
+/* El botón de enviar ahora ocupa todo el ancho */
+#chat-send {
+  width: 100%;
+}
+
+/* La ventana de respuestas (log) ahora tiene más espacio */
+#chat-log {
+  min-height: 200px; /* Le damos una altura mínima */
+  background-color: var(--color-fondo);
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid var(--color-borde);
+}
+
+
+/* --- 2. CORRECCIÓN FINAL DEL ESPACIO DE LOS TÍTULOS H2 --- */
+h2 {
+  /* La única línea que necesitamos cambiar es el margen.
+     Aumentamos el margen inferior de 2rem a 4rem.
+     Esto empujará todo el contenido siguiente hacia abajo. */
+  margin: -2.5rem -2.5rem 4rem -2.5rem !important; /* !important para máxima prioridad */
+}
