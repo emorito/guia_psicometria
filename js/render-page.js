@@ -46,7 +46,7 @@ function renderDescargables() {
     { path: 'docs/Plan_trabajo_grupo.docx', name: 'Plan de Trabajo del Grupo' },
     { path: 'docs/Plantilla_panel_expertos.docx', name: 'Plantilla para Panel de Expertos' },
     { path: 'docs/Consentimiento_informado.docx', name: 'Modelo de Consentimiento Informado' },
-    { path: 'docs/Guia_jamovi_analisis.docx', name: 'Guía de Análisis con Jamovi' },
+    { id: 'open-jamovi-guide', name: 'Guía Interactiva de Jamovi' },
     { path: 'docs/Plantilla_reporte_EFA_CFA.docx', name: 'Plantilla para Reporte EFA/CFA' },
     { path: 'docs/Plantilla_informe_final.docx', name: 'Plantilla del Informe Final' },
     { path: 'docs/Rubrica_evaluacion_informe.pdf', name: 'Rúbrica de Evaluación del Informe' }
@@ -60,11 +60,17 @@ function renderDescargables() {
   
   // Ahora, iteramos sobre la nueva lista de objetos.
   files.forEach(file => {
-    const li = document.createElement('li');
-    // Usamos 'file.path' para el enlace y 'file.name' para el texto visible.
+  const li = document.createElement('li');
+  if (file.id) {
+    // Si tiene un ID, es un botón, no un enlace de descarga
+    li.innerHTML = `<button id="${file.id}" class="btn-jamovi-guide">${file.name}</button>`;
+  } else {
+    // Si tiene 'path', es un enlace de descarga normal
     li.innerHTML = `<a href="${file.path}">${file.name}</a>`;
-    ul.appendChild(li);
-  });
+  }
+  ul.appendChild(li);
+});
+   
   
   // Limpiamos el contenedor y añadimos la nueva lista.
   wrap.innerHTML = '';
@@ -143,5 +149,6 @@ function renderTestCards() {
     );
   });
 }
+
 
 
