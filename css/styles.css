@@ -476,3 +476,65 @@ nav {
   color: #95a5a6; /* Color gris suave */
   opacity: 0.8; /* Lo hace un poco más transparente */
 }
+
+/* ==================================================================== */
+/* ===       ESTILO PARA VENTANA MODAL (GUÍA JAMOVI)              === */
+/* ==================================================================== */
+
+/* El botón especial para abrir la guía */
+.btn-jamovi-guide {
+  /* Copiamos el estilo de los enlaces de descarga para consistencia */
+  display: flex; align-items: center; text-decoration: none; font-weight: 600;
+  color: var(--color-acento); background-color: var(--color-fondo);
+  padding: 1rem; border-radius: 8px; border: 1px solid var(--color-borde);
+  width: 100%; /* Para que ocupe todo el espacio de la tarjeta */
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-jamovi-guide:hover {
+  background-color: var(--color-acento); color: var(--color-blanco);
+  transform: translateY(-3px); box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* El fondo oscuro semi-transparente */
+.modal-backdrop {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* La ventana blanca */
+.modal-window {
+  background-color: var(--color-blanco);
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh; /* Para que no ocupe toda la altura */
+  overflow-y: auto; /* Scroll si el contenido es muy largo */
+  position: relative;
+}
+
+/* El botón de cerrar (X) */
+.modal-close {
+  position: absolute; top: 10px; right: 20px;
+  font-size: 2.5rem; line-height: 1;
+  color: #aaa; background: none; border: none;
+  cursor: pointer; transition: color 0.2s ease;
+}
+.modal-close:hover { color: var(--color-primario); }
+
+/* Para que no se vea el modal por defecto */
+.hidden { display: none; }
+
+/* Estilos para el contenido DENTRO del modal */
+#modal-content h2 { margin-top: 0; }
+#modal-content table { width: 100%; margin-top: 1rem; border-collapse: collapse; }
+#modal-content th, #modal-content td { padding: 12px; text-align: left; border-bottom: 1px solid var(--color-borde); }
+#modal-content th { background-color: var(--color-fondo); }
+#modal-content a { font-weight: 600; }
