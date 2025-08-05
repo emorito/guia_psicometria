@@ -293,8 +293,38 @@
 <script src="js/chat.js"></script>
 <script src="js/render-page.js"></script>
 
+  <!-- ... tus otros scripts (utils.js, quizzes.js, etc.) ... -->
+
+<!-- SCRIPT PARA CONTROLAR EL MODAL DE JAMOVI -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('jamovi-modal');
+    const closeBtn = document.getElementById('modal-close');
+    
+    // Este es un truco para manejar un botón que se crea dinámicamente
+    document.body.addEventListener('click', function(event) {
+      if (event.target.id === 'open-jamovi-guide') {
+        modal.classList.remove('hidden');
+      }
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    // Cierra el modal si se hace clic en el fondo oscuro
+    modal.addEventListener('click', (event) => {
+      if (event.target.id === 'jamovi-modal') {
+        modal.classList.add('hidden');
+      }
+    });
+  });
+</script>
+
+
 </body>
 </html>
+
 
 
 
