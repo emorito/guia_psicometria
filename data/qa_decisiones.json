@@ -1,302 +1,302 @@
 [
   {
-    "id": "decision_001",
-    "question": "¿Cuál es el primer paso crucial al desarrollar un nuevo instrumento de medición?",
-    "answer": "El primer paso es **identificar y definir claramente el propósito** del instrumento [1-5]. Esto implica describir el fenómeno clínico o de investigación que se busca medir [3], asegurando que no existan instrumentos previos que satisfagan adecuadamente este propósito [4, 6]."
+    "q": "¿Cuál es el primer paso crucial al desarrollar un nuevo instrumento de medición?",
+    "tags": ["desarrollo", "definición", "propósito", "instrumento"],
+    "a": "El primer paso es **identificar y definir claramente el propósito** del instrumento [1-5]. Esto implica describir el fenómeno clínico o de investigación que se busca medir [3], asegurando que no existan instrumentos previos que satisfagan adecuadamente este propósito [4, 6]."
   },
   {
-    "id": "decision_002",
-    "question": "¿Cómo se debe iniciar la definición de un constructo para un instrumento de medición?",
-    "answer": "Se debe comenzar con una **descripción y definición clara y concisa del constructo o variable latente** que se pretende medir [2-4, 7-11]. Es fundamental que esta definición sea precisa y especifique lo que el constructo significa y lo que no [8, 12]."
+    "q": "¿Cómo se debe iniciar la definición de un constructo para un instrumento de medición?",
+    "tags": ["constructo", "definición", "variable latente"],
+    "a": "Se debe comenzar con una **descripción y definición clara y concisa del constructo o variable latente** que se pretende medir [2-4, 7-11]. Es fundamental que esta definición sea precisa y especifique lo que el constructo significa y lo que no [8, 12]."
   },
   {
-    "id": "decision_003",
-    "question": "¿Por qué es fundamental realizar una revisión de la literatura al principio del proceso?",
-    "answer": "Una revisión exhaustiva de la literatura es crucial para **sentar un marco empírico y teórico** para el desarrollo de ítems [4, 8, 10, 13-16], refinar la definición del constructo [8], y conocer los instrumentos existentes [16-18]. También ayuda a identificar las dimensiones a priori si es que existen [4]."
+    "q": "¿Por qué es fundamental realizar una revisión de la literatura al principio del proceso?",
+    "tags": ["revisión", "literatura", "marco teórico"],
+    "a": "Una revisión exhaustiva de la literatura es crucial para **sentar un marco empírico y teórico** para el desarrollo de ítems [4, 8, 10, 13-16], refinar la definición del constructo [8], y conocer los instrumentos existentes [16-18]. También ayuda a identificar las dimensiones a priori si es que existen [4]."
   },
   {
-    "id": "decision_004",
-    "question": "¿Qué métodos se pueden usar para generar ítems para un nuevo instrumento?",
-    "answer": "Se pueden utilizar **métodos deductivos**, seleccionando y modificando ítems de instrumentos existentes o de la literatura [18-21], y/o **métodos inductivos**, desarrollando ítems a partir de observaciones directas o la retroalimentación de las partes interesadas, como grupos focales y entrevistas [18-25]."
+    "q": "¿Qué métodos se pueden usar para generar ítems para un nuevo instrumento?",
+    "tags": ["generación de ítems", "métodos", "deductivo", "inductivo"],
+    "a": "Se pueden utilizar **métodos deductivos**, seleccionando y modificando ítems de instrumentos existentes o de la literatura [18-21], y/o **métodos inductivos**, desarrollando ítems a partir de observaciones directas o la retroalimentación de las partes interesadas, como grupos focales y entrevistas [18-25]."
   },
   {
-    "id": "decision_005",
-    "question": "¿Cuántos ítems se deben generar inicialmente en comparación con la versión final deseada?",
-    "answer": "Se recomienda **desarrollar entre dos y cinco veces la cantidad de ítems** que compondrán la versión final de la medida [2, 20, 26-30]. Este banco inicial amplio permite la posterior eliminación de ítems problemáticos [2, 26]."
+    "q": "¿Cuántos ítems se deben generar inicialmente en comparación con la versión final deseada?",
+    "tags": ["ítems", "cantidad", "versión final"],
+    "a": "Se recomienda **desarrollar entre dos y cinco veces la cantidad de ítems** que compondrán la versión final de la medida [2, 20, 26-30]. Este banco inicial amplio permite la posterior eliminación de ítems problemáticos [2, 26]."
   },
   {
-    "id": "decision_006",
-    "question": "¿Cuáles son las características clave que deben tener los ítems al ser redactados?",
-    "answer": "Los ítems deben ser **breves, claros, concisos, legibles, distintivos y relevantes** para el propósito de la escala [22, 31-38]. Deben evitar la ambigüedad, el lenguaje técnico (jerga), las negaciones dobles y las preguntas de doble barril [33, 35, 36, 38-40]. Además, se recomienda un nivel de lectura apropiado, similar al de un estudiante de sexto grado [15, 22, 33, 35]."
+    "q": "¿Cuáles son las características clave que deben tener los ítems al ser redactados?",
+    "tags": ["ítems", "redacción", "características"],
+    "a": "Los ítems deben ser **breves, claros, concisos, legibles, distintivos y relevantes** para el propósito de la escala [22, 31-38]. Deben evitar la ambigüedad, el lenguaje técnico (jerga), las negaciones dobles y las preguntas de doble barril [33, 35, 36, 38-40]. Además, se recomienda un nivel de lectura apropiado, similar al de un estudiante de sexto grado [15, 22, 33, 35]."
   },
   {
-    "id": "decision_007",
-    "question": "¿Qué tipo de formatos de escala de respuesta se pueden considerar?",
-    "answer": "Se pueden considerar varios formatos, como las **escalas tipo Likert** (para actitudes), **escalas de diferencia semántica** (para significado connotativo), **escalas análogas visuales** (para continuos), **escalas binarias** (para opciones dicotómicas) y **listas de verificación** (para múltiples opciones) [28, 41-49]."
+    "q": "¿Qué tipo de formatos de escala de respuesta se pueden considerar?",
+    "tags": ["escala", "formatos de respuesta", "Likert"],
+    "a": "Se pueden considerar varios formatos, como las **escalas tipo Likert** (para actitudes), **escalas de diferencia semántica** (para significado connotativo), **escalas análogas visuales** (para continuos), **escalas binarias** (para opciones dicotómicas) y **listas de verificación** (para múltiples opciones) [28, 41-49]."
   },
   {
-    "id": "decision_008",
-    "question": "¿Cuántas opciones de respuesta son ideales para una escala tipo Likert u otras?",
-    "answer": "Aunque no hay un estándar fijo, las escalas Likert suelen usar **5 puntos**, y las bipolares **7 puntos** [50]. Generalmente, de **cinco a nueve puntos** son adecuados para la mayoría de las ocasiones [50]. La capacidad humana para discriminar no suele ir más allá de siete puntos [51, 52], y es importante considerar la carga cognitiva, optando por menos opciones para niños o personas que respondan en un segundo idioma [53]."
+    "q": "¿Cuántas opciones de respuesta son ideales para una escala tipo Likert u otras?",
+    "tags": ["Likert", "opciones de respuesta", "puntos"],
+    "a": "Aunque no hay un estándar fijo, las escalas Likert suelen usar **5 puntos**, y las bipolares **7 puntos** [50]. Generalmente, de **cinco a nueve puntos** son adecuados para la mayoría de las ocasiones [50]. La capacidad humana para discriminar no suele ir más allá de siete puntos [51, 52], y es importante considerar la carga cognitiva, optando por menos opciones para niños o personas que respondan en un segundo idioma [53]."
   },
   {
-    "id": "decision_009",
-    "question": "¿Se debe incluir siempre una opción de respuesta neutral en la escala?",
-    "answer": "Una opción de respuesta neutral (punto medio) ofrece una elección 'intermedia' [54-56]. Sin embargo, se puede decidir excluirla si se cree que los encuestados la usarán para evitar responder o si el constructo requiere una toma de postura forzada [55-57]."
+    "q": "¿Se debe incluir siempre una opción de respuesta neutral en la escala?",
+    "tags": ["opción neutral", "respuesta"],
+    "a": "Una opción de respuesta neutral (punto medio) ofrece una elección 'intermedia' [54-56]. Sin embargo, se puede decidir excluirla si se cree que los encuestados la usarán para evitar responder o si el constructo requiere una toma de postura forzada [55-57]."
   },
   {
-    "id": "decision_010",
-    "question": "¿Cómo se deben etiquetar las anclas de las opciones de respuesta en una escala?",
-    "answer": "Todas las anclas de las opciones de respuesta deben estar **claramente etiquetadas** [41, 55, 58], y las descripciones deben reflejar intervalos equitativos de acuerdo/desacuerdo o la intensidad del atributo que se mide [54, 58]."
+    "q": "¿Cómo se deben etiquetar las anclas de las opciones de respuesta en una escala?",
+    "tags": ["etiquetas", "anclas", "escala"],
+    "a": "Todas las anclas de las opciones de respuesta deben estar **claramente etiquetadas** [41, 55, 58], y las descripciones deben reflejar intervalos equitativos de acuerdo/desacuerdo o la intensidad del atributo que se mide [54, 58]."
   },
   {
-    "id": "decision_011",
-    "question": "¿Qué elementos son importantes al diseñar las instrucciones del instrumento?",
-    "answer": "Las instrucciones deben ser **cortas, claras, fáciles de seguir y transparentes** [59-61]. Deben incluir señales visuales cuando sea apropiado y **proporcionar definiciones para términos vagos o abstractos** [55, 59, 61]. También deben especificar el proceso de respuesta y el marco temporal al que se refieren los ítems [61, 62]."
+    "q": "¿Qué elementos son importantes al diseñar las instrucciones del instrumento?",
+    "tags": ["instrucciones", "diseño", "instrumento"],
+    "a": "Las instrucciones deben ser **cortas, claras, fáciles de seguir y transparentes** [59-61]. Deben incluir señales visuales cuando sea apropiado y **proporcionar definiciones para términos vagos o abstractos** [55, 59, 61]. También deben especificar el proceso de respuesta y el marco temporal al que se refieren los ítems [61, 62]."
   },
   {
-    "id": "decision_012",
-    "question": "¿Es recomendable trabajar en equipo para generar ítems?",
-    "answer": "Sí, es altamente recomendable utilizar un **equipo de investigación** en el proceso de desarrollo de ítems para aprovechar la triangulación y las perspectivas diversas [15, 22, 27]. Los miembros deben generar listas de ítems individualmente y luego llegar a un consenso colectivo [22, 27]."
+    "q": "¿Es recomendable trabajar en equipo para generar ítems?",
+    "tags": ["equipo", "generación de ítems"],
+    "a": "Sí, es altamente recomendable utilizar un **equipo de investigación** en el proceso de desarrollo de ítems para aprovechar la triangulación y las perspectivas diversas [15, 22, 27]. Los miembros deben generar listas de ítems individualmente y luego llegar a un consenso colectivo [22, 27]."
   },
   {
-    "id": "decision_013",
-    "question": "¿Cuál es el propósito principal de una revisión por parte de un panel de expertos?",
-    "answer": "El propósito principal es **evaluar la calidad de los ítems** en múltiples dimensiones, incluyendo la relevancia para el dominio del contenido, la claridad, la concisión, la gramática, el nivel de lectura, la validez aparente y la redundancia [11, 13, 14, 60, 62-71]."
+    "q": "¿Cuál es el propósito principal de una revisión por parte de un panel de expertos?",
+    "tags": ["expertos", "validez de contenido", "calidad"],
+    "a": "El propósito principal es **evaluar la calidad de los ítems** en múltiples dimensiones, incluyendo la relevancia para el dominio del contenido, la claridad, la concisión, la gramática, el nivel de lectura, la validez aparente y la redundancia [11, 13, 14, 60, 62-71]."
   },
   {
-    "id": "decision_014",
-    "question": "¿Quiénes deben formar parte del panel de expertos?",
-    "answer": "Los expertos deben ser **metodólogos, participantes previstos y/o investigadores** de la materia [13, 62, 66, 69, 72-74]. Se recomienda un mínimo de seis expertos y no más de diez para la validación de contenido [72], aunque paneles de 25-30 expertos son considerados suficientes en general [71]."
+    "q": "¿Quiénes deben formar parte del panel de expertos?",
+    "tags": ["expertos", "panel"],
+    "a": "Los expertos deben ser **metodólogos, participantes previstos y/o investigadores** de la materia [13, 62, 66, 69, 72-74]. Se recomienda un mínimo de seis expertos y no más de diez para la validación de contenido [72], aunque paneles de 25-30 expertos son considerados suficientes en general [71]."
   },
   {
-    "id": "decision_015",
-    "question": "¿Qué métodos cuantitativos se usan para medir el acuerdo entre expertos en la validez de contenido?",
-    "answer": "Se pueden usar el **Coeficiente de Validez de Contenido (CVI)** [75-77], la **Razón de Validez de Contenido (CVR) de Lawshe** [77-79], o el **Coeficiente Kappa de Cohen (CKI)** [77, 80, 81]. El test V de Aiken también es un método recomendado [82, 83]."
+    "q": "¿Qué métodos cuantitativos se usan para medir el acuerdo entre expertos en la validez de contenido?",
+    "tags": ["validez de contenido", "cuantitativo", "CVI", "Kappa"],
+    "a": "Se pueden usar el **Coeficiente de Validez de Contenido (CVI)** [75-77], la **Razón de Validez de Contenido (CVR) de Lawshe** [77-79], o el **Coeficiente Kappa de Cohen (CKI)** [77, 80, 81]. El test V de Aiken también es un método recomendado [82, 83]."
   },
   {
-    "id": "decision_016",
-    "question": "¿Qué se debe hacer después de recibir el feedback del panel de expertos?",
-    "answer": "Se deben **revisar y modificar los ítems e instrucciones** basándose en el feedback de los expertos [84-87]. El desarrollador conserva la decisión final, aunque los expertos no siempre estén familiarizados con los principios de construcción de escalas [66]."
+    "q": "¿Qué se debe hacer después de recibir el feedback del panel de expertos?",
+    "tags": ["feedback", "expertos", "revisión de ítems"],
+    "a": "Se deben **revisar y modificar los ítems e instrucciones** basándose en el feedback de los expertos [84-87]. El desarrollador conserva la decisión final, aunque los expertos no siempre estén familiarizados con los principios de construcción de escalas [66]."
   },
   {
-    "id": "decision_017",
-    "question": "¿Por qué son importantes las entrevistas cognitivas en el desarrollo de la escala?",
-    "answer": "Las entrevistas cognitivas son importantes para **identificar y resolver ambigüedades** en los ítems, asegurar que reflejan el dominio de interés y que los encuestados comprenden las preguntas como se pretende [22, 39, 55, 65, 69, 77, 87-93]. Permiten comprender los procesos mentales de los participantes al responder [92, 93]."
+    "q": "¿Por qué son importantes las entrevistas cognitivas en el desarrollo de la escala?",
+    "tags": ["entrevistas cognitivas", "ambigüedad", "comprensión"],
+    "a": "Las entrevistas cognitivas son importantes para **identificar y resolver ambigüedades** en los ítems, asegurar que reflejan el dominio de interés y que los encuestados comprenden las preguntas como se pretende [22, 39, 55, 65, 69, 77, 87-93]. Permiten comprender los procesos mentales de los participantes al responder [92, 93]."
   },
   {
-    "id": "decision_018",
-    "question": "¿Qué técnicas específicas pueden usarse en las entrevistas cognitivas?",
-    "answer": "Entre las técnicas útiles se incluyen la **paráfrasis/reformulación** (el participante reformula la pregunta con sus propias palabras), la **doble entrevista** (se completa la escala y luego se entrevista sobre el razonamiento de las respuestas), los **'think-alouds'** (verbalizar pensamientos durante el proceso de respuesta) y el **sondeo** (preguntas de seguimiento específicas) [84, 94]."
+    "q": "¿Qué técnicas específicas pueden usarse en las entrevistas cognitivas?",
+    "tags": ["entrevistas cognitivas", "técnicas"],
+    "a": "Entre las técnicas útiles se incluyen la **paráfrasis/reformulación** (el participante reformula la pregunta con sus propias palabras), la **doble entrevista** (se completa la escala y luego se entrevista sobre el razonamiento de las respuestas), los **'think-alouds'** (verbalizar pensamientos durante el proceso de respuesta) y el **sondeo** (preguntas de seguimiento específicas) [84, 94]."
   },
   {
-    "id": "decision_019",
-    "question": "¿Cuál es el propósito de realizar pruebas piloto?",
-    "answer": "Las pruebas piloto se utilizan para **obtener información estadística sobre los ítems**, comentarios y sugerencias [13, 39, 95-97], evaluar cómo se comportarán los datos [39], refinar el cuestionario y los ítems, y determinar si se deben añadir o eliminar ítems [39, 98]."
+    "q": "¿Cuál es el propósito de realizar pruebas piloto?",
+    "tags": ["prueba piloto", "estadísticas"],
+    "a": "Las pruebas piloto se utilizan para **obtener información estadística sobre los ítems**, comentarios y sugerencias [13, 39, 95-97], evaluar cómo se comportarán los datos [39], refinar el cuestionario y los ítems, y determinar si se deben añadir o eliminar ítems [39, 98]."
   },
   {
-    "id": "decision_020",
-    "question": "¿Cuál es un tamaño de muestra recomendado para la prueba piloto?",
-    "answer": "Para las pruebas piloto, el tamaño de la muestra debe ser **pequeño pero representativo** de la población objetivo [84, 99]. Las muestras pueden oscilar entre **5 y 100 personas** [84], con sugerencias específicas de 24 a 36 encuestados para la fase de prueba piloto inicial [97]."
+    "q": "¿Cuál es un tamaño de muestra recomendado para la prueba piloto?",
+    "tags": ["prueba piloto", "muestra"],
+    "a": "Para las pruebas piloto, el tamaño de la muestra debe ser **pequeño pero representativo** de la población objetivo [84, 99]. Las muestras pueden oscilar entre **5 y 100 personas** [84], con sugerencias específicas de 24 a 36 encuestados para la fase de prueba piloto inicial [97]."
   },
   {
-    "id": "decision_021",
-    "question": "¿Qué aspectos se evalúan para establecer la validez de contenido?",
-    "answer": "La validez de contenido evalúa la **relevancia, representatividad y exhaustividad** de los ítems en relación con el constructo objetivo [11, 14, 35, 63, 66, 68, 70, 100-107]. Se busca asegurar que todos los elementos pertinentes al concepto se incluyan y que los elementos inútiles se eliminen [11, 102]."
+    "q": "¿Qué aspectos se evalúan para establecer la validez de contenido?",
+    "tags": ["validez de contenido", "evaluación"],
+    "a": "La validez de contenido evalúa la **relevancia, representatividad y exhaustividad** de los ítems en relación con el constructo objetivo [11, 14, 35, 63, 66, 68, 70, 100-107]. Se busca asegurar que todos los elementos pertinentes al concepto se incluyan y que los elementos inútiles se eliminen [11, 102]."
   },
   {
-    "id": "decision_022",
-    "question": "¿Cómo se evalúa la validez de apariencia del instrumento?",
-    "answer": "La validez de apariencia se evalúa a través del **juicio de los encuestados o usuarios finales** (y a veces expertos en diseño gráfico) sobre si los ítems y el diseño del instrumento son apropiados y relevantes para el constructo y los objetivos de evaluación [63, 69, 91, 108-113]. Se puede usar una escala dicotómica (Sí/No) [111] o el Índice Kappa de Cohen [80]."
+    "q": "¿Cómo se evalúa la validez de apariencia del instrumento?",
+    "tags": ["validez de apariencia", "diseño", "evaluación"],
+    "a": "La validez de apariencia se evalúa a través del **juicio de los encuestados o usuarios finales** (y a veces expertos en diseño gráfico) sobre si los ítems y el diseño del instrumento son apropiados y relevantes para el constructo y los objetivos de evaluación [63, 69, 91, 108-113]. Se puede usar una escala dicotómica (Sí/No) [111] o el Índice Kappa de Cohen [80]."
   },
   {
-    "id": "decision_023",
-    "question": "¿Qué implica la evaluación de la validez del proceso de respuesta?",
-    "answer": "Implica examinar la **correspondencia entre el constructo previsto y las respuestas de los participantes** [93, 103, 112], identificando los elementos que causan las respuestas [93]. Se recomienda hacerlo con una pequeña muestra de encuestados o expertos y revisar los ítems o las instrucciones poco claras [112, 114, 115]. Puede incluir el análisis del tiempo de procesamiento, la codificación del comportamiento o los índices de movimiento ocular [93]."
+    "q": "¿Qué implica la evaluación de la validez del proceso de respuesta?",
+    "tags": ["validez del proceso", "respuesta"],
+    "a": "Implica examinar la **correspondencia entre el constructo previsto y las respuestas de los participantes** [93, 103, 112], identificando los elementos que causan las respuestas [93]. Se recomienda hacerlo con una pequeña muestra de encuestados o expertos y revisar los ítems o las instrucciones poco claras [112, 114, 115]. Puede incluir el análisis del tiempo de procesamiento, la codificación del comportamiento o los índices de movimiento ocular [93]."
   },
   {
-    "id": "decision_024",
-    "question": "¿Qué se busca al evaluar la validez de la estructura interna?",
-    "answer": "Al evaluar la validez de la estructura interna, se busca determinar si el **número y la naturaleza de las dimensiones obtenidas de las respuestas de los participantes se alinean con la estructura teórica** del constructo [103, 116-119]. El análisis factorial es una técnica común utilizada para esto [113, 117]."
+    "q": "¿Qué se busca al evaluar la validez de la estructura interna?",
+    "tags": ["validez de estructura interna", "análisis factorial"],
+    "a": "Al evaluar la validez de la estructura interna, se busca determinar si el **número y la naturaleza de las dimensiones obtenidas de las respuestas de los participantes se alinean con la estructura teórica** del constructo [103, 116-119]. El análisis factorial es una técnica común utilizada para esto [113, 117]."
   },
   {
-    "id": "decision_025",
-    "question": "¿Por qué se evalúa la relación de la escala con otras variables (concurrente, predictiva, discriminante, convergente)?",
-    "answer": "Se evalúa para determinar cómo la escala se relaciona con otras medidas, tanto si se espera que sean similares (validez convergente) como diferentes (validez discriminante) [119, 120]. También se evalúa cómo predice resultados futuros (validez predictiva) o se relaciona con medidas ya establecidas (validez concurrente) [103, 113, 120]."
+    "q": "¿Por qué se evalúa la relación de la escala con otras variables (concurrente, predictiva, discriminante, convergente)?",
+    "tags": ["validez de constructo", "convergente", "discriminante"],
+    "a": "Se evalúa para determinar cómo la escala se relaciona con otras medidas, tanto si se espera que sean similares (validez convergente) como diferentes (validez discriminante) [119, 120]. También se evalúa cómo predice resultados futuros (validez predictiva) o se relaciona con medidas ya establecidas (validez concurrente) [103, 113, 120]."
   },
   {
-    "id": "decision_026",
-    "question": "¿Qué se analiza al evaluar la validez de las consecuencias?",
-    "answer": "Se analizan los **vínculos entre el rendimiento del test, las conclusiones derivadas de las interpretaciones de las puntuaciones y las decisiones tomadas** basándose en esas interpretaciones [103, 121]. Esto incluye la evaluación de posibles usos indebidos y consecuencias negativas no intencionadas [122], utilizando procedimientos cualitativos y cuantitativos [121]."
+    "q": "¿Qué se analiza al evaluar la validez de las consecuencias?",
+    "tags": ["validez de consecuencias"],
+    "a": "Se analizan los **vínculos entre el rendimiento del test, las conclusiones derivadas de las interpretaciones de las puntuaciones y las decisiones tomadas** basándose en esas interpretaciones [103, 121]. Esto incluye la evaluación de posibles usos indebidos y consecuencias negativas no intencionadas [122], utilizando procedimientos cualitativos y cuantitativos [121]."
   },
   {
-    "id": "decision_027",
-    "question": "¿Qué es importante tener en cuenta en contextos transculturales?",
-    "answer": "En contextos transculturales, es crucial asegurar que los ítems se entiendan como se pretende en diferentes grupos culturales. Esto implica abordar no solo la traducción lingüística, sino también la **relevancia conceptual y cultural** [52, 87, 89, 123, 124]. Se recomiendan procedimientos de traducción en varios pasos, con expertos bilingües y verificación de discrepancias [124]."
+    "q": "¿Qué es importante tener en cuenta en contextos transculturales?",
+    "tags": ["transcultural", "traducción", "cultura"],
+    "a": "En contextos transculturales, es crucial asegurar que los ítems se entiendan como se pretende en diferentes grupos culturales. Esto implica abordar no solo la traducción lingüística, sino también la **relevancia conceptual y cultural** [52, 87, 89, 123, 124]. Se recomiendan procedimientos de traducción en varios pasos, con expertos bilingües y verificación de discrepancias [124]."
   },
   {
-    "id": "decision_028",
-    "question": "¿Qué tamaño de muestra se recomienda para un estudio de validación a gran escala?",
-    "answer": "Las investigaciones a gran escala requieren **muestras grandes** [89]. Aunque la Teoría de Respuesta al Ítem (TRI) necesita muestras grandes, especialmente para ítems ordinales [125], algunas fuentes sugieren un mínimo de 30-40 encuestados por característica de interés para análisis de subgrupos [126]. Para análisis factoriales, la estabilidad de los patrones de componentes mejora con muestras de 265-275 participantes [127]."
+    "q": "¿Qué tamaño de muestra se recomienda para un estudio de validación a gran escala?",
+    "tags": ["muestra", "validación", "tamaño"],
+    "a": "Las investigaciones a gran escala requieren **muestras grandes** [89]. Aunque la Teoría de Respuesta al Ítem (TRI) necesita muestras grandes, especialmente para ítems ordinales [125], algunas fuentes sugieren un mínimo de 30-40 encuestados por característica de interés para análisis de subgrupos [126]. Para análisis factoriales, la estabilidad de los patrones de componentes mejora con muestras de 265-275 participantes [127]."
   },
   {
-    "id": "decision_029",
-    "question": "¿Qué pruebas se usan para verificar si los datos son adecuados para el análisis factorial?",
-    "answer": "Se deben usar la **prueba de esfericidad de Bartlett** (p ≤ 0.05) y la **medida de adecuación de muestreo de Kaiser-Meyer-Olkin (KMO)** (KMO ≥ 0.60) [128, 129]. También se debe inspeccionar la matriz de correlación para asegurar que las correlaciones entre ítems sean ≥ 0.30 [128]."
+    "q": "¿Qué pruebas se usan para verificar si los datos son adecuados para el análisis factorial?",
+    "tags": ["análisis factorial", "pruebas", "Bartlett", "KMO"],
+    "a": "Se deben usar la **prueba de esfericidad de Bartlett** (p ≤ 0.05) y la **medida de adecuación de muestreo de Kaiser-Meyer-Olkin (KMO)** (KMO ≥ 0.60) [128, 129]. También se debe inspeccionar la matriz de correlación para asegurar que las correlaciones entre ítems sean ≥ 0.30 [128]."
   },
   {
-    "id": "decision_030",
-    "question": "¿Cuándo se usa el análisis factorial exploratorio (EFA) y cuándo el confirmatorio (CFA)?",
-    "answer": "El **Análisis Factorial Exploratorio (EFA)** se utiliza cuando la estructura del cuestionario es desconocida y necesita ser descubierta [113, 117]. El **Análisis Factorial Confirmatorio (CFA)** se emplea cuando ya existen hipótesis sobre la estructura y se requiere ponerlas a prueba [113, 117, 128]."
+    "q": "¿Cuándo se usa el análisis factorial exploratorio (EFA) y cuándo el confirmatorio (CFA)?",
+    "tags": ["análisis factorial", "EFA", "CFA"],
+    "a": "El **Análisis Factorial Exploratorio (EFA)** se utiliza cuando la estructura del cuestionario es desconocida y necesita ser descubierta [113, 117]. El **Análisis Factorial Confirmatorio (CFA)** se emplea cuando ya existen hipótesis sobre la estructura y se requiere ponerlas a prueba [113, 117, 128]."
   },
   {
-    "id": "decision_031",
-    "question": "¿Qué métodos se emplean para determinar el número de factores a retener en un análisis factorial?",
-    "answer": "Se puede usar el **test de 'scree'** (gráfico de codo) [130], el **análisis paralelo (PA)** [130], y el **Análisis de Escala de Mokken (MSA)** como análisis preliminar, que es insensible a artefactos de frecuencia de respuesta [131]. Los factores se retienen cuando sus valores propios son mayores que los creados por un conjunto de datos aleatorios en el PA [130]."
+    "q": "¿Qué métodos se emplean para determinar el número de factores a retener en un análisis factorial?",
+    "tags": ["factores", "análisis factorial", "scree", "análisis paralelo"],
+    "a": "Se puede usar el **test de 'scree'** (gráfico de codo) [130], el **análisis paralelo (PA)** [130], y el **Análisis de Escala de Mokken (MSA)** como análisis preliminar, que es insensible a artefactos de frecuencia de respuesta [131]. Los factores se retienen cuando sus valores propios son mayores que los creados por un conjunto de datos aleatorios en el PA [130]."
   },
   {
-    "id": "decision_032",
-    "question": "¿Qué medidas se usan para evaluar la consistencia interna de la escala?",
-    "answer": "Se usa comúnmente el **Alfa de Cronbach** [113, 132-134]. Sin embargo, también se recomienda utilizar otros índices de fiabilidad como **Omega (ω)**, **Beta (β)** y **Lambda 6 de Guttman (G6)**, junto con intervalos de confianza para el Alfa de Cronbach, para evitar depender de una única estimación potencialmente sesgada [117, 134]."
+    "q": "¿Qué medidas se usan para evaluar la consistencia interna de la escala?",
+    "tags": ["consistencia interna", "fiabilidad", "Alfa de Cronbach", "Omega"],
+    "a": "Se usa comúnmente el **Alfa de Cronbach** [113, 132-134]. Sin embargo, también se recomienda utilizar otros índices de fiabilidad como **Omega (ω)**, **Beta (β)** y **Lambda 6 de Guttman (G6)**, junto con intervalos de confianza para el Alfa de Cronbach, para evitar depender de una única estimación potencialmente sesgada [117, 134]."
   },
   {
-    "id": "decision_033",
-    "question": "¿Cuáles son los criterios para eliminar ítems después de las pruebas y análisis?",
-    "answer": "Se deben eliminar ítems que no muestren suficiente variación [135, 136], que tengan correlaciones bajas con la puntuación total de la escala [95], que sean ambiguos, redundantes, o que presenten un rendimiento psicométrico deficiente [2, 26, 34, 40, 60, 88, 95, 98, 113, 137-140]. La eliminación debe basarse en la relevancia teórica y la coherencia conceptual [139]."
+    "q": "¿Cuáles son los criterios para eliminar ítems después de las pruebas y análisis?",
+    "tags": ["eliminación de ítems", "criterios"],
+    "a": "Se deben eliminar ítems que no muestren suficiente variación [135, 136], que tengan correlaciones bajas con la puntuación total de la escala [95], que sean ambiguos, redundantes, o que presenten un rendimiento psicométrico deficiente [2, 26, 34, 40, 60, 88, 95, 98, 113, 137-140]. La eliminación debe basarse en la relevancia teórica y la coherencia conceptual [139]."
   },
   {
-    "id": "decision_034",
-    "question": "¿Se deben incluir ítems redactados de forma positiva y negativa?",
-    "answer": "Sí, se puede optar por redactar ítems tanto positiva como negativamente para **minimizar el efecto de sesgo de respuesta** (response set effect) [141]. Sin embargo, esta práctica es objeto de debate y algunas fuentes sugieren evitar mezclar ítems redactados de forma positiva y negativa [35, 40, 142]."
+    "q": "¿Se deben incluir ítems redactados de forma positiva y negativa?",
+    "tags": ["ítems", "sesgo de respuesta", "redacción"],
+    "a": "Sí, se puede optar por redactar ítems tanto positiva como negativamente para **minimizar el efecto de sesgo de respuesta** (response set effect) [141]. Sin embargo, esta práctica es objeto de debate y algunas fuentes sugieren evitar mezclar ítems redactados de forma positiva y negativa [35, 40, 142]."
   },
   {
-    "id": "decision_035",
-    "question": "¿Por qué y cómo se deben depurar las bases de datos?",
-    "answer": "Las bases de datos deben depurarse para **identificar y corregir ingresos atípicos** que puedan distorsionar los resultados [143, 144]. Esto puede hacerse visualmente con gráficos de caja y bigotes (Box Plot) y luego importando los datos a software estadístico como SPSS para un análisis numérico más detallado [143]. La depuración es tan o más importante que las pruebas de hipótesis [144]."
+    "q": "¿Por qué y cómo se deben depurar las bases de datos?",
+    "tags": ["datos", "depuración", "análisis"],
+    "a": "Las bases de datos deben depurarse para **identificar y corregir ingresos atípicos** que puedan distorsionar los resultados [143, 144]. Esto puede hacerse visualmente con gráficos de caja y bigotes (Box Plot) y luego importando los datos a software estadístico como SPSS para un análisis numérico más detallado [143]. La depuración es tan o más importante que las pruebas de hipótesis [144]."
   },
   {
-    "id": "decision_036",
-    "question": "¿Por qué es beneficioso usar múltiples métodos de recolección de datos?",
-    "answer": "La implementación de **múltiples procedimientos para la recolección de datos** aumenta la credibilidad y la rigurosidad de la investigación, permitiendo una visión más completa del fenómeno estudiado [145]."
+    "q": "¿Por qué es beneficioso usar múltiples métodos de recolección de datos?",
+    "tags": ["recolección de datos", "métodos"],
+    "a": "La implementación de **múltiples procedimientos para la recolección de datos** aumenta la credibilidad y la rigurosidad de la investigación, permitiendo una visión más completa del fenómeno estudiado [145]."
   },
   {
-    "id": "decision_037",
-    "question": "¿Cómo debe organizarse la información recolectada?",
-    "answer": "La información recolectada debe organizarse de manera **jerárquica**, lo cual facilita el análisis y la comprensión de los datos [145]."
+    "q": "¿Cómo debe organizarse la información recolectada?",
+    "tags": ["organización de datos", "estructura"],
+    "a": "La información recolectada debe organizarse de manera **jerárquica**, lo cual facilita el análisis y la comprensión de los datos [145]."
   },
   {
-    "id": "decision_038",
-    "question": "¿Qué importancia tiene documentar el proceso?",
-    "answer": "Es fundamental **documentar las comprensiones** que reporta el análisis del instrumento después de su implementación con la población objetivo. Esta documentación contribuye a la transparencia y la credibilidad de la investigación [145]."
+    "q": "¿Qué importancia tiene documentar el proceso?",
+    "tags": ["documentación", "proceso", "investigación"],
+    "a": "Es fundamental **documentar las comprensiones** que reporta el análisis del instrumento después de su implementación con la población objetivo. Esta documentación contribuye a la transparencia y la credibilidad de la investigación [145]."
   },
   {
-    "id": "decision_039",
-    "question": "¿Qué se debe incluir al reportar los hallazgos?",
-    "answer": "Además de los resultados, se deben **presentar las limitaciones de tipo contextual** por las que atraviesa la investigación. Esto proporciona una visión más realista y completa de los hallazgos [145]."
+    "q": "¿Qué se debe incluir al reportar los hallazgos?",
+    "tags": ["informe", "hallazgos", "limitaciones"],
+    "a": "Además de los resultados, se deben **presentar las limitaciones de tipo contextual** por las que atraviesa la investigación. Esto proporciona una visión más realista y completa de los hallazgos [145]."
   },
   {
-    "id": "decision_040",
-    "question": "¿Qué ventajas ofrecen las plataformas de encuestas electrónicas?",
-    "answer": "Las plataformas de encuestas electrónicas (como Qualtrics o REDCap) ofrecen ventajas como la **reducción de errores de entrada de datos, la mejora de las tasas de respuesta, la retroalimentación inmediata** y la facilidad para recolectar datos de grandes muestras a menor costo [146-148]. También facilitan la anonimidad y la gestión de datos [146, 148]."
+    "q": "¿Qué ventajas ofrecen las plataformas de encuestas electrónicas?",
+    "tags": ["encuestas online", "plataformas"],
+    "a": "Las plataformas de encuestas electrónicas (como Qualtrics o REDCap) ofrecen ventajas como la **reducción de errores de entrada de datos, la mejora de las tasas de respuesta, la retroalimentación inmediata** y la facilidad para recolectar datos de grandes muestras a menor costo [146-148]. También facilitan la anonimidad y la gestión de datos [146, 148]."
   },
   {
-    "id": "decision_041",
-    "question": "¿Cuál de las propiedades psicométricas es la más crítica?",
-    "answer": "Aunque tanto la validez como la fiabilidad son importantes, la **validez es la propiedad psicométrica más crítica** [149]. Si un instrumento no mide lo que pretende medir (es decir, no es válido), su fiabilidad (consistencia) es irrelevante [149]."
+    "q": "¿Cuál de las propiedades psicométricas es la más crítica?",
+    "tags": ["psicometría", "validez", "fiabilidad"],
+    "a": "Aunque tanto la validez como la fiabilidad son importantes, la **validez es la propiedad psicométrica más crítica** [149]. Si un instrumento no mide lo que pretende medir (es decir, no es válido), su fiabilidad (consistencia) es irrelevante [149]."
   },
   {
-    "id": "decision_042",
-    "question": "¿Qué debe incluir el manual de un nuevo instrumento de medición?",
-    "answer": "El manual debe ser conciso pero exhaustivo, incluyendo los **fundamentos teóricos del instrumento, procedimientos detallados para la administración, puntuación e interpretación de resultados**, y la documentación de sus propiedades psicométricas [150]."
+    "q": "¿Qué debe incluir el manual de un nuevo instrumento de medición?",
+    "tags": ["manual", "instrumento"],
+    "a": "El manual debe ser conciso pero exhaustivo, incluyendo los **fundamentos teóricos del instrumento, procedimientos detallados para la administración, puntuación e interpretación de resultados**, y la documentación de sus propiedades psicométricas [150]."
   },
   {
-    "id": "decision_043",
-    "question": "¿Qué práctica se debe evitar al reportar los resultados?",
-    "answer": "Se debe **evitar la presentación de informes selectivos**, incluyendo todas las medidas utilizadas en los análisis e interpretando los resultados basándose tanto en los datos como en la justificación teórica [150]."
+    "q": "¿Qué práctica se debe evitar al reportar los resultados?",
+    "tags": ["informe", "resultados", "sesgo"],
+    "a": "Se debe **evitar la presentación de informes selectivos**, incluyendo todas las medidas utilizadas en los análisis e interpretando los resultados basándose tanto en los datos como en la justificación teórica [150]."
   },
   {
-    "id": "decision_044",
-    "question": "¿Con qué frecuencia se debe revisar un instrumento de medición ya validado?",
-    "answer": "Se recomiendan **revisiones periódicas** para tener en cuenta los avances teóricos, los cambios en el constructo medido o la presencia de ítems obsoletos [151]. La frecuencia debe guiarse por pruebas empíricas y la retroalimentación del campo [151]."
+    "q": "¿Con qué frecuencia se debe revisar un instrumento de medición ya validado?",
+    "tags": ["revisión", "actualización"],
+    "a": "Se recomiendan **revisiones periódicas** para tener en cuenta los avances teóricos, los cambios en el constructo medido o la presencia de ítems obsoletos [151]. La frecuencia debe guiarse por pruebas empíricas y la retroalimentación del campo [151]."
   },
   {
-    "id": "decision_045",
-    "question": "¿Qué es la teoría de respuesta al ítem (TRI) y cuándo es útil?",
-    "answer": "La **Teoría de Respuesta al Ítem (TRI)** es un enfoque de medición basado en modelos que utiliza patrones de respuesta a ítems y las habilidades de una persona [43, 139, 152-154]. Es útil para modelar la probabilidad de que un encuestado responda de una manera específica a un ítem, en función de un nivel subyacente de comportamiento [152], y es adecuada para pruebas de alto riesgo [43]."
+    "q": "¿Qué es la teoría de respuesta al ítem (TRI) y cuándo es útil?",
+    "tags": ["psicometría", "TRI", "modelo"],
+    "a": "La **Teoría de Respuesta al Ítem (TRI)** es un enfoque de medición basado en modelos que utiliza patrones de respuesta a ítems y las habilidades de una persona [43, 139, 152-154]. Es útil para modelar la probabilidad de que un encuestado responda de una manera específica a un ítem, en función de un nivel subyacente de comportamiento [152], y es adecuada para pruebas de alto riesgo [43]."
   },
   {
-    "id": "decision_046",
-    "question": "¿Cómo se establece un marco empírico para el desarrollo de ítems?",
-    "answer": "Se establece **identificando una o varias teorías y/o hallazgos sintetizados** de la literatura existente para proporcionar principios o suposiciones que sustenten el constructo propuesto [14, 15]. Esto es fundamental para asegurar la validez de contenido [14]."
+    "q": "¿Cómo se establece un marco empírico para el desarrollo de ítems?",
+    "tags": ["marco empírico", "ítems", "desarrollo"],
+    "a": "Se establece **identificando una o varias teorías y/o hallazgos sintetizados** de la literatura existente para proporcionar principios o suposiciones que sustenten el constructo propuesto [14, 15]. Esto es fundamental para asegurar la validez de contenido [14]."
   },
   {
-    "id": "decision_047",
-    "question": "¿Cuál es la utilidad de un 'blueprint' teórico en el desarrollo de la escala?",
-    "answer": "Un 'blueprint' teórico es una herramienta para **refinar y organizar el marco empírico** [155]. Ayuda a definir las áreas de contenido y dominio del constructo y a determinar la proporción aproximada de ítems a desarrollar en cada área, mejorando así la validez de contenido [15, 32, 155, 156]."
+    "q": "¿Cuál es la utilidad de un 'blueprint' teórico en el desarrollo de la escala?",
+    "tags": ["blueprint", "validez de contenido"],
+    "a": "Un 'blueprint' teórico es una herramienta para **refinar y organizar el marco empírico** [155]. Ayuda a definir las áreas de contenido y dominio del constructo y a determinar la proporción aproximada de ítems a desarrollar en cada área, mejorando así la validez de contenido [15, 32, 155, 156]."
   },
   {
-    "id": "decision_048",
-    "question": "¿Cómo se debe ajustar el número de ítems por área de contenido/dominio?",
-    "answer": "Para mejorar la validez de contenido, los desarrolladores deben **ajustar la importancia relativa de los ítems en cada área de contenido y dominio** [156]. Es decir, se deben desarrollar más ítems para las áreas que representan un mayor alcance del constructo [156]."
+    "q": "¿Cómo se debe ajustar el número de ítems por área de contenido/dominio?",
+    "tags": ["ítems", "ajuste"],
+    "a": "Para mejorar la validez de contenido, los desarrolladores deben **ajustar la importancia relativa de los ítems en cada área de contenido y dominio** [156]. Es decir, se deben desarrollar más ítems para las áreas que representan un mayor alcance del constructo [156]."
   },
   {
-    "id": "decision_049",
-    "question": "¿Por qué es crucial una definición clara del constructo?",
-    "answer": "Una definición clara del constructo es un paso crucial porque garantiza la precisión y especificidad de lo que se mide [7]. De esta definición se especificará el contenido de los ítems con precisión y claridad [8]."
+    "q": "¿Por qué es crucial una definición clara del constructo?",
+    "tags": ["definición", "constructo"],
+    "a": "Una definición clara del constructo es un paso crucial porque garantiza la precisión y especificidad de lo que se mide [7]. De esta definición se especificará el contenido de los ítems con precisión y claridad [8]."
   },
   {
-    "id": "decision_050",
-    "question": "¿Qué implica operacionalizar un constructo?",
-    "answer": "La operacionalización del constructo implica especificar **un modelo de estructura interna, un modelo de relaciones externas con otros constructos, indicadores relevantes potenciales y procesos relacionados con el constructo** [8, 157]. Es el paso de especificar una lista exhaustiva de ítems potenciales [157]."
+    "q": "¿Qué implica operacionalizar un constructo?",
+    "tags": ["operacionalización", "constructo"],
+    "a": "La operacionalización del constructo implica especificar **un modelo de estructura interna, un modelo de relaciones externas con otros constructos, indicadores relevantes potenciales y procesos relacionados con el constructo** [8, 157]. Es el paso de especificar una lista exhaustiva de ítems potenciales [157]."
   },
   {
-    "id": "decision_051",
-    "question": "¿Cuándo se debe decidir el formato de respuesta?",
-    "answer": "El formato de respuesta debe decidirse en una **etapa temprana, simultáneamente con la generación de ítems**, para asegurar la compatibilidad entre ambos [158]."
+    "q": "¿Cuándo se debe decidir el formato de respuesta?",
+    "tags": ["formato de respuesta", "ítems"],
+    "a": "El formato de respuesta debe decidirse en una **etapa temprana, simultáneamente con la generación de ítems**, para asegurar la compatibilidad entre ambos [158]."
   },
   {
-    "id": "decision_052",
-    "question": "¿En qué se debe basar la decisión sobre un constructo?",
-    "answer": "La decisión sobre un constructo generalmente se basa en una **revisión de la literatura relacionada**, junto con la **consulta a expertos** en la materia [8]."
+    "q": "¿En qué se debe basar la decisión sobre un constructo?",
+    "tags": ["constructo", "decisión", "literatura", "expertos"],
+    "a": "La decisión sobre un constructo generalmente se basa en una **revisión de la literatura relacionada**, junto con la **consulta a expertos** en la materia [8]."
   },
   {
-    "id": "decision_053",
-    "question": "¿Qué factores influyen en la elección del tipo de ítem y formato?",
-    "answer": "La elección del tipo de ítem y formato debe considerar el **contexto y el tipo de audiencia** prevista [159]. Factores como la conectividad, el nivel de lectura y el tiempo disponible también son importantes [159]."
+    "q": "¿Qué factores influyen en la elección del tipo de ítem y formato?",
+    "tags": ["ítems", "formato", "audiencia"],
+    "a": "La elección del tipo de ítem y formato debe considerar el **contexto y el tipo de audiencia** prevista [159]. Factores como la conectividad, el nivel de lectura y el tiempo disponible también son importantes [159]."
   },
   {
-    "id": "decision_054",
-    "question": "¿Qué se debe hacer al modificar la escala?",
-    "answer": "Cualquier modificación realizada en la escala debe **documentarse** y considerarse en relación con la validez de contenido establecida previamente [116]. Es crucial asegurar que las modificaciones no tengan consecuencias no deseadas en la capacidad de la escala para cumplir su propósito [116]."
+    "q": "¿Qué se debe hacer al modificar la escala?",
+    "tags": ["modificación", "documentación", "escala"],
+    "a": "Cualquier modificación realizada en la escala debe **documentarse** y considerarse en relación con la validez de contenido establecida previamente [116]. Es crucial asegurar que las modificaciones no tengan consecuencias no deseadas en la capacidad de la escala para cumplir su propósito [116]."
   },
   {
-    "id": "decision_055",
-    "question": "¿Qué tipo de protocolo integral se recomienda para el diagnóstico de propiedades psicométricas?",
-    "answer": "Se introduce un **protocolo de 6 pasos** que permite un diagnóstico detallado de las propiedades psicométricas fundamentales, como la validez estructural y la consistencia interna, para escalas con opciones de respuesta binarias y ordinales [153, 160]."
+    "q": "¿Qué tipo de protocolo integral se recomienda para el diagnóstico de propiedades psicométricas?",
+    "tags": ["psicometría", "protocolo"],
+    "a": "Se introduce un **protocolo de 6 pasos** que permite un diagnóstico detallado de las propiedades psicométricas fundamentales, como la validez estructural y la consistencia interna, para escalas con opciones de respuesta binarias y ordinales [153, 160]."
   },
   {
-    "id": "decision_056",
-    "question": "¿Por qué no se debe depender solo de EFA y Alpha de Cronbach?",
-    "answer": "No se debe depender únicamente de EFA y Alpha de Cronbach porque no siempre son la mejor opción y pueden llevar a resultados engañosos [133]. Se recomienda familiarizarse con **otras técnicas complementarias** para un análisis psicométrico más significativo [133, 160]."
+    "q": "¿Por qué no se debe depender solo de EFA y Alpha de Cronbach?",
+    "tags": ["EFA", "Alfa de Cronbach", "alternativas"],
+    "a": "No se debe depender únicamente de EFA y Alpha de Cronbach porque no siempre son la mejor opción y pueden llevar a resultados engañosos [133]. Se recomienda familiarizarse con **otras técnicas complementarias** para un análisis psicométrico más significativo [133, 160]."
   },
   {
-    "id": "decision_057",
-    "question": "¿Cuándo es preferible una versión más corta de una escala?",
-    "answer": "Si una versión más corta reduce la carga de participación sin pérdida de información relevante, puede ser preferible para futuras investigaciones [161]. Esto se decide a partir del análisis psicométrico del instrumento [161]."
+    "q": "¿Cuándo es preferible una versión más corta de una escala?",
+    "tags": ["versión corta", "escala"],
+    "a": "Si una versión más corta reduce la carga de participación sin pérdida de información relevante, puede ser preferible para futuras investigaciones [161]. Esto se decide a partir del análisis psicométrico del instrumento [161]."
   },
   {
-    "id": "decision_058",
-    "question": "¿Es posible adaptar el protocolo de validación para medidas breves?",
-    "answer": "Sí, para medidas breves, una **versión más corta del protocolo** (ej. descriptivos de ítems, MSA, fiabilidad y descriptivos de puntuaciones de la escala) podría ser suficiente para justificar el cálculo de las puntuaciones de la escala [162]."
+    "q": "¿Es posible adaptar el protocolo de validación para medidas breves?",
+    "tags": ["protocolo", "medidas breves"],
+    "a": "Sí, para medidas breves, una **versión más corta del protocolo** (ej. descriptivos de ítems, MSA, fiabilidad y descriptivos de puntuaciones de la escala) podría ser suficiente para justificar el cálculo de las puntuaciones de la escala [162]."
   },
   {
-    "id": "decision_059",
-    "question": "¿Qué es esencial antes de elegir un método psicométrico?",
-    "answer": "Es esencial considerar cuidadosamente la **naturaleza hipotética del fenómeno** que se estudia antes de elegir este protocolo o cualquier otro método psicométrico [163]. La elección debe alinearse con la conceptualización del constructo [163]."
+    "q": "¿Qué es esencial antes de elegir un método psicométrico?",
+    "tags": ["métodos psicométricos", "elección"],
+    "a": "Es esencial considerar cuidadosamente la **naturaleza hipotética del fenómeno** que se estudia antes de elegir este protocolo o cualquier otro método psicométrico [163]. La elección debe alinearse con la conceptualización del constructo [163]."
   },
   {
-    "id": "decision_060",
-    "question": "¿Cuál es la primera consideración al necesitar una escala de medición?",
-    "answer": "La primera y más importante consideración es **priorizar el uso de una escala existente y ya validada** en lugar de desarrollar una desde cero, ya que la validación es un proceso complejo y que consume muchos recursos [164]."
+    "q": "¿Cuál es la primera consideración al necesitar una escala de medición?",
+    "tags": ["escala existente", "validación"],
+    "a": "La primera y más importante consideración es **priorizar el uso de una escala existente y ya validada** en lugar de desarrollar una desde cero, ya que la validación es un proceso complejo y que consume muchos recursos [164]."
   }
 ]
