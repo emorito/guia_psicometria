@@ -411,3 +411,68 @@ nav {
     margin-bottom: 1.5rem;
 }
 
+
+/* ==================================================================== */
+/* ===       ESTILO PARA CHECKLISTS INTERACTIVOS                  === */
+/* ==================================================================== */
+
+/* El contenedor principal del checklist */
+.checklist-container {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 2rem;
+  background-color: var(--color-fondo);
+  border-radius: 10px;
+  border: 1px solid var(--color-borde);
+}
+
+.checklist-container h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-secundario);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--color-borde);
+  padding-bottom: 0.5rem;
+}
+
+/* La lista en sí */
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist li {
+  margin-bottom: 0.75rem;
+}
+
+/* La etiqueta que contiene el checkbox y el texto, para hacerla clickeable */
+.checklist label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* El texto dentro de la etiqueta */
+.checklist label span {
+  transition: all 0.3s ease;
+}
+
+/* El checkbox en sí */
+.checklist input[type="checkbox"] {
+  margin-right: 12px;
+  /* Hacemos el checkbox un poco más grande y fácil de clickear */
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* LA MAGIA: Qué pasa cuando un checkbox está MARCADO */
+.checklist input[type="checkbox"]:checked + span {
+  text-decoration: line-through; /* Tacha el texto */
+  color: #95a5a6; /* Color gris suave */
+  opacity: 0.8; /* Lo hace un poco más transparente */
+}
