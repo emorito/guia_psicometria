@@ -433,7 +433,7 @@ table.cronograma th {
 .colab-text { flex-grow: 1; }
 .colab-text h2 {
   border: none;
-  margin: 0.3rem 0 0.5rem 1rem; /* Margen negativo eliminado, se ajusta aquí */
+  margin: 0.1rem 0 0.5rem 0.5rem;
   padding: 0;
   background: none;
   border-radius: 0;
@@ -504,4 +504,5 @@ table.cronograma th {
   padding: 1rem;
   border: 1px solid var(--color-borde);
 }
+
 
