@@ -214,31 +214,65 @@ h3 {
   border: 0;
 }
 
-/* --- ARREGLO PARA LOS DESCARGABLES --- */
-/* (Cuando crees la carpeta 'docs', esto hará que se vea bien) */
+/* --- ESTILO MEJORADO PARA LA SECCIÓN DE DESCARGABLES --- */
+
+/* Contenedor principal de la lista de descargables */
+#descargables-list {
+  margin-top: 2rem; /* Añade espacio arriba, separándolo del texto anterior */
+  margin-bottom: 2rem; /* Añade espacio abajo, separándolo del botón del quiz */
+  background-color: var(--color-fondo); /* Un fondo sutil para agrupar los elementos */
+  padding: 1.5rem; /* Espacio interno */
+  border-radius: 10px; /* Bordes redondeados consistentes */
+  border: 1px solid var(--color-borde);
+}
+
+/* La lista (ul) dentro del contenedor */
 #descargables-list ul {
   list-style: none;
   padding: 0;
+  margin: 0; /* Quitamos márgenes por defecto de la lista */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
 }
 
+/* Cada elemento de la lista (li) */
+#descargables-list li {
+  /* No necesita estilos específicos, los ponemos en el enlace */
+}
+
+/* El enlace (a) dentro de cada elemento de la lista */
 #descargables-list li a {
-  display: block;
-  background-color: var(--color-fondo);
+  display: flex; /* Usamos flexbox para alinear el icono y el texto */
+  align-items: center; /* Centramos verticalmente */
+  background-color: var(--color-blanco);
   padding: 1rem;
   border-radius: 8px;
   text-decoration: none;
   color: var(--color-acento);
   font-weight: 600;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border: 1px solid var(--color-borde);
 }
 
 #descargables-list li a:hover {
   background-color: var(--color-acento);
   color: var(--color-blanco);
-  transform: scale(1.03);
+  transform: translateY(-3px); /* Efecto de elevación */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Un icono de descarga para un toque profesional */
+#descargables-list li a::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px; /* Espacio entre el icono y el texto */
+  background-color: currentColor; /* El icono tomará el color del texto (azul o blanco) */
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3E%3Cpath d='M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z'/%3E%3C/svg%3E") no-repeat center / contain;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3E%3Cpath d='M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z'/%3E%3C/svg%3E") no-repeat center / contain;
 }
 
 /* ==================================================================== */
@@ -330,5 +364,50 @@ nav {
 #menu li a:hover::after {
   width: 100%;
   left: 0;
+}
+
+
+/* ==================================================================== */
+/* ===       ESTILO PARA BOTONES DE DESCARGA INDIVIDUALES         === */
+/* ==================================================================== */
+
+/* Estilo para los enlaces de descarga dentro de las secciones */
+.btn-descarga {
+  display: inline-flex; /* Permite alinear el icono y el texto */
+  align-items: center;  /* Centra verticalmente */
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-acento); /* Texto azul */
+  background-color: var(--color-fondo); /* Fondo gris claro */
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--color-borde);
+  margin: 0.5rem 0.5rem 0.5rem 0; /* Espacio alrededor para que no se pegue */
+  transition: all 0.3s ease;
+}
+
+.btn-descarga:hover {
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Icono para el botón de descarga */
+.btn-descarga::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px; /* Espacio entre icono y texto */
+  background-color: currentColor; /* El icono hereda el color del texto */
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3E%3Cpath d='M5 20h14v-2H5v2zm7-18C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h2.55V7h2.9v4H16l-4 4z'/%3E%3C/svg%3E") no-repeat center / contain;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3E%3Cpath d='M5 20h14v-2H5v2zm7-18C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h2.55V7h2.9v4H16l-4 4z'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+/* Espacio para los contenedores de botones de descarga */
+.descargables-en-seccion, #revision-plan div {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
