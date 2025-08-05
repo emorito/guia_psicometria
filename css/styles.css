@@ -505,12 +505,3 @@ table.cronograma th {
   border: 1px solid var(--color-borde);
 }
 
-
-/* --- 2. CORRECCIÓN FINAL DEL ESPACIO DE LOS TÍTULOS H2 --- */
-h2 {
-  /* La única línea que necesitamos cambiar es el margen.
-     Aumentamos el margen inferior de 2rem a 4rem.
-     Esto empujará todo el contenido siguiente hacia abajo. */
-  margin: -2.5rem -2.5rem 3rem -2.5rem !important; /* !important para máxima prioridad */
-}
-
