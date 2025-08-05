@@ -7,7 +7,7 @@ Bienvenido a la Guía Interactiva para la Validación y Estandarización de Prue
 
 Este repositorio contiene todo el código fuente de la plataforma web.
 
-**➡️ Visita la página en vivo:** `[ENLACE A TU PÁGINA PUBLICADA EN GITHUB PAGES]`
+**➡️ Visita la página en vivo:** `(https://emorito.github.io/guia_psicometria/)`
 
 ---
 
