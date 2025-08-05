@@ -23,6 +23,7 @@ body {
   font-family: 'Poppins', 'Segoe UI', sans-serif;
   background-color: var(--color-fondo);
   color: var(--color-primario);
+  margin: 0.3rem 0 0 0;
   line-height: 1.7;
 }
 
@@ -522,3 +523,4 @@ table.cronograma th {
   text-indent: -2em; /* ¡LA MAGIA! Esto mueve la primera línea hacia la izquierda, creando la sangría francesa */
   margin-bottom: 1rem; /* La separación entre una referencia y otra que pediste */
 }
+
