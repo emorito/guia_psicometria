@@ -511,5 +511,6 @@ h2 {
   /* La única línea que necesitamos cambiar es el margen.
      Aumentamos el margen inferior de 2rem a 4rem.
      Esto empujará todo el contenido siguiente hacia abajo. */
-  margin: -2.5rem -2.5rem 4rem -2.5rem !important; /* !important para máxima prioridad */
+  margin: -2.5rem -2.5rem 3rem -2.5rem !important; /* !important para máxima prioridad */
 }
+
