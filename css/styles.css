@@ -241,3 +241,94 @@ h3 {
   transform: scale(1.03);
 }
 
+/* ==================================================================== */
+/* ===       MEJORAS DE ENCABEZADO: BANNER Y MENÚ MINIMALISTA      === */
+/* ==================================================================== */
+
+/* --- 1. EL BANNER DEL ENCABEZADO --- */
+header {
+  /* Imagen de fondo */
+  background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('../media/banner-bg.jpg');
+  background-size: cover; /* Cubre todo el espacio */
+  background-position: center center; /* Centra la imagen */
+  background-attachment: fixed; /* Efecto parallax sutil al hacer scroll */
+
+  /* Estilos del texto */
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 4rem 2rem; /* Más espacio para que se vea la imagen */
+}
+
+/* El Hero es la sección de presentación que está DENTRO del header ahora */
+section.hero {
+  background-color: transparent; /* Hacemos transparente la sección de presentación */
+  box-shadow: none; /* Quitamos la sombra */
+  border: none; /* Quitamos el borde */
+  padding: 0;
+  margin: 0;
+}
+
+section.hero h1 {
+  color: var(--color-blanco);
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra al texto para legibilidad */
+}
+
+section.hero .subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+
+/* --- 2. EL MENÚ DE NAVEGACIÓN MINIMALISTA Y FIJO --- */
+nav {
+  position: sticky; /* ¡La magia! Se pega arriba */
+  top: 0;
+  width: 100%;
+  background-color: var(--color-secundario);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Se asegura que esté por encima de todo */
+  padding: 0.5rem 2rem; /* Espaciado interno */
+  box-sizing: border-box; /* Asegura que el padding no desborde */
+}
+
+#menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* La clave para poner los elementos en horizontal */
+  justify-content: center; /* Centra los elementos */
+  flex-wrap: wrap; /* Si no caben, se van a la siguiente línea */
+  gap: 1.5rem; /* Espacio entre los elementos del menú */
+}
+
+#menu li a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  font-size: 0.9rem; /* Letras más pequeñas */
+  font-weight: 600;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+#menu li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--color-acento);
+  transition: all 0.3s ease;
+}
+
+#menu li a:hover {
+  color: var(--color-acento);
+}
+
+#menu li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
