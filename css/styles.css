@@ -630,3 +630,17 @@ p.section-description {
 #biblio-list {
   margin-top: 1.5rem;
 }
+
+/* =================================================================== */
+/* ===                PULIDO FINAL DE ESPACIADO                  === */
+/* =================================================================== */
+
+/* Espacio superior para los párrafos descriptivos de cada sección */
+p.section-description {
+  margin-top: 1.5rem; /* Asegura un espacio consistente */
+}
+
+/* Espacio superior para el contenedor del chat, para separarlo del título */
+#chat-section .chat-box {
+  margin-top: 1.5rem;
+}
