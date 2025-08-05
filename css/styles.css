@@ -506,3 +506,19 @@ table.cronograma th {
 }
 
 
+/* =================================================================== */
+/* ===       ESTILO FINAL PARA BIBLIOGRAFÍA (SANGRÍA FRANCESA)     === */
+/* =================================================================== */
+
+/* El contenedor de la lista de bibliografía */
+#biblio-list {
+  list-style: none; /* Quitamos los puntos por defecto */
+  padding-left: 0; /* Quitamos el padding por defecto */
+}
+
+/* Cada elemento (referencia) de la lista */
+#biblio-list li {
+  padding-left: 2em; /* Creamos un espacio a la izquierda para la sangría */
+  text-indent: -2em; /* ¡LA MAGIA! Esto mueve la primera línea hacia la izquierda, creando la sangría francesa */
+  margin-bottom: 1rem; /* La separación entre una referencia y otra que pediste */
+}
