@@ -564,3 +564,79 @@ nav {
   transition: background-color 0.2s ease;
 }
 .btn-colab:hover { background-color: #1765cc; }
+
+/* ==================================================================== */
+/* ===         RETOQUES FINALES: ENCABEZADO Y TÍTULOS v2.0        === */
+/* ==================================================================== */
+
+/* --- 1. EL BANNER DEL ENCABEZADO (CON MEJOR CONTRASTE Y CENTRADO) --- */
+header {
+  /* La superposición oscura ahora es un degradado más sutil */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../media/banner-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: var(--color-blanco);
+  
+  /* Usamos Flexbox para un centrado perfecto del contenido */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem; /* Aumentamos el padding para más impacto */
+  min-height: 80vh; /* Asegura que el banner ocupe una buena parte de la pantalla inicial */
+}
+
+/* La sección de presentación dentro del header */
+section.hero {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  max-width: 900px; /* Mantenemos el ancho máximo para consistencia */
+}
+
+/* --- 2. EL TÍTULO Y SUBTÍTULO IMPRESIONANTES --- */
+section.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4.5rem; /* ¡Letras mucho más grandes! */
+  font-weight: 700; /* Tipografía más gruesa */
+  color: transparent; /* Hacemos el relleno del texto transparente */
+  -webkit-text-stroke: 1.5px var(--color-blanco); /* ¡El contorno blanco! */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* Sombra para resaltar el contorno */
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+section.hero .subtitle {
+  font-size: 1.5rem; /* Subtítulo también más grande */
+  font-weight: 600;
+  color: var(--color-blanco);
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8); /* Sombra para legibilidad */
+  opacity: 0.95;
+}
+
+/* --- 3. TÍTULOS DE SECCIÓN CON MÁS DESTAQUE --- */
+h2 {
+  font-size: 2.2rem; /* Un poco más grande */
+  font-weight: 700;
+  color: var(--color-primario);
+  border-bottom: 3px solid var(--color-acento); /* Borde más grueso y de color de acento */
+  padding-bottom: 0.75rem;
+  margin-bottom: 2rem; /* Más espacio después del título */
+  display: inline-block; /* Hace que el borde solo ocupe el ancho del texto */
+}
+
+/* Contenedor de sección (para asegurar que el h2 se centre si la sección es centrada) */
+section {
+  /* ... mantenemos los estilos de sección que ya tenías ... */
+  /* Si la sección necesita centrar su título, puedes añadir text-align: center; a esa sección específica si es necesario */
+}
+
+/* Ajuste final para el audio, para que no desentone */
+.hero audio {
+  margin-top: 2rem;
+  max-width: 100%; /* Asegura que no se desborde */
+}
