@@ -81,6 +81,7 @@ El repositorio está organizado de la siguiente manera para facilitar su compren
 │   └── 🖼️ *.svg
 └── 📁 docs/
     └── 📄 *.docx / *.pdf
+```
 ---
 
 ## 📄 Licencia
