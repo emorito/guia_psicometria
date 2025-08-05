@@ -60,32 +60,27 @@ Este proyecto fue construido desde cero utilizando tecnologías web fundamentale
 
 El repositorio está organizado de la siguiente manera para facilitar su comprensión y mantenimiento:
 
+```text
 /
-├── 📄 index.html # El archivo principal de la página.
-├── 📄 README.md # Este archivo.
-│
+├── 📄 index.html
+├── 📄 README.md
 ├── 📁 css/
-│ └── 📄 styles.css # La única hoja de estilos, limpia y optimizada.
-│
+│   └── 📄 styles.css
 ├── 📁 js/
-│ ├── 📄 chat.js # Lógica para el mini-chat Q&A.
-│ ├── 📄 quizzes.js # Lógica para los quizzes interactivos.
-│ ├── 📄 render-page.js # Script para renderizar contenido dinámico (bibliografía, etc.).
-│ └── 📄 utils.js # Utilidades, como la función para cargar archivos JSON.
-│
+│   ├── 📄 chat.js
+│   ├── 📄 quizzes.js
+│   ├── 📄 render-page.js
+│   └── 📄 utils.js
 ├── 📁 data/
-│ ├── 📄 qa_conceptos.json # Banco de preguntas para el chat.
-│ ├── 📄 qa_decisiones.json# Banco de preguntas para el chat.
-│ └── 📄 quiz_*.json # Archivos JSON para cada uno de los quizzes.
-│
+│   ├── 📄 qa_conceptos.json
+│   ├── 📄 qa_decisiones.json
+│   └── 📄 quiz_*.json
 ├── 📁 media/
-│ ├── 🖼️ banner-bg.jpg # Imagen de fondo del banner.
-│ ├── 🎵 *.mp3 # Archivos de audio.
-│ └── 🖼️ *.svg # Iconos vectoriales.
-│
+│   ├── 🖼️ banner-bg.jpg
+│   ├── 🎵 *.mp3
+│   └── 🖼️ *.svg
 └── 📁 docs/
-└── 📄 *.docx / *.pdf # Todos los documentos descargables.
-
+    └── 📄 *.docx / *.pdf
 ---
 
 ## 📄 Licencia
