@@ -524,4 +524,68 @@ table.cronograma th {
   margin-bottom: 0.5rem; /* La separación entre una referencia y otra que pediste */
 }
 
+/* =================================================================== */
+/* ===      PULIDO FINAL: RESPONSIVIDAD MÓVIL Y ESPACIADO        === */
+/* =================================================================== */
+
+/* --- 1. ESPACIO SUPERIOR PARA PÁRRAFOS DESCRIPTIVOS --- */
+p.section-description {
+  margin-top: 1rem; /* Añade un pequeño espacio superior al texto del cuerpo */
+}
+
+
+/* --- 2. SOLUCIÓN PARA TABLAS ANCHAS EN MÓVILES --- */
+.table-container {
+  overflow-x: auto; /* ¡LA MAGIA! Permite el scroll horizontal */
+  -webkit-overflow-scrolling: touch; /* Deslizamiento suave en iOS */
+  margin: 0 -1rem; /* Pequeño ajuste para que el scroll se vea bien */
+  padding: 0 1rem;
+}
+
+
+/* --- 3. AJUSTES PARA PANTALLAS PEQUEÑAS (MÓVILES) --- */
+@media (max-width: 768px) {
+
+  /* --- Encabezado --- */
+  header {
+    min-height: 60vh; /* Reduce la altura del banner */
+    padding: 4rem 1.5rem; /* Reduce el espaciado interno */
+  }
+
+  section.hero h1 {
+    font-size: 3rem; /* Reduce drásticamente el tamaño del título */
+    -webkit-text-stroke-width: 1px; /* Borde de letra más fino */
+  }
+
+  section.hero .subtitle {
+    font-size: 1.1rem; /* Reduce el tamaño del subtítulo */
+  }
+
+  /* --- Títulos de sección --- */
+  h2 {
+    font-size: 1rem; /* Un poco más pequeño en móviles */
+    letter-spacing: 1px;
+  }
+  
+  /* --- Layout de Secciones --- */
+  section {
+    padding: 2rem 1.5rem; /* Reduce el padding de las secciones */
+    margin: 1.5rem auto;
+  }
+  
+  /* --- Ajuste para el Widget de Colab --- */
+  .colab-section {
+    flex-direction: column; /* Apila los elementos verticalmente */
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .colab-action {
+    width: 100%; /* El botón ocupa todo el ancho */
+  }
+
+  .btn-colab {
+    width: 100%;
+  }
+}
 
