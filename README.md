@@ -1,13 +1,13 @@
 # Guía de Validación de Pruebas Psicológicas
 ### Plataforma Interactiva de Apoyo Académico
 
-![Banner del Encabezado de la Guía](httpsika.io/blog/una-guia-sencilla-de-diseno-web-psicologico/attachment/guia-de-validacion-y-estandarizacion-de-pruebas-psicologicas)
+![Banner del Encabezado de la Guía](banner-preview.png)
 
 Bienvenido a la Guía Interactiva para la Validación y Estandarización de Pruebas Psicológicas, un proyecto diseñado como soporte académico para el curso de **Psicometría Aplicada** de la carrera de Psicología Clínica en la Facultad de Filosofía – UNA.
 
 Este repositorio contiene todo el código fuente de la plataforma web.
 
-**➡️ Visita la página en vivo:** `(https://emorito.github.io/guia_psicometria/)`
+**➡️ Visita la página en vivo:** <https://emorito.github.io/guia_psicometria/>
 
 ---
 
