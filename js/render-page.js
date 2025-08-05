@@ -29,28 +29,50 @@ function renderBibliografia() {
   });
 }
 
+/* ==================================================================== */
+/* ===       RENDER-PAGE.JS - VERSIÓN FINAL Y MEJORADA            === */
+/* ==================================================================== */
+
+// El resto de tu archivo (DOMContentLoaded, renderBibliografia, etc.) se queda igual...
+
+/* --- FUNCIÓN A REEMPLAZAR --- */
+
 /* === 2. Descargables ================================================= */
 function renderDescargables() {
+  // En lugar de una lista de strings, usamos una lista de objetos.
+  // Cada objeto tiene la ruta 'path' y el nombre amigable 'name'.
   const files = [
-    'docs/Ficha_tecnica_instrumento.docx',
-    'docs/Plan_trabajo_grupo.docx',
-    'docs/Plantilla_panel_expertos.docx',
-    'docs/Plantilla_informe_final.docx',
-    'docs/Rubrica_evaluacion_informe.pdf',
-    'docs/Plantilla_reporte_EFA_CFA.docx',
-    'docs/Guia_jamovi_analisis.docx',
-    'docs/Consentimiento_informado.docx'
+    { path: 'docs/Ficha_tecnica_instrumento.docx', name: 'Ficha Técnica del Instrumento' },
+    { path: 'docs/Plan_trabajo_grupo.docx', name: 'Plan de Trabajo del Grupo' },
+    { path: 'docs/Plantilla_panel_expertos.docx', name: 'Plantilla para Panel de Expertos' },
+    { path: 'docs/Consentimiento_informado.docx', name: 'Modelo de Consentimiento Informado' },
+    { path: 'docs/Guia_jamovi_analisis.docx', name: 'Guía de Análisis con Jamovi' },
+    { path: 'docs/Plantilla_reporte_EFA_CFA.docx', name: 'Plantilla para Reporte EFA/CFA' },
+    { path: 'docs/Plantilla_informe_final.docx', name: 'Plantilla del Informe Final' },
+    { path: 'docs/Rubrica_evaluacion_informe.pdf', name: 'Rúbrica de Evaluación del Informe' }
   ];
+  
   const wrap = document.getElementById('descargables-list');
   if (!wrap) return;
+
+  // Creamos la lista <ul>
   const ul = document.createElement('ul');
-  files.forEach(f => {
+  
+  // Ahora, iteramos sobre la nueva lista de objetos.
+  files.forEach(file => {
     const li = document.createElement('li');
-    li.innerHTML = `<a href="${f}">${f.split('/').pop()}</a>`;
+    // Usamos 'file.path' para el enlace y 'file.name' para el texto visible.
+    li.innerHTML = `<a href="${file.path}">${file.name}</a>`;
     ul.appendChild(li);
   });
+  
+  // Limpiamos el contenedor y añadimos la nueva lista.
+  wrap.innerHTML = '';
   wrap.appendChild(ul);
 }
+
+
+// El resto de funciones (renderCronograma, renderTestCards) se quedan igual...
 
 /* === 3. Cronograma completo ========================================= */
 const cronogramaRows = [
@@ -121,4 +143,5 @@ function renderTestCards() {
     );
   });
 }
+
 
