@@ -4,196 +4,181 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guía de Validación – Psicometría Aplicada</title>
-  <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- hoja de estilos -->
+  <!-- Google Fonts: 'Poppins' -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  
+
+  <!-- Tailwind CSS (para el estilo de las tarjetas de tests) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Hoja de estilos principal -->
   <link rel="stylesheet" href="css/styles.css" />
- 
 </head>
 
 <body>
-<!-- ▸▸  MENÚ  ◂◂ -->
+
 <header>
-  <nav>
-    <ul id="menu">
-      <li><a href="#presentacion">Presentación</a></li>
-      <li><a href="#cronograma">Cronograma</a></li>
-      <li><a href="#tests">Tests sugeridos</a></li>
-      <li><a href="#inscripcion">Inscripción</a></li>
-      <li><a href="#revision-plan">Revisión inicial</a></li>
-      <li><a href="#validez">Validez</a></li>
-      <li><a href="#prepiloto">Pre-piloto</a></li>
-      <li><a href="#items">Ítems</a></li>
-      <li><a href="#recoleccion">Muestreo</a></li>
-      <li><a href="#psicometrico">Psicométrico</a></li>
-      <li><a href="#informe">Informe</a></li>
-      <li><a href="#descargables">Descargables</a></li>
-      <li><a href="#chat">Mini-chat</a></li>
-      <li><a href="#biblio">Bibliografía</a></li>
-    </ul>
-  </nav>
+  <!-- La sección de presentación ahora vive dentro del banner del header -->
+  <section class="hero" id="presentacion">
+    <h1>Guía de Validación y Estandarización de Pruebas Psicológicas</h1>
+    <p class="subtitle">Psicometría Aplicada – 5.º año · Psicología Clínica · Facultad de Filosofía – UNA</p>
+    <audio controls>
+      <source src="media/01_presentacion_general.mp3" type="audio/mpeg">
+    </audio>
+  </section>
 </header>
 
-<!-- 1. PRESENTACIÓN -->
- <section class="hero" id="presentacion">
-  <h1>Guía de Validación y Estandarización de Pruebas Psicológicas</h1>
-  <p class="subtitle">Psicometría Aplicada – 5.º año · Psicología Clínica · Facultad de Filosofía – UNA</p>
-   
-  <audio controls>
-    <source src="media/01_presentacion_general.mp3" type="audio/mpeg">
-  </audio>
-</section>
+<!-- Menú de navegación fijo -->
+<nav>
+  <ul id="menu">
+    <li><a href="#presentacion">Presentación</a></li>
+    <li><a href="#cronograma">Cronograma</a></li>
+    <li><a href="#tests">Tests</a></li>
+    <li><a href="#revision-plan">Revisión</a></li>
+    <li><a href="#validez">Validez</a></li>
+    <li><a href="#prepiloto">Pre-piloto</a></li>
+    <li><a href="#items">Ítems</a></li>
+    <li><a href="#recoleccion">Muestreo</a></li>
+    <li><a href="#psicometrico">Análisis</a></li>
+    <li><a href="#informe">Informe</a></li>
+    <li><a href="#descargables">Recursos</a></li>
+    <li><a href="#chat">Chat Q&A</a></li>
+    <li><a href="#biblio">Bibliografía</a></li>
+  </ul>
+</nav>
+
+<main>
 
   <div class="note">
-    <p><strong>Propósito.</strong> Esta guía acompaña el trabajo práctico de validación de un
-      instrumento desde la validez de contenido hasta el informe final.</p>
+    <p><strong>Propósito:</strong> Esta guía acompaña el trabajo práctico de validación de un instrumento desde la validez de contenido hasta el informe final.</p>
   </div>
-</section>
-
   
-<!-- ▸ ▸  2. CRONOGRAMA  ◂ ◂ -->
-<section id="cronograma">
-  <h2>Cronograma y plan de trabajo</h2>
-  <table class="cronograma">
-    <thead><tr><th>Etapa</th><th>Actividad</th><th>Fechas</th><th>Entregables/Acciones</th></tr></thead>
-    <tbody id="cronograma-body"><!-- utils.js rellenará --></tbody>
-  </table>
-</section>
+  <section id="cronograma">
+    <h2>Cronograma y Plan de Trabajo</h2>
+    <table class="cronograma">
+      <thead><tr><th>Etapa</th><th>Actividad</th><th>Fechas</th><th>Entregables/Acciones</th></tr></thead>
+      <tbody id="cronograma-body"><!-- render-page.js rellena esta sección --></tbody>
+    </table>
+  </section>
  
-<!-- 3. TESTS -->
-<section id="tests">
-  <h2>Tests sugeridos</h2>
-  <div id="cards-tests" class="cards-container"><!-- JS genera tarjetas --></div>
-</section>
+  <section id="tests">
+    <h2>Tests Sugeridos</h2>
+    <div id="cards-tests" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6"><!-- render-page.js rellena las tarjetas aquí --></div>
+  </section>
 
-<!-- 4. INSCRIPCIÓN -->
-<section id="inscripcion">
-  <h2>Inscripción de grupos y elección del test</h2>
-  <p>Tamaño recomendado: 3 – 5 integrantes. Verifica que tu test no esté repetido.</p>
-
-  <!-- Google Form -->
-  <div class="iframe-wrap">
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdz4KRBX4btU91r9gJgZRrMGzJvGohZiqWzmLyJnTQuW1kODA/viewform?embedded=true"
-          loading="lazy"></iframe>
-</div>
-          
-
-  <h3>Listado vivo de grupos</h3>
-  <!-- Google Sheet -->
-  <div class="iframe-wrap">
-  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSH3HdSIU9Waykz9kpQ-z7nOxyJF5k9syv3TIPaoC46kTVZP424xUT1_xC4dc4BVQVqGIcINsNWBFfa/pubhtml?gid=1955925198&amp;single=true&amp;widget=true&amp;headers=false"
-          loading="lazy"></iframe>
-</section>
-
-<!-- 5. REVISIÓN INICIAL -->
-<section id="revision-plan">
-  <h2>Revisión inicial y plan</h2>
-  <p>Descarga la ficha técnica y el plan de trabajo, complétalos y súbelos al Aula Virtual.</p>
-  <ul>
-    <li><a href="docs/Ficha_tecnica_instrumento.docx">Ficha técnica (docx)</a></li>
-    <li><a href="docs/Plan_trabajo_grupo.docx">Plan de trabajo del grupo (docx)</a></li>
-  </ul>
-</section>
-
-<!-- ▸▸ 6–10 BLOQUES CON QUIZ plantilla reutilizable ▸▸ -->
-<!-- Ejemplo: Validez de contenido -->
-<section id="validez" class="unidad">
-  <h2>Validez de contenido</h2>
-  <audio controls><source src="media/02_validez_contenido.mp3" type="audio/mpeg" /></audio>
-
-  <p>La validez de contenido asegura que los ítems cubran representativamente el
-     constructo …</p>
-
-  <button class="btn-quiz"
-          data-json="data/quiz_validez.json"
-          data-target="quiz-container-validez">
-    Iniciar quiz (5 preguntas)
-  </button>
-  <div id="quiz-container-validez" class="quiz-box"></div>
-</section>
-
-<!--  … repite secciones pre-piloto, items, recolección, psicométrico … -->
-
-<!-- 11. INFORME -->
-<section id="informe" class="unidad">
-  <h2>Informe final</h2>
-  <audio controls><source src="media/07_informe_final.mp3" type="audio/mpeg"/></audio>
-
-  <p>Guía estructurada y rúbrica de evaluación.</p>
-  <ul>
-    <li><a href="docs/Plantilla_informe_final.docx">Plantilla informe final</a></li>
-    <li><a href="docs/Rubrica_evaluacion_informe.pdf">Rúbrica (PDF)</a></li>
-  </ul>
-
-  <button class="btn-quiz"
-          data-json="data/quiz_informe.json"
-          data-target="quiz-container-informe">
-    Iniciar quiz sobre el informe
-  </button>
-  <div id="quiz-container-informe" class="quiz-box"></div>
-</section>
-
-<!-- 12. DESCARGABLES -->
-<section id="descargables">
-  <h2>Descargables</h2>
-  <div id="descargables-list" class="descarga-grid"><!-- utils.js rellena --></div>
-</section>
-
-
-<!-- 13. MINI-CHAT -->
-<section id="chat-section"> <!-- Cambiado id para evitar conflictos -->
-  <h2>Mini-chat Q&A</h2>
-  <div class="chat-box">
-
-    <!-- El log donde aparecen las burbujas del chat -->
-    <div id="chat-log" class="chat-log-style">
-        <!-- Puedes dejar un mensaje inicial si quieres -->
-        <div class="bubble bot">¡Hola! Selecciona un tema y hazme una pregunta sobre conceptos o decisiones.</div>
+  <section id="inscripcion">
+    <h2>Inscripción de Grupos y Elección del Test</h2>
+    <p>El tamaño recomendado por equipo es de 3 a 5 integrantes. Por favor, verifica en la lista que el test que elijas no haya sido seleccionado por otro grupo.</p>
+    <div class="iframe-wrap">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdz4KRBX4btU91r9gJgZRrMGzJvGohZiqWzmLyJnTQuW1kODA/viewform?embedded=true" loading="lazy"></iframe>
     </div>
-    
-    <!-- Controles de entrada (área inferior) -->
-    <div class="chat-input-area">
-        <!-- 1. SELECTOR DE TEMA -->
-        <!-- Corregido: id="chat-domain" y los values -->
+    <h3>Listado en vivo de grupos e instrumentos</h3>
+    <div class="iframe-wrap">
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSH3HdSIU9Waykz9kpQ-z7nOxyJF5k9syv3TIPaoC46kTVZP424xUT1_xC4dc4BVQVqGIcINsNWBFfa/pubhtml?gid=1955925198&single=true&widget=true&headers=false" loading="lazy"></iframe>
+    </div>
+  </section>
+  
+  <!-- --- SECCIONES CON DESCRIPTORES Y DESCARGABLES MEJORADOS --- -->
+
+  <section id="revision-plan" class="unidad">
+    <h2>Revisión Inicial y Plan</h2>
+    <p class="section-description">Esta es la <strong>fase de planificación</strong> del proyecto. Se responde a las preguntas clave: <strong>qué</strong> (se define el constructo), <strong>por qué</strong> (se justifica la necesidad de validación) y <strong>cómo</strong> (se crea un plan de trabajo detallado). El resultado es una ficha técnica y un cronograma que guiarán todo el proceso.</p>
+    <div class="descargables-en-seccion">
+      <a href="docs/Ficha_tecnica_instrumento.docx" class="btn-descarga">Ficha Técnica (DOCX)</a>
+      <a href="docs/Plan_trabajo_grupo.docx" class="btn-descarga">Plan de Trabajo (DOCX)</a>
+    </div>
+  </section>
+
+  <section id="validez" class="unidad">
+    <h2>Validez de Contenido</h2>
+    <audio controls><source src="media/02_validez_contenido.mp3" type="audio/mpeg" /></audio>
+    <p class="section-description">En esta etapa se asegura que las preguntas del test cubran de forma representativa lo que se busca medir. Se utiliza un <strong>panel de expertos</strong> para evaluar cada ítem y asegurar que el instrumento sea una medida fiel del constructo, documentando todos los ajustes tras su retroalimentación.</p>
+    <button class="btn-quiz" data-json="data/quiz_validez.json" data-target="quiz-container-validez">Iniciar Quiz de Validez</button>
+    <div id="quiz-container-validez" class="quiz-box"></div>
+  </section>
+
+  <section id="prepiloto" class="unidad">
+    <h2>Estudio Pre-Piloto</h2>
+    <p class="section-description">Es una <strong>prueba a pequeña escala</strong> para detectar problemas antes de la recolección principal. Se aplican entrevistas cognitivas o grupos focales a una muestra reducida para registrar el tiempo de respuesta y los comentarios de los participantes sobre la claridad de las instrucciones e ítems.</p>
+    <button class="btn-quiz" data-json="data/quiz_prepiloto.json" data-target="quiz-container-prepiloto">Iniciar Quiz de Pre-Piloto</button>
+    <div id="quiz-container-prepiloto" class="quiz-box"></div>
+  </section>
+
+  <section id="items" class="unidad">
+    <h2>Análisis de Ítems</h2>
+    <p class="section-description">Se examinan las propiedades estadísticas de cada pregunta. Se calculan estadísticos descriptivos, como la <strong>correlación ítem-total</strong>, para identificar y marcar los ítems con un desempeño débil. El objetivo es decidir qué ítems se mantienen, revisan o eliminan para fortalecer el instrumento.</p>
+    <button class="btn-quiz" data-json="data/quiz_items.json" data-target="quiz-container-items">Iniciar Quiz de Análisis de Ítems</button>
+    <div id="quiz-container-items" class="quiz-box"></div>
+  </section>
+
+  <section id="recoleccion" class="unidad">
+    <h2>Recolección Principal y Muestreo</h2>
+    <p class="section-description">Aquí se pone a prueba el instrumento a gran escala. Las decisiones más importantes son: determinar un <strong>tamaño de muestra adecuado</strong> (más de 300 participantes es una buena práctica), elegir un método de muestreo y seguir un estricto protocolo ético-logístico con <strong>consentimiento informado</strong> y autorización del comité de ética.</p>
+    <button class="btn-quiz" data-json="data/quiz_muestreo.json" data-target="quiz-container-muestreo">Iniciar Quiz de Muestreo</g>
+    <div id="quiz-container-muestreo" class="quiz-box"></div>
+  </section>
+
+  <section id="psicometrico" class="unidad">
+    <h2>Análisis Psicométrico</h2>
+    <p class="section-description">En esta fase se procesan los datos. Primero se realiza una limpieza para manejar valores faltantes y atípicos. Luego se evalúa la estructura interna del test con <strong>Análisis Factorial Exploratorio (AFE)</strong>, se analiza la fiabilidad (ej. Alfa de Cronbach, Omega) y, finalmente, se crean los <strong>baremos</strong> para estandarizar e interpretar las puntuaciones.</p>
+    <button class="btn-quiz" data-json="data/quiz_analisis.json" data-target="quiz-container-analisis">Iniciar Quiz de Análisis Psicométrico</button>
+    <div id="quiz-container-analisis" class="quiz-box"></div>
+  </section>
+  
+  <section id="informe" class="unidad">
+    <h2>Informe Final</h2>
+    <audio controls><source src="media/07_informe_final.mp3" type="audio/mpeg"/></audio>
+    <p class="section-description">El informe final es el documento que resume y relata la historia completa del proyecto. Sigue la estructura <strong>IMRyD (Introducción, Método, Resultados y Discusión)</strong> y presenta de manera clara los hallazgos clave, las limitaciones y las futuras aplicaciones del instrumento validado.</p>
+    <div class="descargables-en-seccion">
+      <a href="docs/Plantilla_informe_final.docx" class="btn-descarga">Plantilla Informe Final (DOCX)</a>
+      <a href="docs/Rubrica_evaluacion_informe.pdf" class="btn-descarga">Rúbrica de Evaluación (PDF)</a>
+    </div>
+    <button class="btn-quiz" data-json="data/quiz_informe.json" data-target="quiz-container-informe">Iniciar Quiz sobre el Informe</button>
+    <div id="quiz-container-informe" class="quiz-box"></div>
+  </section>
+
+  <section id="descargables">
+    <h2>Centro de Recursos</h2>
+    <div id="descargables-list"><!-- render-page.js rellena esta sección --></div>
+  </section>
+
+  <section id="chat-section">
+    <h2>Mini-Chat Q&A</h2>
+    <div class="chat-box">
+      <div id="chat-log" class="chat-log-style">
+        <div class="bubble bot">¡Hola! Soy un asistente virtual. Selecciona un tema y hazme una pregunta.</div>
+      </div>
+      <div class="chat-input-area">
         <select id="chat-domain">
-          <option value="conceptos">Conceptos</option>
-          <option value="decisiones">Decisiones operativas</option>
+          <option value="conceptos">Conceptos Clave</option>
+          <option value="decisiones">Decisiones Operativas</option>
         </select>
-
-        <!-- 2. CAMPO DE TEXTO -->
-        <!-- Corregido: id="chat-input" -->
         <input type="text" id="chat-input" placeholder="Escribe tu pregunta…" />
-
-        <!-- 3. BOTÓN DE ENVÍO -->
-        <!-- Corregido: id="chat-send" -->
         <button id="chat-send">Responder</button>
+      </div>
     </div>
-    
-  </div>
-</section>
+  </section>
 
-<!-- 14. BIBLIOGRAFÍA -->
-<section id="biblio">
-  <h2>Bibliografía mínima (APA 7)</h2>
-  <ul id="biblio-list"></ul>
-</section>
+  <section id="biblio">
+    <h2>Bibliografía Mínima (APA 7)</h2>
+    <ul id="biblio-list"><!-- render-page.js rellena esta sección --></ul>
+  </section>
 
-<!-- 15. CRÉDITOS -->
+</main>
+
 <footer id="creditos">
-  <p>Guía de Validación v1.0 – Psicometría Aplicada – UNA.\
-     Elaborada por Enrique Morosini con ChatGPT.\
-     Este sitio se actualiza continuamente&nbsp;– cita la fecha de consulta.</p>
+  <p>Guía de Validación v1.1 – Psicometría Aplicada – UNA.<br>
+     Elaborada por Enrique Morosini con asistencia de IA.<br>
+     Este sitio se actualiza continuamente – cita la fecha de consulta.</p>
 </footer>
 
+<!-- SCRIPTS FUNDAMENTALES - EL ORDEN ES CRÍTICO -->
+<script src="js/utils.js"></script>
+<script src="js/quizzes.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/render-page.js"></script>
 
-<!-- JS -->
-    <script src="js/utils.js"></script>       <!-- La herramienta -->
-    <script src="js/quizzes.js"></script>     <!-- El script del quiz (usa la herramienta) -->
-    <script src="js/chat.js"></script>       <!-- El script del chat (usa la herramienta) -->
-    <script src="js/render-page.js"></script> <!-- El que dibuja el resto -->
-
-
+</body>
+</html>
