@@ -4,13 +4,13 @@
 
 /* --- 1. CONFIGURACIÓN GLOBAL Y VARIABLES DE COLOR --- */
 :root {
-  --color-primario: #2c3e50;      /* Azul oscuro/gris para texto principal */
-  --color-secundario: #34495e;    /* Un tono más claro para el menú y fondos */
-  --color-fondo: #f4f6f9;         /* Gris muy claro para el fondo general */
-  --color-acento: #3498db;        /* Azul vibrante para botones, enlaces y bordes */
-  --color-acento-hover: #2980b9;  /* Azul más oscuro para el hover */
+  --color-primario: #2c3e50;
+  --color-secundario: #34495e;
+  --color-fondo: #f4f6f9;
+  --color-acento: #3498db;
+  --color-acento-hover: #2980b9;
   --color-blanco: #ffffff;
-  --color-borde: #e0e0e0;         /* Gris claro para bordes sutiles */
+  --color-borde: #e0e0e0;
 }
 
 *, *::before, *::after {
@@ -64,7 +64,7 @@ section.hero h1 {
 
 section.hero .subtitle {
   font-size: 1.4rem;
-  font-weight: 400; /* Tipografía más delgada */
+  font-weight: 400;
   color: var(--color-blanco);
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.85);
   opacity: 0.95;
@@ -129,10 +129,6 @@ nav {
 
 
 /* --- 4. ESTRUCTURA Y TÍTULOS DE LAS SECCIONES --- */
-main {
-  /* Contenedor principal para las secciones */
-}
-
 section {
   background-color: var(--color-blanco);
   margin: 2rem auto;
@@ -144,13 +140,16 @@ section {
 }
 
 h2 {
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: var(--color-primario);
-  border-bottom: 4px solid var(--color-acento);
-  padding-bottom: 0.8rem;
-  margin-bottom: 2rem;
-  display: inline-block;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 0.75rem 1.5rem;
+  margin: -2.5rem -2.5rem 2rem -2.5rem;
+  border-radius: 12px 12px 0 0;
+  border-bottom: none;
 }
 
 h3 {
@@ -163,7 +162,7 @@ h3 {
 
 /* --- 5. COMPONENTES REUTILIZABLES --- */
 
-/* --- Botones --- */
+/* --- Botones Genéricos (Quiz, Chat) --- */
 .btn-quiz, .btn-submit-quiz, #chat-send {
   display: inline-block;
   background-color: var(--color-acento);
@@ -272,6 +271,7 @@ table.cronograma th {
   font-weight: 600;
 }
 
+
 /* --- 6. SECCIONES Y COMPONENTES ESPECÍFICOS --- */
 
 /* --- Centro de Recursos (Descargables) --- */
@@ -339,63 +339,6 @@ table.cronograma th {
   transform: translateY(-3px); box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* --- Acordeón (Asistente IA) --- */
-.accordion {
-  margin: 2rem 0;
-}
-
-.accordion-item {
-  border-bottom: 1px solid var(--color-borde);
-}
-
-.accordion-item label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 0;
-  cursor: pointer;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--color-primario);
-}
-
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
-  padding: 0 1rem;
-}
-
-.accordion-item input[type="checkbox"] {
-  display: none;
-}
-
-.accordion-item input[type="checkbox"]:checked ~ .accordion-content {
-  max-height: 1000px;
-  padding: 0 1rem 1.5rem 1rem;
-}
-
-.accordion-item label::after {
-  content: '\002B';
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--color-acento);
-  transition: transform 0.3s ease-in-out;
-}
-
-.accordion-item input[type="checkbox"]:checked ~ label::after {
-  transform: rotate(45deg);
-}
-
-.accordion-content h4 { color: var(--color-acento); margin-top: 0; }
-.accordion-content ul { list-style-type: disc; padding-left: 20px; }
-.accordion-content li { margin-bottom: 0.5rem; }
-.accordion-content blockquote {
-  border-left: 4px solid var(--color-acento);
-  padding-left: 1rem; margin-left: 0;
-  font-style: italic; color: #6c757d;
-}
-
 /* --- Checklists Interactivos --- */
 .checklist-container {
   margin-top: 2rem;
@@ -416,14 +359,8 @@ table.cronograma th {
   padding-bottom: 0.5rem;
 }
 
-.checklist {
-  list-style: none;
-}
-
-.checklist li {
-  margin-bottom: 0.75rem;
-}
-
+.checklist { list-style: none; }
+.checklist li { margin-bottom: 0.75rem; }
 .checklist label {
   display: flex;
   align-items: center;
@@ -431,18 +368,13 @@ table.cronograma th {
   font-size: 1rem;
   transition: color 0.3s ease;
 }
-
-.checklist label span {
-  transition: all 0.3s ease;
-}
-
+.checklist label span { transition: all 0.3s ease; }
 .checklist input[type="checkbox"] {
   margin-right: 12px;
   width: 18px;
   height: 18px;
   cursor: pointer;
 }
-
 .checklist input[type="checkbox"]:checked + span {
   text-decoration: line-through;
   color: #95a5a6;
@@ -491,7 +423,7 @@ table.cronograma th {
 .colab-section {
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Para mejor responsividad en móviles */
+  flex-wrap: wrap;
   gap: 1.5rem;
   background-color: #e8f0fe;
   border: 1px solid #d2e3fc;
@@ -499,7 +431,15 @@ table.cronograma th {
 .colab-icon { flex-shrink: 0; }
 .colab-icon img { width: 50px; height: 50px; }
 .colab-text { flex-grow: 1; }
-.colab-text h2 { border: none; margin-bottom: 0.5rem; color: #1967d2; font-size: 1.5rem; }
+.colab-text h2 {
+  border: none;
+  margin: 0 0 0.5rem 0; /* Margen negativo eliminado, se ajusta aquí */
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  color: #1967d2;
+  font-size: 1.5rem;
+}
 .colab-text p { margin: 0; line-height: 1.6; }
 .colab-action { flex-shrink: 0; }
 .btn-colab {
@@ -514,4 +454,10 @@ table.cronograma th {
 }
 .btn-colab:hover { background-color: #1765cc; }
 
-/* Las tarjetas de tests de Tailwind no necesitan CSS aquí si se usa el CDN */
+/* --- Footer --- */
+#creditos {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
+    color: #6c757d;
+}
