@@ -644,3 +644,21 @@ p.section-description {
 #chat-section .chat-box {
   margin-top: 1.5rem;
 }
+
+
+/* =================================================================== */
+/* ===      SOLUCIÓN PARA IMAGEN DE FONDO EN iPAD/iPHONE         === */
+/* =================================================================== */
+
+/* Esta media query se activa solo en pantallas de tabletas y móviles 
+   (cualquier cosa por debajo de 1024px de ancho) */
+@media (max-width: 1024px) {
+  
+  header {
+    /* Desactivamos el efecto parallax y usamos el método de scroll estándar,
+       que es 100% compatible con todos los dispositivos. */
+    background-attachment: scroll;
+  }
+  
+}
+
