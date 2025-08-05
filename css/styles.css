@@ -23,7 +23,7 @@ body {
   font-family: 'Poppins', 'Segoe UI', sans-serif;
   background-color: var(--color-fondo);
   color: var(--color-primario);
-  margin: 0.3rem 0 0 0;
+  margin-top: 0.5rem;
   line-height: 1.7;
 }
 
@@ -521,6 +521,7 @@ table.cronograma th {
 #biblio-list li {
   padding-left: 2em; /* Creamos un espacio a la izquierda para la sangría */
   text-indent: -2em; /* ¡LA MAGIA! Esto mueve la primera línea hacia la izquierda, creando la sangría francesa */
-  margin-bottom: 1rem; /* La separación entre una referencia y otra que pediste */
+  margin-bottom: 0.5rem; /* La separación entre una referencia y otra que pediste */
 }
+
 
