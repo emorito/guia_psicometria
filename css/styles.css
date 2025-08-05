@@ -147,7 +147,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   padding: 0.75rem 1.5rem;
-  margin: -2.5rem -2.5rem 3rem -2.5rem;
+  margin: -2.5rem -2.5rem 3.5rem -2.5rem;
   border-radius: 12px 12px 0 0;
   border-bottom: none;
 }
@@ -433,7 +433,7 @@ table.cronograma th {
 .colab-text { flex-grow: 1; }
 .colab-text h2 {
   border: none;
-  margin: 0 0 0.5rem 0; /* Margen negativo eliminado, se ajusta aquí */
+  margin: 0.3rem 0 0.5rem 1rem; /* Margen negativo eliminado, se ajusta aquí */
   padding: 0;
   background: none;
   border-radius: 0;
