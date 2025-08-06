@@ -661,3 +661,181 @@ margin-top: 1.5rem;
   }
   
 }
+/* =================================================================== */
+/* ===    ESTILOS PARA MARKDOWN DENTRO DE LAS BURBUJAS DEL CHAT    === */
+/* =================================================================== */
+
+.bubble.bot strong {
+  color: var(--color-primario); /* Hace que el texto en negrita destaque un poco más */
+}
+
+.bubble.bot a {
+  color: var(--color-acento); /* Asegura que los enlaces tengan el color de acento */
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.bubble.bot a:hover {
+  text-decoration: none;
+}
+
+/* =================================================================== */
+/* ===         REDISENO TOTAL DE ESTILO PARA LOS QUIZZES           === */
+/* =================================================================== */
+
+/* Contenedor principal del quiz, después de hacer clic en el botón */
+.quiz-box {
+  margin-top: 2rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  background-color: var(--color-fondo);
+}
+
+/* El formulario que contiene todas las preguntas */
+.quiz-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Espacio generoso entre cada pregunta */
+}
+
+/* Cada bloque de pregunta individual */
+.quiz-question {
+  /* No necesita mucho estilo, el espacio lo da el formulario */
+}
+
+/* El texto de la pregunta (ej. "1. ¿Cuál es el propósito...") */
+.question-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-primario);
+  margin-bottom: 1rem;
+}
+
+/* --- El Nuevo Diseño de las Opciones de Respuesta --- */
+
+/* El contenedor de todas las opciones para una pregunta */
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* Espacio entre las opciones */
+}
+
+/* Ocultamos el botón de radio original. ¡La magia está en el label! */
+.options-container input[type="radio"] {
+  display: none;
+}
+
+/* La etiqueta que envuelve el botón de radio y el texto. La convertimos en un botón. */
+.options-container label {
+  display: block;
+  background-color: var(--color-blanco);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid var(--color-borde);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  padding-left: 2.5rem; /* Espacio para nuestro círculo personalizado */
+}
+
+/* Efecto al pasar el ratón por encima */
+.options-container label:hover {
+  border-color: var(--color-acento);
+  background-color: #f0f8ff; /* Un azul muy pálido */
+}
+
+/* Estilo del CÍRCULO que reemplaza al botón de radio por defecto */
+.options-container label::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--color-borde);
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+/* LA MAGIA: Qué pasa cuando se SELECCIONA una opción */
+.options-container input[type="radio"]:checked + span {
+  /* (El código JS actual no usa un span, así que esta regla no es necesaria por ahora) */
+}
+
+.options-container input[type="radio"]:checked + label {
+  background-color: var(--color-acento);
+  border-color: var(--color-acento-hover);
+  color: var(--color-blanco);
+  font-weight: 600;
+}
+
+.options-container input[type="radio"]:checked + label::before {
+  background-color: var(--color-blanco);
+  border-color: var(--color-blanco);
+  box-shadow: inset 0 0 0 3px var(--color-acento); /* El punto interior del círculo */
+}
+
+
+/* --- La Nueva Tarjeta de Resultados --- */
+
+/* Contenedor de la retroalimentación final */
+.quiz-results {
+  text-align: center;
+  padding: 2rem;
+}
+
+.quiz-results h3 {
+  font-size: 1.8rem;
+  color: var(--color-secundario);
+  margin-bottom: 0.5rem;
+}
+
+.quiz-results p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Estilos para los resultados detallados */
+.quiz-summary {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.quiz-summary h2 {
+  background: none;
+  border: none;
+  color: var(--color-primario);
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.result-item {
+  background-color: var(--color-blanco);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  text-align: left;
+  border-left: 5px solid; /* Borde de color que indicará si es correcto o no */
+}
+
+.result-item.correct {
+  border-left-color: #27ae60; /* Verde para correcto */
+}
+
+.result-item.incorrect {
+  border-left-color: #e74c3c; /* Rojo para incorrecto */
+}
+
+.result-item p {
+  margin: 0.5rem 0;
+}
+
+.result-item .explanation {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+  border-top: 1px dashed var(--color-borde);
+}
