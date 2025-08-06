@@ -305,13 +305,24 @@
   </div>
 </div>
   
-<!-- === SCRIPTS FUNDAMENTALES - EL ORDEN ES CRÍTICO === -->
+
+
+  <!-- === SCRIPTS FUNDAMENTALES - EL ORDEN ES CRÍTICO === -->
+
+<!-- 1. El traductor de Markdown (DEBE CARGARSE PRIMERO) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+
+<!-- 2. La herramienta para cargar datos -->
 <script src="js/utils.js"></script>
+
+<!-- 3. Scripts que usan las herramientas -->
 <script src="js/quizzes.js"></script>
 <script src="js/chat.js"></script>
 <script src="js/render-page.js"></script>
+
+<!-- 4. El script que controla el modal de Jamovi -->
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('jamovi-modal');
     const closeBtn = document.getElementById('modal-close');
     
@@ -339,3 +350,4 @@
 
 </body>
 </html>
+
