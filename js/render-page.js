@@ -11,20 +11,56 @@ document.addEventListener('DOMContentLoaded', () => {
   renderTestCards();
 });
 
-/* === 1. Bibliografía APA 7 ========================================= */
+/* === 1. Bibliografía APA 7 (Versión Final Interactiva) ========================================= */
 function renderBibliografia() {
+  // Nueva estructura de datos: un array de objetos, cada uno con la referencia, el comentario y el enlace.
   const refs = [
-    `American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). <i>Standards for educational and psychological testing</i>. Washington, DC: AERA.`,
-    `Boateng, G. O., Neilands, T. B., Frongillo, E. A., Melgar-Quiñonez, H. R., & Young, S. L. (2018). Best practices for developing and validating scales... <i>Frontiers in Public Health, 6</i>, 149.`,
-    `DeVellis, R. F., & Thorpe, A. (2022). <i>Scale development: Theory and applications (5ª ed.)</i>. Sage.`,
-    `Kyriazos, T. A., & Stalikas, A. (2018). Applied psychometrics... <i>Psychology, 9</i>, 2531-2560.`,
-    `Streiner, D. L., Norman, G. R., & Cairney, J. (2015). <i>Health measurement scales (5ª ed.)</i>. Oxford University Press.`
+    {
+      ref: `American Educational Research Association, American Psychological Association, & National Council on Measurement in Education. (2014). <i>Standards for educational and psychological testing</i>. American Educational Research Association.`,
+      url: 'https://drive.google.com/file/d/1A3SzT6xnbJxTc1fS_dd13CjW-z6xXlNj/view?usp=sharing',
+      comentario: `Este es el documento fundamental en psicometría, la "biblia" de los estándares para el desarrollo, uso e interpretación de tests. Es crucial para entender los principios éticos y técnicos que rigen la validación de cualquier instrumento.`
+    },
+    {
+      ref: `Carretero-Dios, H., & Pérez, C. (2005). Normas para el desarrollo y revisión de estudios instrumentales. <i>International Journal of Clinical and Health Psychology, 5</i>(3), 521-551.`,
+      url: 'https://www.redalyc.org/pdf/337/33705307.pdf',
+      comentario: `Este artículo es una guía práctica y accesible para diseñar y revisar instrumentos de investigación. Es excelente para entender el "paso a paso" de un estudio instrumental, desde la conceptualización hasta el análisis.`
+    },
+    {
+      ref: `Sireci, S. G., & Benítez Baena, I. (2023). Evidencias sobre la validación de los tests: Una guía práctica. <i>Psicothema, 35</i>(3), 217-224.`,
+      url: 'https://scielo.isciii.es/pdf/psicothema/v35n3/1886-144X-psicothema-35-03-217.pdf',
+      comentario: `Esta "guía práctica" es esencial para comprender los diferentes tipos de evidencia de validez (contenido, constructo, criterio) y cómo se recogen. Ofrece una visión concisa y actualizada de las mejores prácticas.`
+    },
+    {
+      ref: `Pérez-Rivas, F. J., et al. (2023). Design and content validation using expert opinions of an instrument assessing the lifestyle of adults: The ‘PONTE A 100’ Questionnaire. <i>Healthcare, 11</i>(20), 2038.`,
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10379326/pdf/healthcare-11-02038.pdf',
+      comentario: `Este artículo es un ejemplo muy claro y reciente de cómo realizar la validez de contenido utilizando el juicio de expertos. Es particularmente útil para la primera fase del proyecto.`
+    },
+    {
+      ref: `Holguín Villamil, O. A. (2021). Proceso de validación y fiabilidad del instrumento de investigación transmedia. <i>REIDU: Revista de Investigación y Desarrollo Universitario, 10</i>(1), 107-120.`,
+      url: 'https://reidu.cl/index.php/REIDU/article/view/92',
+      comentario: `Aunque se centra en un instrumento específico, este texto es útil porque describe el proceso completo de validación y fiabilidad de manera aplicada, ayudando a visualizar las etapas y análisis involucrados.`
+    }
   ];
+  
   const ul = document.getElementById('biblio-list');
   if (!ul) return;
-  refs.forEach(txt => {
+  ul.innerHTML = ''; // Limpiamos la lista por si acaso
+
+  // Ahora, creamos el HTML para cada tarjeta desplegable
+  refs.forEach((item, index) => {
     const li = document.createElement('li');
-    li.innerHTML = txt;
+    li.className = 'biblio-item';
+    
+    // Usamos el truco del checkbox oculto para controlar el despliegue
+    li.innerHTML = `
+      <div class="ref-text">${item.ref}</div>
+      <div class="ref-actions">
+        <a href="${item.url}" target="_blank" class="btn-biblio-link">Acceder al Documento</a>
+        <label for="biblio-toggle-${index}" class="btn-biblio-comment">Leer Comentario</label>
+      </div>
+      <input type="checkbox" id="biblio-toggle-${index}" class="biblio-toggle">
+      <div class="ref-comment">${item.comentario}</div>
+    `;
     ul.appendChild(li);
   });
 }
@@ -149,6 +185,7 @@ function renderTestCards() {
     );
   });
 }
+
 
 
 
