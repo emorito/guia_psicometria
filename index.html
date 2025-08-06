@@ -20,7 +20,6 @@
 <body>
 
 <header>
-  <!-- La sección de presentación ahora vive dentro del banner del header -->
   <section class="hero" id="presentacion">
     <h1>Guía de Validación y Estandarización de Pruebas Psicológicas</h1>
     <p class="subtitle">Psicometría Aplicada – 5.º año · Psicología Clínica · Facultad de Filosofía – UNA</p>
@@ -30,7 +29,6 @@
   </section>
 </header>
 
-<!-- Menú de navegación fijo -->
 <nav>
   <ul id="menu">
     <li><a href="#presentacion">Presentación</a></li>
@@ -55,51 +53,43 @@
     <p><strong>Propósito:</strong> Esta guía acompaña el trabajo práctico de validación de un instrumento desde la validez de contenido hasta el informe final.</p>
   </div>
 
-<!-- ========================================================== -->
-<!-- ===   SECCIÓN ENRIQUECIDA DEL NOTEBOOK INTERACTIVO     === -->
-<!-- ========================================================== -->
-<!-- index.html - Sección Asistente IA Corregida -->
-<section id="colab-notebook" class="colab-section">
-  <div class="colab-header">
-    <div class="colab-icon">
-      <img src="media/colab_icon.svg" alt="Icono de Asistente IA">
+  <section id="colab-notebook" class="colab-section">
+    <div class="colab-header">
+      <div class="colab-icon">
+        <img src="media/colab_icon.svg" alt="Icono de Asistente IA">
+      </div>
+      <h2>Tu Asistente de IA</h2>
     </div>
-    <h2>Tu Asistente de IA</h2>
-  </div>
-  <div class="colab-text">
-    <p>
-      Chatea con tus fuentes, obtén respuestas y acelera tu aprendizaje. Este notebook no es solo un recurso, es un <strong>entorno de análisis vivo</strong> donde puedes interactuar con los conceptos, ejecutar los procesos y dominar las técnicas de esta guía.
-    </p>
-  </div>
-  <div class="colab-action">
-    <a href="https://notebooklm.google.com/notebook/ff79a5e9-9078-4e4c-bbd4-20fa647ad9ca" target="_blank" class="btn-colab">Abrir Notebook</a>
-  </div>
-</section>
+    <div class="colab-text">
+      <p>
+        Chatea con tus fuentes, obtén respuestas y acelera tu aprendizaje. Este notebook no es solo un recurso, es un <strong>entorno de análisis vivo</strong> donde puedes interactuar con los conceptos, ejecutar los procesos y dominar las técnicas de esta guía.
+      </p>
+    </div>
+    <div class="colab-action">
+      <a href="https://notebooklm.google.com/notebook/ff79a5e9-9078-4e4c-bbd4-20fa647ad9ca" target="_blank" class="btn-colab">Abrir Notebook</a>
+    </div>
+  </section>
   
-
-<!-- index.html - Sección Cronograma Corregida -->
-<section id="cronograma">
-  <h2>Cronograma y Plan de Trabajo</h2>
-  <div class="table-container">
-    <table class="cronograma">
-      <thead>
-        <tr>
-          <th>Etapa</th>
-          <th>Actividad</th>
-          <th>Fechas</th>
-          <th>Entregables/Acciones</th>
-        </tr>
-      </thead>
-      <tbody id="cronograma-body">
-        <!-- El script render-page.js rellenará esta sección -->
-      </tbody>
-    </table>
-  </div>
-</section>
+  <section id="cronograma">
+    <h2>Cronograma y Plan de Trabajo</h2>
+    <div class="table-container">
+      <table class="cronograma">
+        <thead>
+          <tr>
+            <th>Etapa</th>
+            <th>Actividad</th>
+            <th>Fechas</th>
+            <th>Entregables/Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="cronograma-body"></tbody>
+      </table>
+    </div>
+  </section>
  
   <section id="tests">
     <h2>Tests Sugeridos</h2>
-    <div id="cards-tests" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6"><!-- render-page.js rellena las tarjetas aquí --></div>
+    <div id="cards-tests" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6"></div>
   </section>
 
   <section id="inscripcion">
@@ -114,8 +104,6 @@
     </div>
   </section>
   
-  <!-- --- SECCIONES CON DESCRIPTORES Y DESCARGABLES MEJORADOS --- -->
-
   <section id="revision-plan" class="unidad">
     <h2>Revisión Inicial y Plan</h2>
     <p class="section-description">Esta es la <strong>fase de planificación</strong> del proyecto. Se responde a las preguntas clave: <strong>qué</strong> (se define el constructo), <strong>por qué</strong> (se justifica la necesidad de validación) y <strong>cómo</strong> (se crea un plan de trabajo detallado). El resultado es una ficha técnica y un cronograma que guiarán todo el proceso.</p>
@@ -130,15 +118,15 @@
     <audio controls><source src="media/02_validez_contenido.mp3" type="audio/mpeg" /></audio>
     <p class="section-description">En esta etapa se asegura que las preguntas del test cubran de forma representativa lo que se busca medir. Se utiliza un <strong>panel de expertos</strong> para evaluar cada ítem y asegurar que el instrumento sea una medida fiel del constructo, documentando todos los ajustes tras su retroalimentación.</p>
     <div class="checklist-container">
-  <h4>Checklist de Validez de Contenido</h4>
-  <ul class="checklist">
-    <li><label><input type="checkbox"><span>Definición clara y exhaustiva del constructo.</span></label></li>
-    <li><label><input type="checkbox"><span>Selección de un panel de 5 a 10 expertos cualificados.</span></label></li>
-    <li><label><input type="checkbox"><span>Elaboración de una matriz de evaluación para los jueces (pertinencia, claridad, etc.).</span></label></li>
-    <li><label><input type="checkbox"><span>Recopilación y análisis cuantitativo del feedback (ej. V de Aiken).</span></label></li>
-    <li><label><input type="checkbox"><span>Documentación de los cambios realizados a los ítems basados en el feedback.</span></label></li>
-  </ul>
-  </div>    
+      <h4>Checklist de Validez de Contenido</h4>
+      <ul class="checklist">
+        <li><label><input type="checkbox"><span>Definición clara y exhaustiva del constructo.</span></label></li>
+        <li><label><input type="checkbox"><span>Selección de un panel de 5 a 10 expertos cualificados.</span></label></li>
+        <li><label><input type="checkbox"><span>Elaboración de una matriz de evaluación para los jueces (pertinencia, claridad, etc.).</span></label></li>
+        <li><label><input type="checkbox"><span>Recopilación y análisis cuantitativo del feedback (ej. V de Aiken).</span></label></li>
+        <li><label><input type="checkbox"><span>Documentación de los cambios realizados a los ítems basados en el feedback.</span></label></li>
+      </ul>
+    </div>    
     <button class="btn-quiz" data-json="data/quiz_validez.json" data-target="quiz-container-validez">Iniciar Quiz de Validez</button>
     <div id="quiz-container-validez" class="quiz-box"></div>
   </section>
@@ -147,15 +135,15 @@
     <h2>Estudio Pre-Piloto</h2>
     <p class="section-description">Es una <strong>prueba a pequeña escala</strong> para detectar problemas antes de la recolección principal. Se aplican entrevistas cognitivas o grupos focales a una muestra reducida para registrar el tiempo de respuesta y los comentarios de los participantes sobre la claridad de las instrucciones e ítems.</p>
     <div class="checklist-container">
-  <h4>Checklist del Estudio Pre-Piloto</h4>
-  <ul class="checklist">
-    <li><label><input type="checkbox"><span>Selección de una muestra pequeña (10-30 personas) representativa de la población final.</span></label></li>
-    <li><label><input type="checkbox"><span>Redacción de un guion para las entrevistas cognitivas (ej. método "pensar en voz alta").</span></label></li>
-    <li><label><input type="checkbox"><span>Revisión de la claridad de las instrucciones generales y de cada ítem.</span></label></li>
-    <li><label><input type="checkbox"><span>Registro del tiempo promedio que toma completar el cuestionario.</span></label></li>
-    <li><label><input type="checkbox"><span>Análisis de los comentarios cualitativos para identificar ítems problemáticos o ambiguos.</span></label></li>
-  </ul>
-</div>
+      <h4>Checklist del Estudio Pre-Piloto</h4>
+      <ul class="checklist">
+        <li><label><input type="checkbox"><span>Selección de una muestra pequeña (10-30 personas) representativa de la población final.</span></label></li>
+        <li><label><input type="checkbox"><span>Redacción de un guion para las entrevistas cognitivas (ej. método "pensar en voz alta").</span></label></li>
+        <li><label><input type="checkbox"><span>Revisión de la claridad de las instrucciones generales y de cada ítem.</span></label></li>
+        <li><label><input type="checkbox"><span>Registro del tiempo promedio que toma completar el cuestionario.</span></label></li>
+        <li><label><input type="checkbox"><span>Análisis de los comentarios cualitativos para identificar ítems problemáticos o ambiguos.</span></label></li>
+      </ul>
+    </div>
     <button class="btn-quiz" data-json="data/quiz_prepiloto.json" data-target="quiz-container-prepiloto">Iniciar Quiz de Pre-Piloto</button>
     <div id="quiz-container-prepiloto" class="quiz-box"></div>
   </section>
@@ -164,16 +152,16 @@
     <h2>Análisis de Ítems</h2>
     <p class="section-description">Se examinan las propiedades estadísticas de cada pregunta. Se calculan estadísticos descriptivos, como la <strong>correlación ítem-total</strong>, para identificar y marcar los ítems con un desempeño débil. El objetivo es decidir qué ítems se mantienen, revisan o eliminan para fortalecer el instrumento.</p>
     <div class="checklist-container">
-  <h4>Checklist del Análisis de Ítems</h4>
-  <ul class="checklist">
-    <li><label><input type="checkbox"><span>Cálculo de estadísticos descriptivos para cada ítem (media, desviación estándar).</span></label></li>
-    <li><label><input type="checkbox"><span>Análisis de la distribución de respuestas para cada ítem.</span></label></li>
-    <li><label><input type="checkbox"><span>Cálculo del índice de homogeneidad (correlación ítem-total corregida).</span></label></li>
-    <li><label><input type="checkbox"><span>Identificación de ítems con baja correlación (ej. < .20 o .30).</span></label></li>
-    <li><label><input type="checkbox"><span>Toma de decisión documentada: mantener, revisar o eliminar cada ítem analizado.</span></label></li>
-  </ul>
-  </div>
-      <button class="btn-quiz" data-json="data/quiz_items.json" data-target="quiz-container-items">Iniciar Quiz de Análisis de Ítems</button>
+      <h4>Checklist del Análisis de Ítems</h4>
+      <ul class="checklist">
+        <li><label><input type="checkbox"><span>Cálculo de estadísticos descriptivos para cada ítem (media, desviación estándar).</span></label></li>
+        <li><label><input type="checkbox"><span>Análisis de la distribución de respuestas para cada ítem.</span></label></li>
+        <li><label><input type="checkbox"><span>Cálculo del índice de homogeneidad (correlación ítem-total corregida).</span></label></li>
+        <li><label><input type="checkbox"><span>Identificación de ítems con baja correlación (ej. < .20 o .30).</span></label></li>
+        <li><label><input type="checkbox"><span>Toma de decisión documentada: mantener, revisar o eliminar cada ítem analizado.</span></label></li>
+      </ul>
+    </div>
+    <button class="btn-quiz" data-json="data/quiz_items.json" data-target="quiz-container-items">Iniciar Quiz de Análisis de Ítems</button>
     <div id="quiz-container-items" class="quiz-box"></div>
   </section>
 
@@ -181,16 +169,16 @@
     <h2>Recolección Principal y Muestreo</h2>
     <p class="section-description">Aquí se pone a prueba el instrumento a gran escala. Las decisiones más importantes son: determinar un <strong>tamaño de muestra adecuado</strong> (más de 300 participantes es una buena práctica), elegir un método de muestreo y seguir un estricto protocolo ético-logístico con <strong>consentimiento informado</strong> y autorización del comité de ética.</p>
     <div class="checklist-container">
-  <h4>Checklist de Recolección y Muestreo</h4>
-  <ul class="checklist">
-    <li><label><input type="checkbox"><span>Definición y justificación del tamaño muestral (objetivo > 300).</span></label></li>
-    <li><label><input type="checkbox"><span>Elección del método de muestreo (ej. no probabilístico por conveniencia, bola de nieve).</span></label></li>
-    <li><label><input type="checkbox"><span>Obtención de la aprobación de un Comité de Ética.</span></label></li>
-    <li><label><input type="checkbox"><span>Preparación del formulario de consentimiento informado.</span></label></li>
-    <li><label><input type="checkbox"><span>Creación de la base de datos y plan de codificación de variables.</span></label></li>
-  </ul>
-  </div>
-      <button class="btn-quiz" data-json="data/quiz_muestreo.json" data-target="quiz-container-muestreo">Iniciar Quiz de Muestreo</g>
+      <h4>Checklist de Recolección y Muestreo</h4>
+      <ul class="checklist">
+        <li><label><input type="checkbox"><span>Definición y justificación del tamaño muestral (objetivo > 300).</span></label></li>
+        <li><label><input type="checkbox"><span>Elección del método de muestreo (ej. no probabilístico por conveniencia, bola de nieve).</span></label></li>
+        <li><label><input type="checkbox"><span>Obtención de la aprobación de un Comité de Ética.</span></label></li>
+        <li><label><input type="checkbox"><span>Preparación del formulario de consentimiento informado.</span></label></li>
+        <li><label><input type="checkbox"><span>Creación de la base de datos y plan de codificación de variables.</span></label></li>
+      </ul>
+    </div>
+    <button class="btn-quiz" data-json="data/quiz_muestreo.json" data-target="quiz-container-muestreo">Iniciar Quiz de Muestreo</button>
     <div id="quiz-container-muestreo" class="quiz-box"></div>
   </section>
 
@@ -198,15 +186,15 @@
     <h2>Análisis Psicométrico</h2>
     <p class="section-description">En esta fase se procesan los datos. Primero se realiza una limpieza para manejar valores faltantes y atípicos. Luego se evalúa la estructura interna del test con <strong>Análisis Factorial Exploratorio (AFE)</strong>, se analiza la fiabilidad (ej. Alfa de Cronbach, Omega) y, finalmente, se crean los <strong>baremos</strong> para estandarizar e interpretar las puntuaciones.</p>
     <div class="checklist-container">
-  <h4>Checklist del Análisis Psicométrico</h4>
-  <ul class="checklist">
-    <li><label><input type="checkbox"><span>Realización de la limpieza de la base de datos (valores atípicos, faltantes).</span></label></li>
-    <li><label><input type="checkbox"><span>Verificación de la adecuación de los datos para el AFE (prueba de Bartlett y KMO).</span></label></li>
-    <li><label><input type="checkbox"><span>Ejecución del Análisis Factorial Exploratorio (AFE) para evaluar la estructura interna.</span></label></li>
-    <li><label><input type="checkbox"><span>Cálculo de la fiabilidad de la consistencia interna (Alfa de Cronbach y Omega de McDonald).</span></label></li>
-    <li><label><input type="checkbox"><span>Elaboración de los baremos (cálculo de percentiles o puntuaciones T).</span></label></li>
-  </ul>
-</div>
+      <h4>Checklist del Análisis Psicométrico</h4>
+      <ul class="checklist">
+        <li><label><input type="checkbox"><span>Realización de la limpieza de la base de datos (valores atípicos, faltantes).</span></label></li>
+        <li><label><input type="checkbox"><span>Verificación de la adecuación de los datos para el AFE (prueba de Bartlett y KMO).</span></label></li>
+        <li><label><input type="checkbox"><span>Ejecución del Análisis Factorial Exploratorio (AFE) para evaluar la estructura interna.</span></label></li>
+        <li><label><input type="checkbox"><span>Cálculo de la fiabilidad de la consistencia interna (Alfa de Cronbach y Omega de McDonald).</span></label></li>
+        <li><label><input type="checkbox"><span>Elaboración de los baremos (cálculo de percentiles o puntuaciones T).</span></label></li>
+      </ul>
+    </div>
     <button class="btn-quiz" data-json="data/quiz_analisis.json" data-target="quiz-container-analisis">Iniciar Quiz de Análisis Psicométrico</button>
     <div id="quiz-container-analisis" class="quiz-box"></div>
   </section>
@@ -216,15 +204,15 @@
     <audio controls><source src="media/07_informe_final.mp3" type="audio/mpeg"/></audio>
     <p class="section-description">El informe final es el documento que resume y relata la historia completa del proyecto. Sigue la estructura <strong>IMRyD (Introducción, Método, Resultados y Discusión)</strong> y presenta de manera clara los hallazgos clave, las limitaciones y las futuras aplicaciones del instrumento validado.</p>
     <div class="checklist-container">
-  <h4>Checklist del Informe Final</h4>
-  <ul class="checklist">
-    <li><label><input type="checkbox"><span>Redacción de la Introducción (antecedentes, justificación y objetivos).</span></label></li>
-    <li><label><input type="checkbox"><span>Redacción del Método (participantes, instrumento, procedimiento, análisis de datos).</span></label></li>
-    <li><label><input type="checkbox"><span>Presentación de los Resultados (tablas y figuras claras, descripción de hallazgos).</span></label></li>
-    <li><label><input type="checkbox"><span>Redacción de la Discusión (interpretación de resultados, limitaciones, futuras líneas).</span></label></li>
-    <li><label><input type="checkbox"><span>Inclusión de todos los anexos requeridos (instrumento final, consentimiento, etc.).</span></label></li>
-  </ul>
-</div>
+      <h4>Checklist del Informe Final</h4>
+      <ul class="checklist">
+        <li><label><input type="checkbox"><span>Redacción de la Introducción (antecedentes, justificación y objetivos).</span></label></li>
+        <li><label><input type="checkbox"><span>Redacción del Método (participantes, instrumento, procedimiento, análisis de datos).</span></label></li>
+        <li><label><input type="checkbox"><span>Presentación de los Resultados (tablas y figuras claras, descripción de hallazgos).</span></label></li>
+        <li><label><input type="checkbox"><span>Redacción de la Discusión (interpretación de resultados, limitaciones, futuras líneas).</span></label></li>
+        <li><label><input type="checkbox"><span>Inclusión de todos los anexos requeridos (instrumento final, consentimiento, etc.).</span></label></li>
+      </ul>
+    </div>
     <div class="descargables-en-seccion">
       <a href="docs/Plantilla_informe_final.docx" class="btn-descarga">Plantilla Informe Final (DOCX)</a>
       <a href="docs/Rubrica_evaluacion_informe.pdf" class="btn-descarga">Rúbrica de Evaluación (PDF)</a>
@@ -235,17 +223,19 @@
 
   <section id="descargables">
     <h2>Centro de Recursos</h2>
-    <div id="descargables-list"><!-- render-page.js rellena esta sección --></div>
+    <div id="descargables-list"></div>
   </section>
 
   <section id="chat-section">
     <h2>Mini-Chat Q&A</h2>
     <div class="chat-box">
-      <div class="bubble bot">
+      <div id="chat-log" class="chat-log-style">
+        <div class="bubble bot">
+          Soy un asistente de consulta rápida. Pregúntame por conceptos o decisiones clave. Si mi respuesta no es suficiente, te recomiendo usar el 
+          <a href="#colab-notebook"><b>Asistente de Investigación IA</b></a> 
+          de la sección anterior para un análisis más profundo.
         </div>
-  Soy un asistente de consulta rápida. Pregúntame por conceptos o decisiones clave. Si mi respuesta no es suficiente, te recomiendo usar el 
-  <a href="#colab-notebook"><b>Asistente de Investigación IA</b></a> 
-  de la sección anterior para un análisis más profundo.
+      </div>
       <div class="chat-input-area">
         <select id="chat-domain">
           <option value="conceptos">Conceptos Clave</option>
@@ -259,7 +249,7 @@
 
   <section id="biblio">
     <h2>Bibliografía Mínima (APA 7)</h2>
-    <ul id="biblio-list"><!-- render-page.js rellena esta sección --></ul>
+    <ul id="biblio-list"></ul>
   </section>
 
 </main>
@@ -268,29 +258,25 @@
   <p>Guía de Validación v1.1 – Psicometría Aplicada – UNA.<br>
      Elaborada por Enrique Morosini con asistencia de IA.<br>
      Este sitio se actualiza continuamente – cita la fecha de consulta.</p>
-  
-  <!-- ========================================================== -->
-<!-- ===      VENTANA MODAL PARA LA GUÍA DE JAMOVI          === -->
-<!-- ========================================================== -->
+</footer>
+
+<!-- === VENTANA MODAL PARA LA GUÍA DE JAMOVI === -->
 <div id="jamovi-modal" class="modal-backdrop hidden">
   <div class="modal-window">
-    <button id="modal-close" class="modal-close" title="Cerrar">×</button>
+    <button id="modal-close" class="modal-close" title="Cerrar">&times;</button>
     <div id="modal-content">
       <h2>Guía Práctica de Análisis en Jamovi</h2>
       <p>Pasos esenciales para análisis psicométricos en Jamovi, con enlaces a manuales y tutoriales para profundizar y mantener la guía siempre actualizada.</p>
-
       <h3>1. Configurar Jamovi</h3>
       <ul>
         <li>Descargue e instale la última versión desde la <a href="https://www.jamovi.org/download.html" target="_blank">Página Oficial de Jamovi</a>.</li>
         <li>Consulte el <a href="https://www.jamovi.org/user-manual.html" target="_blank">Manual de Usuario Oficial</a> para soporte general.</li>
       </ul>
-
       <h3>2. Importar Datos</h3>
       <ul>
         <li>Video-Tutorial: <a href="https://youtu.be/7u4zXG7gA-E" target="_blank">Importar y gestionar datos en Jamovi (YouTube)</a>.</li>
         <li>Pasos: Archivo → Abrir → Seleccionar archivo (.csv, .xlsx, .sav) → Verificar tipos de variable.</li>
       </ul>
-      
       <h3>3. Módulos Necesarios</h3>
       <p>Para agregar módulos: pestaña <strong>Modules</strong> (icono de puzzle) → Jamovi Library → Install from Jamovi library.</p>
       <table>
@@ -301,19 +287,16 @@
           <tr><td><strong>lavaan</strong> (SEM)</td><td>Análisis Factorial Confirmatorio (CFA)</td></tr>
         </tbody>
       </table>
-
       <h3>4. Análisis Factorial Exploratorio (EFA)</h3>
       <ul>
         <li>Ruta: <strong>Analyses → Factor → Exploratory Factor Analysis</strong>.</li>
         <li>Guía de referencia: <a href="https://bookdown.org/gsparrow/efa/" target="_blank">EFA in R and jamovi</a>.</li>
       </ul>
-
       <h3>5. Análisis de Fiabilidad</h3>
       <ul>
         <li>Ruta: <strong>Analyses → Factor → Reliability Analysis</strong>.</li>
         <li>Lectura recomendada: <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2012.00443/full" target="_blank">Interpretación de Alfa y Omega</a>.</li>
       </ul>
-
       <h3>Recursos Adicionales</h3>
       <ul>
         <li>Comunidad y foro oficial: <a href="https://forum.jamovi.org" target="_blank">Foro de Jamovi</a>.</li>
@@ -322,59 +305,37 @@
   </div>
 </div>
   
-</footer>
-
-<!-- SCRIPTS FUNDAMENTALES - EL ORDEN ES CRÍTICO -->
+<!-- === SCRIPTS FUNDAMENTALES - EL ORDEN ES CRÍTICO === -->
 <script src="js/utils.js"></script>
 <script src="js/quizzes.js"></script>
 <script src="js/chat.js"></script>
 <script src="js/render-page.js"></script>
-
-  <!-- ... tus otros scripts (utils.js, quizzes.js, etc.) ... -->
-
-<!-- SCRIPT PARA CONTROLAR EL MODAL DE JAMOVI -->
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('jamovi-modal');
     const closeBtn = document.getElementById('modal-close');
     
-    // Este es un truco para manejar un botón que se crea dinámicamente
     document.body.addEventListener('click', function(event) {
       if (event.target.id === 'open-jamovi-guide') {
         modal.classList.remove('hidden');
       }
     });
 
-    closeBtn.addEventListener('click', () => {
-      modal.classList.add('hidden');
-    });
-
-    // Cierra el modal si se hace clic en el fondo oscuro
-    modal.addEventListener('click', (event) => {
-      if (event.target.id === 'jamovi-modal') {
+    if(closeBtn) {
+      closeBtn.addEventListener('click', () => {
         modal.classList.add('hidden');
-      }
-    });
+      });
+    }
+
+    if(modal) {
+      modal.addEventListener('click', (event) => {
+        if (event.target.id === 'jamovi-modal') {
+          modal.classList.add('hidden');
+        }
+      });
+    }
   });
 </script>
 
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
