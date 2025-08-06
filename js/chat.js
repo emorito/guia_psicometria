@@ -25,6 +25,9 @@ const Chat = {
     const txt = document.getElementById('chat-input').value.trim().toLowerCase();
     if (!txt) return;
 
+    // ¡NUEVA LÍNEA! Creamos el convertidor de Markdown
+  const converter = new showdown.Converter();
+    
     const dominio = document.getElementById('chat-domain').value;
     const banco = this.bancos[dominio];
 
@@ -36,9 +39,13 @@ const Chat = {
 
     const log = document.getElementById('chat-log');
     const cardQ = `<div class="bubble user">${txt}</div>`;
-    const cardA = hit
-      ? `<div class="bubble bot">${hit.a}</div>`
-      : `<div class="bubble bot">❓ No encontré una respuesta guardada. Intenta otra palabra clave.</div>`;
+    
+    const respuestaMarkdown = hit ? hit.a : '❓ No encontré una respuesta guardada. Intenta otra palabra clave.';
+
+// ¡LA MAGIA! Usamos el convertidor para traducir el Markdown a HTML
+const respuestaHTML = converter.makeHtml(respuestaMarkdown);
+
+const cardA = `<div class="bubble bot">${respuestaHTML}</div>`;
 
     log.insertAdjacentHTML('beforeend', cardQ + cardA);
     log.scrollTop = log.scrollHeight;
@@ -49,3 +56,4 @@ const Chat = {
 
 /* inicia cuando cargue el DOM */
 document.addEventListener('DOMContentLoaded', () => Chat.init());
+
