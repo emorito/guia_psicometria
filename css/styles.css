@@ -839,3 +839,97 @@ margin-top: 1.5rem;
   margin-top: 0.5rem;
   border-top: 1px dashed var(--color-borde);
 }
+
+
+/* =================================================================== */
+/* ===    ESTILO FINAL PARA BIBLIOGRAFÍA INTERACTIVA (TARJETAS)    === */
+/* =================================================================== */
+
+#biblio-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+/* Cada tarjeta de referencia */
+.biblio-item {
+  background-color: var(--color-fondo);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--color-borde);
+}
+
+/* El texto de la referencia con sangría francesa */
+.ref-text {
+  padding-left: 2em;
+  text-indent: -2em;
+  margin-bottom: 1rem;
+}
+
+/* Contenedor para los botones de acción */
+.ref-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Estilo de los botones (enlace y comentario) */
+.btn-biblio-link, .btn-biblio-comment {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Botón de enlace (principal) */
+.btn-biblio-link {
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+}
+.btn-biblio-link:hover {
+  background-color: var(--color-acento-hover);
+}
+
+/* Botón de comentario (secundario) */
+.btn-biblio-comment {
+  background-color: transparent;
+  color: var(--color-secundario);
+  border: 1px solid var(--color-borde);
+}
+.btn-biblio-comment:hover {
+  background-color: #e9ecef; /* Un gris muy claro */
+}
+
+/* Ocultamos el checkbox */
+.biblio-toggle {
+  display: none;
+}
+
+/* El comentario, oculto por defecto */
+.ref-comment {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-out;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 1px solid transparent;
+  color: var(--color-secundario);
+}
+
+/* LA MAGIA: Cuando el checkbox está marcado, mostramos el comentario */
+.biblio-toggle:checked ~ .ref-comment {
+  max-height: 500px; /* Altura suficiente para el texto */
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top-color: var(--color-borde); /* La línea separadora aparece */
+}
+
+/* Cambiamos el texto del botón de comentario cuando está activo */
+.biblio-toggle:checked ~ .ref-actions .btn-biblio-comment {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+}
