@@ -52,15 +52,16 @@ function renderBibliografia() {
     li.className = 'biblio-item';
     
     // Usamos el truco del checkbox oculto para controlar el despliegue
-    li.innerHTML = `
-      <div class="ref-text">${item.ref}</div>
-      <div class="ref-actions">
-        <a href="${item.url}" target="_blank" class="btn-biblio-link">Acceder al Documento</a>
-        <label for="biblio-toggle-${index}" class="btn-biblio-comment">Leer Comentario</label>
-      </div>
-      <input type="checkbox" id="biblio-toggle-${index}" class="biblio-toggle">
-      <div class="ref-comment">${item.comentario}</div>
-    `;
+   li.innerHTML = `
+     <div class="ref-text">${item.ref}</div>
+     <div class="ref-actions">
+       <a href="${item.url}" target="_blank">Acceder al documento</a>
+       <span class="action-separator">|</span>
+       <label for="biblio-toggle-${index}">Leer comentario</label>
+     </div>
+     <input type="checkbox" id="biblio-toggle-${index}" class="biblio-toggle">
+     <div class="ref-comment">${item.comentario}</div>
+   `;
     ul.appendChild(li);
   });
 }
@@ -185,6 +186,7 @@ function renderTestCards() {
     );
   });
 }
+
 
 
 
