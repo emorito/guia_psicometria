@@ -19,9 +19,12 @@ margin: 0;
 padding: 0;
 }
 
+
 body {
 font-family: 'Poppins', 'Segoe UI', sans-serif;
+/* Un fondo sutil para dar textura y un look más profesional */
 background-color: var(--color-fondo);
+background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e0e0e0' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 color: var(--color-primario);
 margin-top: 0.5rem;
 line-height: 1.7;
@@ -739,10 +742,12 @@ margin-top: 1.5rem;
   padding-left: 2.5rem; /* Espacio para nuestro círculo personalizado */
 }
 
+
 /* Efecto al pasar el ratón por encima */
 .options-container label:hover {
-  border-color: var(--color-acento);
-  background-color: #f0f8ff; /* Un azul muy pálido */
+  border-color: var(--color-acento-hover);
+  transform: translateY(-2px); /* Eleva la opción ligeramente */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Añade una sombra sutil */
 }
 
 /* Estilo del CÍRCULO que reemplaza al botón de radio por defecto */
@@ -865,13 +870,16 @@ margin-top: 1.5rem;
   margin-bottom: 0.75rem; /* Menos espacio, más cohesión */
 }
 
+
 /* Contenedor para las acciones de texto */
 .ref-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem; /* Espacio entre los enlaces */
-  padding-left: 2em; /* Alineado con la sangría */
-  font-size: 0.9rem; /* Texto más pequeño y discreto */
+  display: flex; /* Usamos Flexbox para alinear los elementos */
+  align-items: center; /* Centramos verticalmente los enlaces */
+  flex-wrap: wrap; /* ¡IMPORTANTE! Permite que los enlaces se ajusten en pantallas pequeñas */
+  gap: 0.5rem 1.5rem; /* Espacio vertical y horizontal para cuando se envuelven */
+  padding-left: 2em; /* Mantenemos la alineación con la sangría */
+  font-size: 0.85rem; /* Hacemos el texto un poco más pequeño y discreto */
+  margin-top: 0.5rem; /* Añadimos un pequeño espacio superior */
 }
 
 /* Estilo de los enlaces y la etiqueta */
