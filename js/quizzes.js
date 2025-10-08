@@ -107,5 +107,11 @@ function renderizarQuiz(preguntas, contenedor) {
 
     const resumenPuntaje = `<div class="quiz-summary"><h2>Has acertado ${puntaje} de ${preguntas.length}</h2></div>`;
     contenedor.innerHTML = resumenPuntaje + resultadosHTML;
+
+    // Marcar sección como completada
+const key = jsonPath.match(/quiz_(\w+)\.json/)[1];
+window.markSectionComplete?.(key);
+    
   });
 }
+
