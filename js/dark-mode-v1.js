@@ -1,4 +1,4 @@
-/* dark-mode.js – Toggle y persistencia */
+/* dark-mode-v1.js – Toggle y persistencia */
 (function () {
   const button = document.getElementById('theme-toggle');
   const html = document.documentElement;
