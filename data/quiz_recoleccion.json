@@ -1,107 +1,107 @@
 [
   {
-    "id": "RECMP01",
-    "p": "¿Cuál es la función principal de un pre-test en el desarrollo de un cuestionario psicométrico?",
-    "opciones": ["Establecer la fiabilidad definitiva del instrumento.", "Evaluar la claridad y comprensión de los ítems y el diseño del cuestionario.", "Determinar la validez de constructo mediante análisis factorial.", "Seleccionar el método de rotación de factores más adecuado."],
-    "correcta": 1,
-    "exp": "El pre-test busca identificar y corregir problemas de redacción y diseño antes de la recolección masiva de datos."
-  },
-  {
-    "id": "RECMP02",
-    "p": "¿Quiénes deberían participar en un pre-test o estudio piloto para evaluar un cuestionario?",
-    "opciones": ["Solo expertos en psicometría.", "Cualquier persona disponible para una prueba rápida.", "Individuos que sean representativos de la población objetivo.", "Únicamente los investigadores que diseñaron el cuestionario."],
+    "id": "RECO01",
+    "p": "¿Qué tamaño de muestra mínimo se recomienda para un estudio principal con Análisis Factorial Exploratorio (AFE)?",
+    "opciones": ["5", "50", "100", "500"],
     "correcta": 2,
-    "exp": "Los participantes del pre-test deben ser similares a los encuestados reales para obtener retroalimentación relevante."
+    "exp": "100 participantes es un mínimo aceptable para AFE, aunque 300 es ideal."
   },
   {
-    "id": "RECMP03",
-    "p": "¿Cuál es un tamaño de muestra común para las entrevistas cognitivas en la fase de pre-test de un cuestionario?",
-    "opciones": ["Más de 200 participantes.", "Entre 5 y 15 participantes.", "Exactamente 50 participantes.", "Cientos de participantes para análisis estadísticos."],
-    "correcta": 1,
-    "exp": "Las entrevistas cognitivas suelen realizarse con un número pequeño de participantes, entre 5 y 15, hasta alcanzar la saturación."
-  },
-  {
-    "id": "RECMP04",
-    "p": "¿Qué técnica de pre-test implica pedir a los participantes que verbalicen sus pensamientos mientras responden los ítems de un cuestionario?",
-    "opciones": ["Análisis de fiabilidad Alfa de Cronbach.", "Entrevistas cognitivas con 'pensar en voz alta'.", "Análisis factorial exploratorio.", "Prueba de validez de criterio."],
-    "correcta": 1,
-    "exp": "Las entrevistas cognitivas, especialmente el 'pensar en voz alta', revelan cómo los encuestados interpretan y procesan las preguntas."
-  },
-  {
-    "id": "RECMP05",
-    "p": "¿Qué tipo de problemas de los ítems se pueden identificar eficazmente mediante entrevistas cognitivas?",
-    "opciones": ["Correlaciones bajas entre ítems.", "Ambigüedad, confusión o dificultad de comprensión de los ítems.", "Cargas factoriales cruzadas.", "Unidimensionalidad del constructo."],
-    "correcta": 1,
-    "exp": "Las entrevistas cognitivas son clave para detectar ítems ambiguos, confusos o difíciles de entender por la población objetivo."
-  },
-  {
-    "id": "RECMP06",
-    "p": "¿Qué característica esencial deben tener los ítems de un cuestionario en cuanto a su redacción?",
-    "opciones": ["Ser largos y muy detallados para mayor precisión.", "Incluir dobles negaciones para evitar sesgos.", "Ser claros, concisos y simples.", "Utilizar jerga técnica para mayor rigurosidad."],
+    "id": "RECO02",
+    "p": "¿Qué proporción sujetos-por-variable (SPV) es guía común para tamaño de muestra?",
+    "opciones": ["1:1", "5:1", "10:1", "20:1"],
     "correcta": 2,
-    "exp": "Los ítems deben ser claros, concisos y simples para evitar ambigüedades y facilitar la respuesta."
+    "exp": "10:1 es una guía común, aunque varía según el estudio."
   },
   {
-    "id": "RECMP07",
-    "p": "¿Qué tipo de ítems se recomienda evitar al redactar un cuestionario?",
-    "opciones": ["Ítems con carga factorial alta.", "Ítems de 'doble barril' (que preguntan dos cosas a la vez).", "Ítems con alta correlación con el puntaje total.", "Ítems redactados positivamente."],
-    "correcta": 1,
-    "exp": "Los ítems de 'doble barril' son confusos y pueden inducir respuestas inexactas al medir dos ideas simultáneamente."
-  },
-  {
-    "id": "RECMP08",
-    "p": "¿Cuántos ítems se recomienda tener en el pool inicial de un cuestionario en comparación con la versión final?",
-    "opciones": ["Aproximadamente la mitad de los ítems finales.", "El mismo número para optimizar el tiempo.", "De dos a cinco veces el número de ítems finales.", "No hay una recomendación específica, depende del tema."],
+    "id": "RECO03",
+    "p": "¿Qué tipo de muestra puede comprometer la generalizabilidad por sesgo de selección?",
+    "opciones": ["Aleatoria simple", "Estratificada", "No probabilística", "Por conglomerados"],
     "correcta": 2,
-    "exp": "Se sugiere un pool inicial de ítems significativamente más grande para permitir una selección juiciosa."
+    "exp": "Las muestras no probabilísticas pueden generar sesgos de selección."
   },
   {
-    "id": "RECMP09",
-    "p": "¿Cuál es el propósito de realizar un estudio piloto (pilot test) en las condiciones reales de campo?",
-    "opciones": ["Confirmar la validez aparente del instrumento.", "Evaluar cómo se comportarán los datos en un entorno real y si hay ítems que eliminar.", "Generar una lista exhaustiva de ítems.", "Obtener la aprobación de expertos en la materia."],
-    "correcta": 1,
-    "exp": "Un estudio piloto es un ensayo general para ver cómo funcionan los ítems y las condiciones de recolección antes del estudio principal."
-  },
-  {
-    "id": "RECMP10",
-    "p": "¿Cuál es el rango de tamaño de muestra recomendado para un estudio piloto si se planea un Análisis Factorial Exploratorio (AFE)?",
-    "opciones": ["Entre 5 y 15 participantes.", "Entre 50 y 100 participantes.", "Al menos 500 participantes.", "No hay un tamaño de muestra específico para estudios piloto."],
-    "correcta": 1,
-    "exp": "Para un AFE en el piloto, un tamaño de muestra de 50 a 100 participantes es considerado adecuado."
-  },
-  {
-    "id": "RECMP11",
-    "p": "Según Comrey y Lee (1992), ¿cuál de los siguientes tamaños de muestra para investigación psicométrica se considera 'bueno'?",
-    "opciones": ["50 participantes.", "100 participantes.", "300 participantes.", "Más de 1000 participantes."],
+    "id": "RECO04",
+    "p": "¿Cuál es un tamaño de muestra 'bueno' según Comrey y Lee?",
+    "opciones": ["50", "100", "300", "1000"],
     "correcta": 2,
-    "exp": "Comrey y Lee sugieren que 300 participantes es un tamaño de muestra 'bueno' para investigación psicométrica."
+    "exp": "Comrey y Lee consideran 300 participantes como 'bueno' para investigación psicométrica."
   },
   {
-    "id": "RECMP12",
-    "p": "¿Qué proporción de sujetos por variable (STV) es generalmente aceptable como guía para el tamaño de la muestra en un estudio principal?",
-    "opciones": ["1:1.", "5:1.", "10:1.", "20:1."],
-    "correcta": 2,
-    "exp": "Una proporción de 10:1 (sujetos por variable) es típicamente considerada aceptable, aunque varía."
-  },
-  {
-    "id": "RECMP13",
-    "p": "Si las comunalidades de los ítems son bajas (<0.50) en un análisis factorial, ¿qué implicación tiene para el tamaño de la muestra requerido?",
-    "opciones": ["El tamaño de la muestra puede ser menor.", "Se requiere un tamaño de muestra de al menos 300 participantes.", "No afecta el tamaño de la muestra.", "El análisis factorial no es apropiado."],
+    "id": "RECO05",
+    "p": "¿Qué implica que las comunalidades sean < 0.50 en un AFE?",
+    "opciones": ["Alta validez", "Necesidad de muestra más grande", "Baja fiabilidad", "Unidimensionalidad"],
     "correcta": 1,
-    "exp": "Comunalidades bajas requieren un tamaño de muestra más grande (300+) para obtener estimaciones precisas."
+    "exp": "Comunalidades bajas requieren muestras más grandes para estimaciones precisas."
   },
   {
-    "id": "RECMP14",
-    "p": "Si algunos ítems de una escala homogénea muestran correlaciones negativas consistentes con otros, ¿qué acción se podría considerar?",
-    "opciones": ["Eliminar todos los ítems de inmediato.", "Indica que los ítems miden diferentes constructos.", "Necesidad de recodificar (invertir la puntuación) algunos ítems.", "Aumentar el número de opciones de respuesta."],
+    "id": "RECO06",
+    "p": "¿Qué se debe obtener antes de recolectar datos humanos?",
+    "opciones": ["Consentimiento informado", "Aprobación de comité de ética", "Ambos", "Ninguno"],
     "correcta": 2,
-    "exp": "Correlaciones negativas pueden indicar que un ítem está codificado en dirección opuesta y necesita ser invertido."
+    "exp": "Se requieren ambos: aprobación ética y consentimiento informado."
   },
   {
-    "id": "RECMP15",
-    "p": "¿Qué tipo de muestra se considera una limitación común en la validación de escalas debido a que puede comprometer la generalizabilidad de los hallazgos?",
-    "opciones": ["Muestras probabilísticas.", "Muestras aleatorias estratificadas.", "Muestras por conglomerados.", "Muestras no probabilísticas."],
-    "correcta": 3,
-    "exp": "Las muestras no probabilísticas pueden generar sesgos de selección, afectando la generalizabilidad de los resultados."
+    "id": "RECO07",
+    "p": "¿Qué método de muestreo garantiza que cada elemento tenga la misma probabilidad de ser seleccionado?",
+    "opciones": ["Conveniencia", "Aleatorio simple", "Por cuotas", "Bola de nieve"],
+    "correcta": 1,
+    "exp": "El muestreo aleatorio simple garantiza igual probabilidad de selección."
+  },
+  {
+    "id": "RECO08",
+    "p": "¿Qué implica una correlación negativa consistente entre ítems de una escala?",
+    "opciones": ["Alta validez", "Necesidad de recodificar", "Baja fiabilidad", "Multidimensionalidad"],
+    "correcta": 1,
+    "exp": "Correlaciones negativas sugieren que algunos ítems están invertidos y deben recodificarse."
+  },
+  {
+    "id": "RECO09",
+    "p": "¿Qué se revisa al analizar la 'distribución de respuestas' de un ítem?",
+    "opciones": ["Cargas factoriales", "Frecuencia de cada opción", "Validez de criterio", "Fiabilidad test-retest"],
+    "correcta": 1,
+    "exp": "Se revisa si hay opciones poco elegidas o sesgos en la distribución."
+  },
+  {
+    "id": "RECO10",
+    "p": "¿Qué tamaño de muestra es mínimo para análisis de ítems iniciales?",
+    "opciones": ["5", "50", "100", "500"],
+    "correcta": 2,
+    "exp": "100 participantes es un mínimo razonable para análisis de ítems iniciales."
+  },
+  {
+    "id": "RECO11",
+    "p": "¿Qué se analiza con la 'matriz de correlaciones inter-ítem'?",
+    "opciones": ["Relaciones entre pares de ítems", "Cargas factoriales", "Validez de constructo", "Fiabilidad test-retest"],
+    "correcta": 0,
+    "exp": "Permite ver qué tan relacionados están los ítems entre sí."
+  },
+  {
+    "id": "RECO12",
+    "p": "¿Qué indica que el 95 % de las respuestas caigan en una sola categoría?",
+    "opciones": ["Alta validez", "El ítem no discrimina y puede eliminarse", "Alta fiabilidad", "El ítem debe mantenerse"],
+    "correcta": 1,
+    "exp": "Falta de variación sugiere que el ítem no aporta información útil."
+  },
+  {
+    "id": "RECO13",
+    "p": "¿Qué se hace con ítems que tienen correlaciones negativas consistentes con el resto?",
+    "opciones": ["Se duplican", "Se eliminan o se recodifican", "Se mantienen", "Se combinan"],
+    "correcta": 1,
+    "exp": "Correlaciones negativas sugieren inversión de codificación o eliminación."
+  },
+  {
+    "id": "RECO14",
+    "p": "¿Qué método de muestreo es más vulnerable al sesgo de selección?",
+    "opciones": ["Aleatorio simple", "Estratificado", "No probabilístico", "Por conglomerados"],
+    "correcta": 2,
+    "exp": "Las muestras no probabilísticas son más vulnerables al sesgo de selección."
+  },
+  {
+    "id": "RECO15",
+    "p": "¿Qué implica un Alfa de Cronbach de 0.95 en una escala corta?",
+    "opciones": ["Excelente consistencia", "Posible redundancia de ítems", "Baja validez", "Alta dificultad"],
+    "correcta": 1,
+    "exp": "Alfas muy altos en escalas cortas pueden indicar redundancia."
   }
 ]
