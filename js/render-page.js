@@ -154,7 +154,7 @@ const testsData = [
   {sigla:'EES', nombre:'Escala de Somnolencia de Epworth', desc:'Evalúa la probabilidad de quedarse dormido en diferentes situaciones cotidianas, midiendo la somnolencia diurna general.', it:8},
   {sigla:'AUDIT', nombre:'Cuestionario de Identificación de Trastornos por Consumo de Alcohol', desc:'Es una herramienta de cribado para identificar el consumo de alcohol de riesgo, perjudicial o dependiente.', it:10},
   {sigla:'DAST-10', nombre:'Test de Abuso de Drogas de 10 ítems', desc:'Identifica el uso problemático de drogas y los problemas asociados en el último año.', it:10},
-  {sigla:'CUBI-18', nombre:'Cuestionario de Ideación Suicida de Barcelona', desc:'Evalúa la presencia de ideación y conductas suicidas en adolescentes y adultos jóvenes.', it:18},
+  {sigla:'CUBI-18', nombre:'Cuestionario de Urgencia, Búsqueda e Impulsividad', desc:'Evalúa la impulsividad a través de tres subtipos principales: impulsividad por imprevisión, búsqueda de sensaciones y urgencia compulsiva', it:18},
   {sigla:'SD3', nombre:'Triada Oscura Abreviada', desc:'Mide los rasgos de personalidad de la triada oscura: Maquiavelismo, Narcisismo y Psicopatía.', it:27},
   {sigla:'CREA', nombre:'Escala de Autopercepción de Creatividad', desc:'Evalúa la percepción de una persona sobre su propia capacidad para generar ideas originales, resolver problemas y crear.', it:30},
 ];
@@ -186,6 +186,7 @@ function renderTestCards() {
     );
   });
 }
+
 
 
 
