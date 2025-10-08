@@ -19,6 +19,17 @@
 
 <body>
 
+  <!-- Barra de progreso + insignias -->
+<section id="progress-bar" style="background:#f4f6f9;border-bottom:1px solid #e0e0e0;padding:8px 16px;display:flex;align-items:center;gap:12px;font-size:14px;">
+  <span>Progreso</span>
+  <div style="flex:1;height:8px;background:#e0e0e0;border-radius:4px;overflow:hidden;">
+    <div id="progress-fill" style="height:100%;background:#3498db;width:0%;transition:width 0.4s ease;"></div>
+  </div>
+  <strong id="progress-percent">0 %</strong>
+  <div id="badges" style="display:flex;gap:6px;"></div>
+</section>
+
+  
 <header>
   <section class="hero" id="presentacion">
     <h1>Guía de Validación y Estandarización de Pruebas Psicológicas</h1>
@@ -359,6 +370,7 @@
   <script src="js/dark-mode-v1.js"></script>
 </body>
 </html>
+
 
 
 
