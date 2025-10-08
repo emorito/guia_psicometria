@@ -1,5 +1,4 @@
-/* quizzes.js - v4 - VERSIÓN FINAL CORREGIDA CON SINTAXIS VERIFICADA */
-
+/* quizzes.js – v5 LIMPIO Y FUNCIONAL */
 document.addEventListener('DOMContentLoaded', () => {
   const quizButtons = document.querySelectorAll('.btn-quiz');
 
@@ -8,38 +7,25 @@ document.addEventListener('DOMContentLoaded', () => {
       const jsonPath = button.dataset.json;
       const targetId = button.dataset.target;
       const targetElement = document.getElementById(targetId);
+      if (!targetElement) return;
 
-      if (!targetElement) {
-        console.error(`Error: No se encontró el contenedor del quiz con el ID "${targetId}".`);
-        return;
-      }
+      targetElement.innerHTML = '<p>Cargando cuestionario...</p>';
 
-      targetElement.innerHTML = '<p class="quiz-loading">Cargando cuestionario...</p>';
-      
       try {
-        const bancoDePreguntas = await Utils.loadJSON(jsonPath);
-
-        if (!bancoDePreguntas || bancoDePreguntas.length === 0) {
-          throw new Error(`El archivo ${jsonPath} está vacío o no se pudo cargar.`);
-        }
-
-        const preguntasSeleccionadas = seleccionarPreguntasAlAzar(bancoDePreguntas, 5);
-        renderizarQuiz(preguntasSeleccionadas, targetElement);
-
-      } catch (error) {
-        console.error("No se pudo iniciar el cuestionario:", error);
-        targetElement.innerHTML = '<p class="quiz-error">❌ Lo sentimos, no se pudieron cargar las preguntas.</p>';
+        const bancoDePreguntas = await fetch(jsonPath).then(r => {
+          if (!r.ok) throw new Error('404');
+          return r.json();
+        });
+        const preguntasSeleccionadas = [...bancoDePreguntas].sort(() => 0.5 - Math.random()).slice(0, 5);
+        renderizarQuiz(preguntasSeleccionadas, targetElement, jsonPath);
+      } catch (e) {
+        targetElement.innerHTML = '<p>❌ No se pudieron cargar las preguntas.</p>';
       }
     });
   });
 });
 
-function seleccionarPreguntasAlAzar(array, numItems) {
-  const arrayMezclado = [...array].sort(() => 0.5 - Math.random());
-  return arrayMezclado.slice(0, numItems);
-}
-
-function renderizarQuiz(preguntas, contenedor) {
+function renderizarQuiz(preguntas, contenedor, jsonPath) {
   contenedor.innerHTML = '';
   const form = document.createElement('form');
   form.className = 'quiz-form';
@@ -50,23 +36,17 @@ function renderizarQuiz(preguntas, contenedor) {
 
     let opcionesHTML = '';
     pregunta.opciones.forEach((opcion, i) => {
-      // === SINTAXIS CORREGIDA Y VERIFICADA ===
-      // Se asegura que todas las comillas y etiquetas estén correctamente anidadas.
       opcionesHTML += `
         <div>
           <input type="radio" name="pregunta_${index}" value="${i}" required id="opcion_${index}_${i}">
-          <label for="opcion_${index}_${i}">
-            <span>${opcion}</span>
-          </label>
+          <label for="opcion_${index}_${i}">${opcion}</label>
         </div>
       `;
     });
 
     preguntaDiv.innerHTML = `
-      <p class="question-text">${index + 1}. ${pregunta.p}</p> 
-      <div class="options-container">
-        ${opcionesHTML}
-      </div>
+      <p class="question-text">${index + 1}. ${pregunta.p}</p>
+      <div class="options-container">${opcionesHTML}</div>
     `;
     form.appendChild(preguntaDiv);
   });
@@ -76,45 +56,38 @@ function renderizarQuiz(preguntas, contenedor) {
   submitButton.className = 'btn-submit-quiz';
   submitButton.textContent = 'Corregir y ver resultados';
   form.appendChild(submitButton);
-  contenedor.appendChild(form);
 
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
+  form.addEventListener('submit', e => {
+    e.preventDefault();
     let puntaje = 0;
     let resultadosHTML = '';
 
     preguntas.forEach((pregunta, index) => {
       const respuestaUsuarioNode = form.querySelector(`input[name="pregunta_${index}"]:checked`);
-      
-      if (respuestaUsuarioNode) {
-        const respuestaUsuarioIndex = parseInt(respuestaUsuarioNode.value, 10);
-        const esCorrecta = respuestaUsuarioIndex === pregunta.correcta;
+      if (!respuestaUsuarioNode) return;
 
-        if (esCorrecta) {
-          puntaje++;
-        }
-        
-        resultadosHTML += `
-          <div class="result-item ${esCorrecta ? 'correct' : 'incorrect'}">
-            <p><strong>Pregunta:</strong> ${pregunta.p}</p>
-            <p><strong>Tu respuesta:</strong> ${pregunta.opciones[respuestaUsuarioIndex]}</p>
-            ${!esCorrecta ? `<p><strong>Respuesta correcta:</strong> ${pregunta.opciones[pregunta.correcta]}</p>` : ''}
-            <p class="explanation"><em><strong>Explicación:</strong> ${pregunta.exp}</em></p>
-          </div>
-        `;
-      }
+      const respuestaUsuarioIndex = parseInt(respuestaUsuarioNode.value, 10);
+      const esCorrecta = respuestaUsuarioIndex === pregunta.correcta;
+      if (esCorrecta) puntaje++;
+
+      resultadosHTML += `
+        <div class="result-item ${esCorrecta ? 'correct' : 'incorrect'}">
+          <p><strong>Pregunta:</strong> ${pregunta.p}</p>
+          <p><strong>Tu respuesta:</strong> ${pregunta.opciones[respuestaUsuarioIndex]}</p>
+          ${!esCorrecta ? `<p><strong>Respuesta correcta:</strong> ${pregunta.opciones[pregunta.correcta]}</p>` : ''}
+          <p class="explanation"><em><strong>Explicación:</strong> ${pregunta.exp}</em></p>
+        </div>
+      `;
     });
 
     const resumenPuntaje = `<div class="quiz-summary"><h2>Has acertado ${puntaje} de ${preguntas.length}</h2></div>`;
     contenedor.innerHTML = resumenPuntaje + resultadosHTML;
 
-    <button onclick="window.exportQuizPDF('` + key + `','` + preguntas.length + `','` + puntaje + `')">Exportar resultados (PDF)</button>
-
-    // Marcar sección como completada
-const key = jsonPath.match(/quiz_(\w+)\.json/)[1];
-window.markSectionComplete?.(key);
-    
+    // Exportar PDF
+    const key = jsonPath.match(/quiz_(\w+)\.json/)[1];
+    window.exportQuizPDF?.(key, preguntas.length, puntaje);
+    window.markSectionComplete?.(key);
   });
+
+  contenedor.appendChild(form);
 }
-
-
